@@ -1,0 +1,6 @@
+echo Killing old docker processes...
+docker-compose rm -fs
+
+echo Pull docker containers...
+docker-compose build -f docker-compose-prod.yml --no-cache
+docker-compose up -d

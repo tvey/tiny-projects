@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <title>Hi There!</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: sans-serif;
+        font-size: 3rem;
+        background: #fff6c7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        color: #fa2384;
+        text-align: center;
+        margin-bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <script>
+      function showTime() {
+        let today = new Date(),
+            h = today.getHours(),
+            m = today.getMinutes(),
+            s = today.getSeconds();
+        m = (m >= 10) ? m : ('0' + m);
+        s = (s >= 10) ? s : ('0' + s);
+        document.querySelector('h1').innerHTML = `It’s time :) ${h}:${m}:${s}`;
+        setTimeout(() => { showTime() }, 500);
+      }
+      showTime();
+    </script>
+  </body>
+</html>

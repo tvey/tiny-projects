@@ -1,0 +1,6 @@
+echo Killing old docker processes...
+docker-compose rm -fs
+
+echo Building docker containers...
+docker-compose build --no-cache
+docker-compose up -d
