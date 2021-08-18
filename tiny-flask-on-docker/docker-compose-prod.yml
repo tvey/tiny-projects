@@ -2,20 +2,18 @@ version: "3.8"
 
 services:
   web:
-    container_name: tiny-flask
     image: uiou/tiny-flask
+    container_name: tiny-flask
     restart: always
-    build: ./app
     ports: 
       - "5000:5000"
     volumes:
       - .:/app
     command: gunicorn -w 1 -b 0.0.0.0:5000 hello:app
   nginx:
-    container_name: tiny-nginx
     image: uiou/tiny-nginx
+    container_name: tiny-nginx
     restart: always
-    build: ./nginx
     ports:
       - "80:80"
     depends_on:
