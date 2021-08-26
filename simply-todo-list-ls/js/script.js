@@ -4,6 +4,7 @@ const ui = new UI(ls);
 const todoForm = document.getElementById('todo-form');
 const todoInput = document.getElementById('new-todo');
 const todoUl = document.getElementById('todo-list');
+const submitBtn = document.querySelector('#todo-form button[type="submit"]')
 
 document.addEventListener('DOMContentLoaded', () => {
   ui.displayList(todoUl);
@@ -12,7 +13,19 @@ document.addEventListener('DOMContentLoaded', () => {
 todoForm.addEventListener('submit', (e) => {
   let text = todoInput.value;
   if (text.trim()) {
-    ui.addElem(text, todoUl);
+    if (todoForm.classList.contains('editing')) {
+      todoForm.classList.remove('editing');
+      submitBtn.classList.remove('btn-accent');
+      submitBtn.innerText = '+';
+      todoInput.style.borderColor = '#3aa128';
+      let idHolder = document.querySelector('#todo-form input[type="hidden"]');
+      let itemId = idHolder.value;
+      idHolder.remove();
+      let item = document.getElementById(`${itemId}`);
+      ui.updateElem(item, text);
+    } else {
+      ui.addElem(text, todoUl);
+    }
     todoInput.value = '';
   }
   e.preventDefault();
@@ -20,7 +33,7 @@ todoForm.addEventListener('submit', (e) => {
 
 todoUl.addEventListener('click', (e) => {
   handleIsDone(e);
-  // handleEdit(e);
+  handleEdit(e);
   handleDelete(e);
 });
 
@@ -37,7 +50,21 @@ function handleEdit(e) {
   if (e.target.parentElement.parentElement.classList.contains('edit')) {
     let itemToUpdate = e.target.parentElement;
     itemToUpdate = findItem(itemToUpdate);
-    ui.updateElem(itemToUpdate);
+    let itemText = itemToUpdate.querySelector('p').innerHTML;
+    let todoInput = todoForm.children[0];
+    todoForm.classList.add('editing');
+    submitBtn.classList.add('btn-accent');
+    todoInput.style.borderColor = '#fcca03';
+    submitBtn.innerHTML = '<i class="fas fa-check"></i>';
+    todoInput.value = itemText;
+    todoInput.focus();
+
+    let idHolder = document.querySelector('#todo-form input[type="hidden"]');
+    if (idHolder) idHolder.remove();
+    idHolder = document.createElement('input');
+    idHolder.type = 'hidden';
+    idHolder.value = itemToUpdate.id;
+    todoForm.appendChild(idHolder);
   }
 }
 
@@ -60,6 +87,7 @@ function findItem(elem) {
 
 function copyToClipboard(elem) {
   let textElem = elem.parentElement.previousElementSibling;
+  // Not for mobile
   navigator.clipboard.writeText(textElem.textContent);
   showNotification('Copied!');
 }
@@ -72,15 +100,4 @@ function showNotification(message) {
   setTimeout(() => {
     n.remove();
   }, 2000);
-}
-
-function moveCursorToEnd(el) {
-  if (typeof el.selectionStart == "number") {
-    el.selectionStart = el.selectionEnd = el.value.length;
-  } else if (typeof el.createTextRange != "undefined") {
-    el.focus();
-    let range = el.createTextRange();
-    range.collapse(false);
-    range.select();
-  }
 }

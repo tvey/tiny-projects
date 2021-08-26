@@ -4,7 +4,7 @@ class LS {
   }
 
   loadList() {
-    // Load list from LS or create empty (getItem)
+    // Load list from LS or create empty
     let todoList;
     const loadedList = localStorage.getItem(this.listName);
     if (loadedList === null) {
@@ -38,8 +38,7 @@ class LS {
       if (i == itemId) {
         todoList.splice(i, 1);
         this.saveList(todoList);
-        this.loadList();
-        return false;
+        return; // breaks
       }
     });
   }
@@ -60,13 +59,22 @@ class LS {
           todoList.unshift(popped);
         }
         this.saveList(todoList);
-        return false; // break
+        return;
       }
     });
   }
 
-  editItem(itemId) {
-    // To-do
+  editItem(itemId, newText) {
+    const todoList = this.loadList();
+
+    todoList.forEach((item, i) => {
+      if (i == itemId) {
+        item.text = newText;
+        // Don't update ids
+        localStorage.setItem(this.listName, JSON.stringify(todoList));
+        return;
+      }
+    });
   }
 }
 
@@ -84,7 +92,7 @@ class UI {
 
     const newElem = `
         <li class="item" id="${item.id}">
-          <form id="check">
+          <form class="check">
             <div class="checkbox-wrap">
               <input type="checkbox" class="main-checkbox" ${checked}>
               <label></label>
@@ -93,13 +101,13 @@ class UI {
           <p class="${isDoneClasses}">${item.text}</p>
           <div class="manage">
             <button class="link-btn text-muted edit" title="Edit">
-              <small><i class="fas fa-pencil-alt"></i></small>
+              <span><i class="fas fa-pencil-alt"></i></span>
             </button>
             <button class="link-btn text-muted copy" onclick="copyToClipboard(this)" title="Copy text">
-              <small><i class="far fa-copy"></i></small>
+              <span><i class="far fa-copy"></i></span>
             </button>
             <button class="link-btn text-muted delete" title="Delete">
-              <small><i class="far fa-times-circle"></i></small>
+              <span><i class="far fa-times-circle"></i></span>
             </button>
           </div>     
         </li>`;
@@ -127,8 +135,9 @@ class UI {
     this.displayList(item.parentElement);
   }
 
-  updateElem(item) {
-    // To-do
+  updateElem(item, newText) {
+    this.ls.editItem(item.id, newText)
+    this.displayList(item.parentElement);
   }
 
   deleteElem(itemToRemove) {
