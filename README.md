@@ -2,7 +2,17 @@
 
 ## Contents
 
+* [Simply Todo List](#simply-todo-list)
+
 * [Tiny Flask](#tiny-flask)
+
+## Simply Todo List
+
+Rethinking of [a small app on Django](https://github.com/tvey/simply-todo-list) using pure Javascript and LocalStorage.
+
+The app allows to add, edit, delete, copy and sort (on desktop) items.
+
+Works on Netlify: [https://simply-todo-list.netlify.app/](https://simply-todo-list.netlify.app/)
 
 ## Tiny Flask
 
