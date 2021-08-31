@@ -16,17 +16,21 @@ class LS {
   }
 
   saveList(list) {
-    // Update ids and save list to LS
+    localStorage.setItem(this.listName, JSON.stringify(list));
+  }
+
+  updateIds(list) {
+    // Start with 0
     list.forEach((item, index) => {
       item.id = index;
     })
-    localStorage.setItem(this.listName, JSON.stringify(list));
   }
 
   addItem(text) {
     const todoList = this.loadList();
     let newItem = { id: 0, text: text, isDone: false };
     todoList.unshift(newItem);
+    this.updateIds(todoList);
     this.saveList(todoList);
     return newItem;
   }
@@ -37,6 +41,7 @@ class LS {
     todoList.forEach((item, i) => {
       if (i == itemId) {
         todoList.splice(i, 1);
+        this.updateIds(todoList);
         this.saveList(todoList);
         return; // breaks
       }
@@ -58,6 +63,7 @@ class LS {
         } else {
           todoList.unshift(popped);
         }
+        this.updateIds(todoList);
         this.saveList(todoList);
         return;
       }
@@ -71,10 +77,23 @@ class LS {
       if (i == itemId) {
         item.text = newText;
         // Don't update ids
-        localStorage.setItem(this.listName, JSON.stringify(todoList));
+        this.saveList(todoList);
         return;
       }
     });
+  }
+
+  saveSort(positions) {
+    const todoList = this.loadList();
+
+    todoList.sort((a, b) => {
+      // Sort list item ids based on positions array
+      return positions.indexOf(a.id) - positions.indexOf(b.id);
+    });
+    todoList.forEach((item, i) => {
+      item.id = i;
+    });
+    this.saveList(todoList);
   }
 }
 
@@ -91,7 +110,7 @@ class UI {
     if (item.isDone) checked = "checked";
 
     const newElem = `
-        <li class="item" id="${item.id}">
+        <li class="item" id="${item.id}" draggable="true">
           <form class="check">
             <div class="checkbox-wrap">
               <input type="checkbox" class="main-checkbox" ${checked}>
@@ -121,13 +140,13 @@ class UI {
       output += this.formatElem(item);
     });
     parent.innerHTML = output;
+    handleSorting();
   }
 
   addElem(text, parent) {
     // Create li with styles and inner text
-    let newItem = this.ls.addItem(text);
-    let newElem = this.formatElem(newItem);
-    parent.innerHTML = newElem + parent.innerHTML;
+    this.ls.addItem(text);
+    this.displayList(parent);
   }
 
   toggleCheck(item) {
@@ -141,10 +160,15 @@ class UI {
   }
 
   deleteElem(itemToRemove) {
-    // Remove elem from DOM and from LS
+    // Remove elem from the DOM and LS
     this.ls.deleteItem(itemToRemove.id);
     let parent = itemToRemove.parentElement;
     itemToRemove.remove();
+    this.displayList(parent);
+  }
+
+  saveSort(positions, parent) {
+    this.ls.saveSort(positions);
     this.displayList(parent);
   }
 }

@@ -4,7 +4,7 @@ const ui = new UI(ls);
 const todoForm = document.getElementById('todo-form');
 const todoInput = document.getElementById('new-todo');
 const todoUl = document.getElementById('todo-list');
-const submitBtn = document.querySelector('#todo-form button[type="submit"]')
+const submitBtn = document.querySelector('#todo-form button[type="submit"]');
 
 document.addEventListener('DOMContentLoaded', () => {
   ui.displayList(todoUl);
@@ -83,11 +83,41 @@ function findItem(elem) {
   return elem;
 }
 
+function handleSorting() {
+  document.querySelectorAll('.item').forEach(item => {
+    item.addEventListener('dragstart', () => {
+      item.classList.add('dragging');
+    });
+    item.addEventListener('dragend', () => {
+      item.classList.remove('dragging');
+      let positions = [];
+      document.querySelectorAll('.item').forEach((item) => {
+        positions.push(item.id);
+      });
+      positions = positions.map((i) => {
+        return parseInt(i, 10);
+      });
+      ui.saveSort(positions, todoUl);
+    });
+  });
+
+  todoUl.addEventListener('dragover', (e) => {
+    const afterElement = getDragAfterElement(todoUl, e.clientY);
+    const draggingElement = document.querySelector('.dragging');
+    if (afterElement == null) {
+      todoUl.appendChild(draggingElement);
+    } else {
+      todoUl.insertBefore(draggingElement, afterElement);
+    }
+  });
+}
+
+
 // Utilities
 
 function copyToClipboard(elem) {
   let textElem = elem.parentElement.previousElementSibling;
-  // Not for mobile
+  // Works with SSL
   navigator.clipboard.writeText(textElem.textContent);
   showNotification('Copied!');
 }
@@ -100,4 +130,18 @@ function showNotification(message) {
   setTimeout(() => {
     n.remove();
   }, 2000);
+}
+
+function getDragAfterElement(container, y) {
+  const draggableElements = [...container.querySelectorAll('.item:not(.dragging)')];
+
+  return draggableElements.reduce((closest, child) => {
+    const box = child.getBoundingClientRect();
+    const offset = y - box.top - box.height / 2;
+    if (offset < 0 && offset > closest.offset) {
+      return { offset: offset, element: child }
+    } else {
+      return closest
+    }
+  }, { offset: Number.NEGATIVE_INFINITY }).element
 }
