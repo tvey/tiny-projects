@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cadbcc82d5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{% block title %}{% endblock title %}Simply Todo List</title>
+  </head>
+  <body class="theme-dark">
+    <div class="container">
+      {% block content %}{% endblock content %}
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script></script>
+  </body>
+</html>
