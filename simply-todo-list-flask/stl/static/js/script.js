@@ -11,13 +11,8 @@ function moveCursorToEnd(el) {
 
 function copyToClipboard(elem) {
   let textElem = elem.parentElement.previousElementSibling;
-  let range = document.createRange();
-  range.selectNode(textElem);
-  window.getSelection().removeAllRanges(); 
-  window.getSelection().addRange(range); 
-  document.execCommand('copy');
-  showNotification('Copied!')
-  window.getSelection().removeAllRanges();
+  navigator.clipboard.writeText(textElem.textContent);
+  showNotification('Copied!');
 }
 
 function showNotification(message) {

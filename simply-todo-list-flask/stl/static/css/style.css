@@ -45,7 +45,9 @@ body {
   color: var(--light-color);
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
   border-radius: var(--b-radius);
   display: block;
   width: 100%;
@@ -55,7 +57,9 @@ input[type="text"] {
   transition: border-color .2s ease-in-out;
 }
 
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
   border: var(--b-width) solid var(--accent-one);
 }
 
@@ -96,6 +100,18 @@ input[type="radio"]:not(:checked) + label:hover {
   margin-bottom: 1rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -114,6 +130,10 @@ input[type="radio"]:not(:checked) + label:hover {
 
 .hidden {
   display: none;
+}
+
+.link {
+  color: var(--accent-one);
 }
 
 .btn {
@@ -156,16 +176,42 @@ a.text-muted:hover {
   color: var(--accent-one);
 }
 
+.alert {
+  font-size: 0.9rem;
+  border-radius: var(--b-radius);
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.alert-info {
+  background: #faffc2;
+  border: var(--accent-one) 1px solid;
+  color: var(--accent-one);
+}
+
+.alert-danger {
+  background: #ffebe8;
+  border: 1px solid var(--error-color);
+  color: var(--error-color);
+}
+
+.alert-danger a {
+  text-decoration: underline;
+}
+
 .done {
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+.form-group {
+  margin-bottom: 0.5rem;
 }
 
 #todo-form {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0.75rem;
 }
 
 #todo-form input {

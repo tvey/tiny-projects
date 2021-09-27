@@ -1,64 +1,66 @@
-from datetime import datetime
+from flask import Blueprint, render_template, request, redirect, url_for, flash
+from flask_login import login_required, current_user
+from .models import Todo
+from . import db
 
-from flask import Flask, render_template, request, redirect, url_for
-from flask_sqlalchemy import SQLAlchemy
-
-
-app = Flask(__name__)
-app.config['SECRET_KEY'] = 'blah'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///stl.db'
-db = SQLAlchemy(app)
+main = Blueprint('main', __name__)
 
 
-class Todo(db.Model):
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    text = db.Column(db.Text, nullable=False)
-    date_added = db.Column(db.DateTime, default=datetime.utcnow)
-    is_done = db.Column(db.Boolean, default=False)
-
-    def __repr__(self):
-        return f'<Todo {self.id}>'
-
-
-@app.route('/', methods=['GET', 'POST'])
+@main.route('/', methods=['GET', 'POST'])
 def home():
-    todos = Todo.query.all()
-    print(todos)
+    if not current_user.is_authenticated:
+        return render_template('index.html')
+
+    todos = (
+        Todo.query.filter_by(owner_id=current_user.id)
+        .order_by(Todo.date_added.desc())
+        .all()
+    )
 
     if request.method == 'POST':
-        todo_text = request.form.get('todo')
-        print(todo_text)
-
-        if todo_text.strip() and not todo_text.isspace():
-            new_todo = Todo(text=todo_text)
-            print('new todo', new_todo)
-            db.session.add(new_todo)
+        if 'is_done' in request.form:
+            todo = Todo.query.get_or_404(request.form.get('is_done'))
+            todo.is_done = not todo.is_done
             db.session.commit()
-            return redirect(url_for('home'))
+            return redirect(url_for('main.home'))
+        elif 'todo' in request.form:
+            todo_text = request.form.get('todo')
+
+            if todo_text.strip() and not todo_text.isspace():
+                new_todo = Todo(text=todo_text, owner_id=current_user.id)
+                db.session.add(new_todo)
+                db.session.commit()
+                return redirect(url_for('main.home'))
+            else:
+                flash('Todo text cannot be empty.', 'info')
+                return redirect(request.path)
         else:
-            return redirect(url_for('home'))
+            return redirect(url_for('main.home'))
     return render_template('index.html', todo_list=todos)
 
 
-
-@app.route('/edit/<int:pk>', methods=['GET', 'POST'])
+@main.route('/edit/<int:pk>', methods=['GET', 'POST'])
+@login_required
 def edit_todo(pk):
     todo = Todo.query.get_or_404(pk)
 
     if request.method == 'POST':
-        todo.text = request.form.get('todo')
-        db.session.commit()
-        return redirect(url_for('home'))
+        todo_text = request.form.get('todo')
+
+        if todo_text.strip() and not todo_text.isspace():
+            todo.text = todo_text
+            db.session.commit()
+            return redirect(url_for('main.home'))
+        else:
+            flash('Todo text cannot be empty.', 'info')
+            return redirect(request.path)
     return render_template('index.html', todo=todo)
 
 
-
-@app.route('/delete/<int:pk>', methods=['POST'])
+@main.route('/delete/<int:pk>', methods=['POST'])
+@login_required
 def delete_todo(pk):
     todo = Todo.query.get_or_404(pk)
     db.session.delete(todo)
     db.session.commit()
-    return redirect(url_for('home'))
-
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    return redirect(url_for('main.home'))

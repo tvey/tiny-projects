@@ -7,14 +7,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icon/icon.svg') }}" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='icon/apple-touch-icon.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='icon/icon/manifest.webmanifest') }}">
     <title>{% block title %}{% endblock title %}Simply Todo List</title>
   </head>
   <body class="theme-dark">
     <div class="container">
+      {% if current_user.is_authenticated %}
+      <nav class="text-right text-muted mb-3">
+        <small>
+          <span>Hey, {{ current_user.username }}</span> |
+          <a href="{{ url_for('auth.logout') }}" class="link">Logout</a>
+        </small>
+      </nav>
+      {% endif %}
+
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">
+              {{ message }}
+            </div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+
       {% block content %}{% endblock content %}
+
       <div id="notify"></div>
     </div>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <script></script>
   </body>
 </html>
