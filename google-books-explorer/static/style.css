@@ -1,18 +1,123 @@
+:root {
+  --green: #3aa128;
+  --yellow: #fcca03;
+  --blue: #0c63c8;
+  --red: #db3738;
+  --max-width: 680px;
+  --b-radius: 4px;
+  --b-width: 4px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html {
   position: relative;
   min-height: 100%;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .container {
   width: auto;
-  max-width: 680px;
-  padding: 0 15px;
+  max-width: var(--max-width);
+  padding: 0 20px;
+  margin: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue);
+  border-bottom: 3px solid rgba(255, 255, 255, 0);
+  transition: border-color .2s ease-in;
+}
+
+a:hover,
+a:focus {
+  border-color: var(--yellow);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+input[type="search"] {
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  padding: 1.2rem;
+  outline: 0 none;
+  border: var(--b-width) solid #ccc;
+  border-radius: var(--b-radius);
+  transition: border-color .2s ease-in-out;
+}
+
+input[type="search"]:focus {
+  border: var(--b-width) solid var(--yellow);
+}
+
+.btn {
+  color: #fff;
+  background: var(--blue);
+  border-radius: var(--b-radius);
+  padding: 1.35rem;
+  border: none;
+  opacity: 0.9;
+  transition: all .2s ease-in-out;
+}
+
+.btn-success {
+  background: var(--green);
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 1;
+}
+
+#search-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+#search-form input {
+  margin-right: 0.5rem;
+}
+
+.list {
+  margin-bottom: 1rem;
+}
+
+.list-item {
+  position: relative;
+  border-radius: var(--b-radius);
+  margin-bottom: 5px;
+  padding: 1.3rem;
+  border: 1px solid #ccc; 
 }
 
 .footer {
@@ -22,5 +127,32 @@ body {
   height: 80px;
   line-height: 80px;
   background-color: #f5f5f5;
+}
+
+.footer div {
+  width: 90%;
+  margin: auto;
   text-align: center;
+}
+
+.spinner {
+  width: 100%;
+}
+
+.spinner::after { 
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: calc(50% - 15px);
+  border-radius: 50%;
+  border-top: 4px solid rgba(252, 202, 3, 0.6);
+  border-left: 4px solid rgba(252, 202, 3, 0.6);
+  border-bottom: 4px solid rgba(252, 202, 3, 0.6);
+  border-right: 4px solid rgba(252, 202, 3, 0);
+  animation: spinner 0.8s linear infinite;
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
 }

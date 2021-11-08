@@ -10,8 +10,8 @@ const app = new Vue({
     async fetchBooks(e) {
       e.preventDefault();
       this.loading = true;
-      this.books = new Array(20);
-      let q = this.q.replace(/\s+/g, " ").trim();
+      this.books = new Array(15);
+      let q = this.q.replace(/\s+/g, ' ').trim();
       let response = await fetch(`/search/?q=${encodeURI(q)}`);
       let books = await response.json();
       this.books = books;
