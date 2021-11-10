@@ -2,17 +2,31 @@
 
 ## Contents
 
+* [Google Books Explorer](#google-books-explorer)
+
 * [Simply Todo List](#simply-todo-list)
+
+* [STL-Flask](#stl-flask)
 
 * [Tiny Flask](#tiny-flask)
 
+## Google Books Explorer
+
+There is Django calling Google Books API on the backend and returning its json responses.
+And there is Vue from cdn accepting queries and displaying fetched results.
+
 ## Simply Todo List
 
-Rethinking of [a small app on Django](https://github.com/tvey/simply-todo-list) using pure Javascript and LocalStorage.
+Rethinking [a small app on Django](https://github.com/tvey/simply-todo-list) using pure Javascript and LocalStorage.
 
 The app allows to add, edit, delete, copy and sort (on desktop) items.
 
 Works on Netlify: [https://simply-todo-list.netlify.app/](https://simply-todo-list.netlify.app/)
+
+## STL-Flask
+
+The same old to-do list with a backend switched from Django to Flask just for the sake of trying.
+Authentication and CRUD are in place, other features omitted.
 
 ## Tiny Flask
 
