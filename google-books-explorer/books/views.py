@@ -10,7 +10,8 @@ class IndexView(TemplateView):
 
 def search(request):
     query = request.GET.get('q')
+    page = request.GET.get('page', 0)
 
     if not query:
         return JsonResponse({'error': 'Query is required.'}, status=400)
-    return JsonResponse(call_books_api(query), safe=False)
+    return JsonResponse(call_books_api(query, page=page), safe=False)

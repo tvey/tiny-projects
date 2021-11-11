@@ -25,7 +25,7 @@
           <div v-if="loading" class="spinner"></div>
           <div v-else>
             <a :href="[[ book.link ]]" target="_blank">[[ book.title ]]</a>
-            <span v-if="book.authors.length">by [[ book.authors ]]</span>
+            <span v-if="book.authors.length"> ([[ book.authors ]])</span>
           </div>
         </li>
       </ul>
@@ -38,7 +38,7 @@
     </footer>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue@next"></script>
   <script src="{% static 'app.js' %}"></script>
 </body>
 </html>

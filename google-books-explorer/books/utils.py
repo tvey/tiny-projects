@@ -2,19 +2,33 @@ import os
 
 import dotenv
 import requests
+import requests_cache
 
 dotenv.load_dotenv()
+requests_cache.install_cache('gbooks')
 
 API_KEY = os.environ.get('API_KEY')
 
 
-def call_books_api(query):
+def call_books_api(query, page=0):
     url = 'https://www.googleapis.com/books/v1/volumes'
+
+    try:
+        page = int(page)
+    except TypeError:
+        raise ValueError('Page must be an integer.')
+
+    if page == 0:
+        start_index = 0
+    else:
+        start_index = page * 15  # looping through items, not pages
+
     params = {
         'key': API_KEY,
         'q': query,
         'maxResults': 15,
-        # 'startIndex': 0,  # todo: go through pages, infinite scroll
+        'startIndex': start_index,
+        'fields': 'items(id,volumeInfo(title,authors))',
     }
     r = requests.get(url, params=params)
     items = r.json().get('items')
@@ -25,11 +39,8 @@ def call_books_api(query):
             book = {}
             info = item['volumeInfo']
             book['title'] = info.get('title')
-            book['subtitle'] = info.get('subtitle')
             authors = info.get('authors')
             book['authors'] = ', '.join(authors) if authors else []
-            book['description'] = info.get('description')
             book['link'] = f"https://books.google.ru/books/?id={item['id']}"
-            book['piblished_date'] = info.get('publishedDate')
             books.append(book)
     return books
