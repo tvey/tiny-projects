@@ -28,6 +28,8 @@ Works on Netlify: [https://simply-todo-list.netlify.app/](https://simply-todo-li
 The same old to-do list with a backend switched from Django to Flask just for the sake of trying.
 Authentication and CRUD are in place, other features omitted.
 
+Works on Heroku: [https://stlf.herokuapp.com/](https://stlf.herokuapp.com/)
+
 ## Tiny Flask
 
 Dockerized web app with Nginx. Build images locally with Nginx listening on port 8000
