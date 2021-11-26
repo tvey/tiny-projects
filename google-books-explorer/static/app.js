@@ -34,13 +34,18 @@ let Books = {
       let q = this.q.replace(/\s+/g, ' ').trim();
       let response = await fetch(`/search/?q=${encodeURI(q)}&page=${encodeURI(this.currentPage)}`);
       let moreBooks = await response.json();
-      console.log(moreBooks)
-      if (moreBooks.length) {
-        this.books.push(...moreBooks);
-        console.log(this.books.length);
-      } else {
+      if (!moreBooks.length) {
         console.log('No more books');
         this.loading = false;
+        return
+      } else {     
+        this.books.push(...moreBooks);
+        console.log(this.books.length);
+      }
+
+      if (moreBooks.length) {
+      } else {
+        this.books = [];
         return;  // why
       }
       this.loading = false;
@@ -49,5 +54,3 @@ let Books = {
 }
 
 Vue.createApp(Books).mount('#app')
-
-// more todos

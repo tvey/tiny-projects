@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Query
+
+@admin.register(Query)
+class QueryAdmin(admin.ModelAdmin):
+    list_display = ['__str__', 'ip', 'timestamp']

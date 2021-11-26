@@ -8,6 +8,10 @@ python-dotenv = "*"
 django = "*"
 requests = "*"
 requests-cache = "*"
+gunicorn = "*"
+dj-database-url = "*"
+psycopg2 = "*"
+whitenoise = "*"
 
 [dev-packages]
 

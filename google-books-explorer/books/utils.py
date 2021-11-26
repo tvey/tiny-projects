@@ -44,3 +44,12 @@ def call_books_api(query, page=0):
             book['link'] = f"https://books.google.ru/books/?id={item['id']}"
             books.append(book)
     return books
+
+
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
