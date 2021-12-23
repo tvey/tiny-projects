@@ -4,6 +4,10 @@
 
 * [Google Books Explorer](#google-books-explorer)
 
+* [Hey FastAPI](#hey-fastapi)
+
+* [Hey Sanic](#hey-sanic)
+
 * [Simply Todo List](#simply-todo-list)
 
 * [STL-Flask](#stl-flask)
@@ -14,6 +18,14 @@
 
 There is Django calling Google Books API on the backend and returning its json responses.
 And there is Vue from cdn accepting queries and displaying fetched results.
+
+## Hey FastAPI
+
+A FastAPI CRUD example with [SQLModel](https://github.com/tiangolo/sqlmodel).
+
+## Hey Sanic
+
+Basic Sanic CRUD with MongoDB using a sanic-motor wrapper.
 
 ## Simply Todo List
 
