@@ -1,0 +1,142 @@
+[
+    {
+        "model": "quotes.author",
+        "pk": 1,
+        "fields": {
+            "name": "Confucius"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 2,
+        "fields": {
+            "name": "Lao Tzu"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 3,
+        "fields": {
+            "name": "Socrates"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 4,
+        "fields": {
+            "name": "Plato"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 5,
+        "fields": {
+            "name": "Aristotle"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 6,
+        "fields": {
+            "name": "Thomas Hobbes"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 7,
+        "fields": {
+            "name": "Rene Descartes"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 8,
+        "fields": {
+            "name": "John Locke"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 9,
+        "fields": {
+            "name": "Baruch Spinoza"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 10,
+        "fields": {
+            "name": "David Hume"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 11,
+        "fields": {
+            "name": "Jean-Jacques Rousseau"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 12,
+        "fields": {
+            "name": "Immanuel Kant"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 13,
+        "fields": {
+            "name": "G.W.F. Hegel"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 14,
+        "fields": {
+            "name": "Soren Kierkegaard"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 15,
+        "fields": {
+            "name": "Karl Marx"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 16,
+        "fields": {
+            "name": "Friedrich Nietzsche"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 17,
+        "fields": {
+            "name": "Bertrand Russell"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 18,
+        "fields": {
+            "name": "Ludwig Wittgenstein"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 19,
+        "fields": {
+            "name": "Michel Foucault"
+        }
+    },
+    {
+        "model": "quotes.author",
+        "pk": 20,
+        "fields": {
+            "name": "Jean-Paul Sartre"
+        }
+    }
+]

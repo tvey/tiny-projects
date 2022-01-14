@@ -1,0 +1,4802 @@
+[
+    {
+        "model": "quotes.quote",
+        "pk": 1,
+        "fields": {
+            "author": 1,
+            "content": "By three methods we may learn wisdom: First, by reflection, which is noblest; Second, by imitation, which is easiest; and third by experience, which is the bitterest."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 2,
+        "fields": {
+            "author": 1,
+            "content": "Everything has beauty, but not everyone sees it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 3,
+        "fields": {
+            "author": 1,
+            "content": "It does not matter how slowly you go as long as you do not stop."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 4,
+        "fields": {
+            "author": 1,
+            "content": "Wheresoever you go, go with all your heart."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 5,
+        "fields": {
+            "author": 1,
+            "content": "He who knows all the answers has not been asked all the questions."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 6,
+        "fields": {
+            "author": 1,
+            "content": "Life is really simple, but we insist on making it complicated."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 7,
+        "fields": {
+            "author": 1,
+            "content": "The man who moves a mountain begins by carrying away small stones."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 8,
+        "fields": {
+            "author": 1,
+            "content": "If you make a mistake and do not correct it, this is called a mistake."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 9,
+        "fields": {
+            "author": 1,
+            "content": "Study the past if you would define the future."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 10,
+        "fields": {
+            "author": 1,
+            "content": "The funniest people are the saddest ones"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 11,
+        "fields": {
+            "author": 1,
+            "content": "Before you embark on a journey of revenge, dig two graves."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 12,
+        "fields": {
+            "author": 1,
+            "content": "To be wronged is nothing, unless you continue to remember it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 13,
+        "fields": {
+            "author": 1,
+            "content": "Respect yourself and others will respect you."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 14,
+        "fields": {
+            "author": 1,
+            "content": "The man who asks a question is a fool for a minute, the man who does not ask is a fool for life."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 15,
+        "fields": {
+            "author": 1,
+            "content": "When you see a good person, think of becoming like her/him. When you see someone not so good, reflect on your own weak points."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 16,
+        "fields": {
+            "author": 1,
+            "content": "You cannot open a book without learning something."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 17,
+        "fields": {
+            "author": 1,
+            "content": "Silence is a true friend who never betrays."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 18,
+        "fields": {
+            "author": 1,
+            "content": "Attack the evil that is within yourself, rather than attacking the evil that is in others."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 19,
+        "fields": {
+            "author": 1,
+            "content": "What the superior man seeks is in himself; what the small man seeks is in others."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 20,
+        "fields": {
+            "author": 1,
+            "content": "I hear and I forget. I see and I remember. I do and I understand."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 21,
+        "fields": {
+            "author": 1,
+            "content": "The hardest thing of all is to find a black cat in a dark room, especially if there is no cat."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 22,
+        "fields": {
+            "author": 1,
+            "content": "Music produces a kind of pleasure which human nature cannot do without."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 23,
+        "fields": {
+            "author": 1,
+            "content": "Give a bowl of rice to a man and you will feed him for a day. Teach him how to grow his own rice and you will save his life."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 24,
+        "fields": {
+            "author": 1,
+            "content": "The gem cannot be polished without friction, nor man perfected without trials."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 25,
+        "fields": {
+            "author": 1,
+            "content": "The way out is through the door. Why is it that no one will use this method?"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 26,
+        "fields": {
+            "author": 1,
+            "content": "It is not the failure of others to appreciate your abilities that should trouble you, but rather your failure to appreciate theirs."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 27,
+        "fields": {
+            "author": 1,
+            "content": "The man of wisdom is never of two minds;\nthe man of benevolence never worries;\nthe man of courage is never afraid."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 28,
+        "fields": {
+            "author": 1,
+            "content": "Only the wisest and stupidest of men never change."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 29,
+        "fields": {
+            "author": 1,
+            "content": "It is more shameful to distrust our friends than to be deceived by them."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 30,
+        "fields": {
+            "author": 1,
+            "content": "We have two lives, and the second begins when we realize we only have one."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 31,
+        "fields": {
+            "author": 2,
+            "content": "Being deeply loved by someone gives you strength, while loving someone deeply gives you courage."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 32,
+        "fields": {
+            "author": 2,
+            "content": "Simplicity, patience, compassion.\nThese three are your greatest treasures.\nSimple in actions and thoughts, you return to the source of being.\nPatient with both friends and enemies,\nyou accord with the way things are.\nCompassionate toward yourself,\nyou reconcile all beings in the world."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 33,
+        "fields": {
+            "author": 2,
+            "content": "The journey of a thousand miles begins with a single step."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 34,
+        "fields": {
+            "author": 2,
+            "content": "Knowing others is intelligence;\nknowing yourself is true wisdom.\nMastering others is strength;\nmastering yourself is true power."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 35,
+        "fields": {
+            "author": 2,
+            "content": "Life is a series of natural and spontaneous changes. Don't resist them; that only creates sorrow. Let reality be reality. Let things flow naturally forward in whatever way they like."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 36,
+        "fields": {
+            "author": 2,
+            "content": "A good traveler has no fixed plans and is not intent on arriving."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 37,
+        "fields": {
+            "author": 2,
+            "content": "Those who know do not speak. Those who speak do not know."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 38,
+        "fields": {
+            "author": 2,
+            "content": "When you are content to be simply yourself and don't compare or compete, everyone will respect you."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 39,
+        "fields": {
+            "author": 2,
+            "content": "The truth is not always beautiful, nor beautiful words the truth."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 40,
+        "fields": {
+            "author": 2,
+            "content": "Time is a created thing. To say 'I don't have time,' is like saying, 'I don't want to."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 41,
+        "fields": {
+            "author": 2,
+            "content": "The best fighter is never angry."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 42,
+        "fields": {
+            "author": 2,
+            "content": "Because one believes in oneself, one doesn't try to convince others. Because one is content with oneself, one doesn't need others' approval. Because one accepts oneself, the whole world accepts him or her."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 43,
+        "fields": {
+            "author": 2,
+            "content": "If you are depressed you are living in the past.\nIf you are anxious you are living in the future.\nIf you are at peace you are living in the present."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 44,
+        "fields": {
+            "author": 2,
+            "content": "A man with outward courage dares to die; a man with inner courage dares to live."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 45,
+        "fields": {
+            "author": 2,
+            "content": "Care about what other people think and you will always be their prisoner."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 46,
+        "fields": {
+            "author": 2,
+            "content": "Be content with what you have;\nrejoice in the way things are.\nWhen you realize there is nothing lacking,\nthe whole world belongs to you."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 47,
+        "fields": {
+            "author": 2,
+            "content": "Nature does not hurry, yet everything is accomplished."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 48,
+        "fields": {
+            "author": 2,
+            "content": "Be careful what you water your dreams with. Water them with worry and fear and you will produce weeds that choke the life from your dream. Water them with optimism and solutions and you will cultivate success. Always be on the lookout for ways to turn a problem into an opportunity for success. Always be on the lookout for ways to nurture your dream."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 49,
+        "fields": {
+            "author": 2,
+            "content": "At the center of your being\nyou have the answer;\nyou know who you are\nand you know what you want."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 50,
+        "fields": {
+            "author": 2,
+            "content": "Do you have the patience to wait until your mud settles and the water is clear?"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 51,
+        "fields": {
+            "author": 2,
+            "content": "Silence is a source of Great Strength."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 52,
+        "fields": {
+            "author": 2,
+            "content": "If you understand others you are smart.\nIf you understand yourself you are illuminated.\nIf you overcome others you are powerful.\nIf you overcome yourself you have strength.\nIf you know how to be satisfied you are rich.\nIf you can act with vigor, you have a will.\nIf you don't lose your objectives you can be long-lasting.\nIf you die without loss, you are eternal."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 53,
+        "fields": {
+            "author": 2,
+            "content": "Stop thinking, and end your problems."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 54,
+        "fields": {
+            "author": 2,
+            "content": "The flame that burns Twice as bright burns half as long."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 55,
+        "fields": {
+            "author": 2,
+            "content": "Kindness in words creates confidence. Kindness in thinking creates profoundness. Kindness in giving creates love."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 56,
+        "fields": {
+            "author": 2,
+            "content": "Manifest plainness,\nEmbrace simplicity,\nReduce selfishness,\nHave few desires."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 57,
+        "fields": {
+            "author": 2,
+            "content": "Music in the soul can be heard by the universe."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 58,
+        "fields": {
+            "author": 2,
+            "content": "A leader is best\nWhen people barely know he exists\nOf a good leader, who talks little,\nWhen his work is done, his aim fulfilled,\nThey will say, \u201cWe did this ourselves."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 59,
+        "fields": {
+            "author": 2,
+            "content": "Act without expectation."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 60,
+        "fields": {
+            "author": 2,
+            "content": "Respond intelligently even to unintelligent treatment"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 61,
+        "fields": {
+            "author": 3,
+            "content": "The only true wisdom is in knowing you know nothing."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 62,
+        "fields": {
+            "author": 3,
+            "content": "The unexamined life is not worth living."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 63,
+        "fields": {
+            "author": 3,
+            "content": "I cannot teach anybody anything. I can only make them think"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 64,
+        "fields": {
+            "author": 3,
+            "content": "There is only one good, knowledge, and one evil, ignorance."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 65,
+        "fields": {
+            "author": 3,
+            "content": "Be kind, for everyone you meet is fighting a hard battle."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 66,
+        "fields": {
+            "author": 3,
+            "content": "Wonder is the beginning of wisdom."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 67,
+        "fields": {
+            "author": 3,
+            "content": "Strong minds discuss ideas, average minds discuss events, weak minds discuss people."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 68,
+        "fields": {
+            "author": 3,
+            "content": "To find yourself, think for yourself."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 69,
+        "fields": {
+            "author": 3,
+            "content": "Education is the kindling of a flame, not the filling of a vessel."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 70,
+        "fields": {
+            "author": 3,
+            "content": "By all means marry; if you get a good wife, you\u2019ll become happy; if you get a bad one, you\u2019ll become a philosopher."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 71,
+        "fields": {
+            "author": 3,
+            "content": "He who is not contented with what he has, would not be contented with what he would like to have."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 72,
+        "fields": {
+            "author": 3,
+            "content": "Be slow to fall into friendship, but when you are in, continue firm and constant."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 73,
+        "fields": {
+            "author": 3,
+            "content": "If you don't get what you want, you suffer; if you get what you don't want, you suffer; even when you get exactly what you want, you still suffer because you can't hold on to it forever. Your mind is your predicament. It wants to be free of change. Free of pain, free of the obligations of life and death. But change is law and no amount of pretending will alter that reality."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 74,
+        "fields": {
+            "author": 3,
+            "content": "The children now love luxury; they have bad manners, contempt for authority; they show disrespect for elders and love chatter in place of exercise. Children are now tyrants, not the servants of their households. They no longer rise when elders enter the room. They contradict their parents, chatter before company, gobble up dainties at the table, cross their legs, and tyrannize their teachers."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 75,
+        "fields": {
+            "author": 3,
+            "content": "Sometimes you put walls up not to keep people out, but to see who cares enough to break them down."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 76,
+        "fields": {
+            "author": 3,
+            "content": "No man has the right to be an amateur in the matter of physical training. It is a shame for a man to grow old without seeing the beauty and strength of which his body is capable."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 77,
+        "fields": {
+            "author": 3,
+            "content": "The secret of happiness, you see, is not found in seeking more, but in developing the capacity to enjoy less."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 78,
+        "fields": {
+            "author": 3,
+            "content": "Know thyself."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 79,
+        "fields": {
+            "author": 3,
+            "content": "Let him who would move the world first move himself."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 80,
+        "fields": {
+            "author": 3,
+            "content": "Death may be the greatest of all human blessings."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 81,
+        "fields": {
+            "author": 3,
+            "content": "Contentment is natural wealth, luxury is artificial poverty."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 82,
+        "fields": {
+            "author": 3,
+            "content": "Employ your time in improving yourself by other men's writings so that you shall come easily by what others have labored hard for."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 83,
+        "fields": {
+            "author": 3,
+            "content": "The only good is knowledge and the only evil is ignorance."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 84,
+        "fields": {
+            "author": 3,
+            "content": "The hour of departure has arrived, and we go our separate ways, I to die, and you to live. Which of these two is better only God knows."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 85,
+        "fields": {
+            "author": 3,
+            "content": "Do not do to others what angers you if done to you by others."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 86,
+        "fields": {
+            "author": 3,
+            "content": "I am not an Athenian or a Greek, but a citizen of the world.\"\n\n[As quoted in Plutarch's Of Banishment]"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 87,
+        "fields": {
+            "author": 3,
+            "content": "I examined the poets, and I look on them as people whose talent overawes both themselves and others, people who present themselves as wise men and are taken as such, when they are nothing of the sort.\n\nFrom poets, I moved to artists. No one was more ignorant about the arts than I; no one was more convinced that artists possessed really beautiful secrets. However, I noticed that their condition was no better than that of the poets and that both of them have the same misconceptions. Because the most skillful among them excel in their specialty, they look upon themselves as the wisest of men. In my eyes, this presumption completely tarnished their knowledge. As a result, putting myself in the place of the oracle and asking myself what I would prefer to be \u2014 what I was or what they were, to know what they have learned or to know that I know nothing \u2014 I replied to myself and to the god: I wish to remain who I am.\n\nWe do not know \u2014 neither the sophists, nor the orators, nor the artists, nor I\u2014 what the True, the Good, and the Beautiful are. But there is this difference between us: although these people know nothing, they all believe they know something; whereas, I, if I know nothing, at least have no doubts about it. As a result, all this superiority in wisdom which the oracle has attributed to me reduces itself to the single point that I am strongly convinced that I am ignorant of what I do not know."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 88,
+        "fields": {
+            "author": 3,
+            "content": "Every action has its pleasures and its price."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 89,
+        "fields": {
+            "author": 3,
+            "content": "Prefer knowledge to wealth, for the one is transitory, the other perpetual."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 90,
+        "fields": {
+            "author": 3,
+            "content": "We cannot live better than in seeking to become better."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 91,
+        "fields": {
+            "author": 4,
+            "content": "Be kind, for everyone you meet is fighting a harder battle."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 92,
+        "fields": {
+            "author": 4,
+            "content": "Every heart sings a song, incomplete, until another heart whispers back. Those who wish to sing always find a song. At the touch of a lover, everyone becomes a poet."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 93,
+        "fields": {
+            "author": 4,
+            "content": "We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 94,
+        "fields": {
+            "author": 4,
+            "content": "Only the dead have seen the end of war."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 95,
+        "fields": {
+            "author": 4,
+            "content": "The price good men pay for indifference to public affairs is to be ruled by evil men."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 96,
+        "fields": {
+            "author": 4,
+            "content": "Do not train a child to learn by force or harshness; but direct them to it by what amuses their minds, so that you may be better able to discover with accuracy the peculiar bent of the genius of each."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 97,
+        "fields": {
+            "author": 4,
+            "content": "The heaviest penalty for declining to rule is to be ruled by someone inferior to yourself."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 98,
+        "fields": {
+            "author": 4,
+            "content": "According to Greek mythology, humans were originally created with four arms, four legs and a head with two faces. Fearing their power, Zeus split them into two separate parts, condemning them to spend their lives in search of their other halves."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 99,
+        "fields": {
+            "author": 4,
+            "content": "I am the wisest man alive, for I know one thing, and that is that I know nothing."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 100,
+        "fields": {
+            "author": 4,
+            "content": "Never discourage anyone...who continually makes progress, no matter how slow."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 101,
+        "fields": {
+            "author": 4,
+            "content": "Love is a serious mental disease."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 102,
+        "fields": {
+            "author": 4,
+            "content": "One of the penalties of refusing to participate in politics is that you end up being governed by your inferiors."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 103,
+        "fields": {
+            "author": 4,
+            "content": "good people do not need laws to tell them to act responsibly, while bad people will find a way around the laws"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 104,
+        "fields": {
+            "author": 4,
+            "content": "The measure of a man is what he does with power."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 105,
+        "fields": {
+            "author": 4,
+            "content": "Ignorance, the root and stem of every evil."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 106,
+        "fields": {
+            "author": 4,
+            "content": "If women are expected to do the same work as men, we must teach them the same things."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 107,
+        "fields": {
+            "author": 4,
+            "content": "I'm trying to think, don't confuse me with facts."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 108,
+        "fields": {
+            "author": 4,
+            "content": "...and when one of them meets the other half, the actual half of himself, whether he be a lover of youth or a lover of another sort, the pair are lost in an amazement of love and friendship and intimacy and one will not be out of the other's sight, as I may say, even for a moment..."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 109,
+        "fields": {
+            "author": 4,
+            "content": "There is truth in wine and children"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 110,
+        "fields": {
+            "author": 4,
+            "content": "Those who tell the stories rule society."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 111,
+        "fields": {
+            "author": 4,
+            "content": "Human behavior flows from three main sources: desire, emotion, and knowledge."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 112,
+        "fields": {
+            "author": 4,
+            "content": "The madness of love is the greatest of heaven's blessings."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 113,
+        "fields": {
+            "author": 4,
+            "content": "Education is teaching our children to desire the right things."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 114,
+        "fields": {
+            "author": 4,
+            "content": "There are three classes of men; lovers of wisdom, lovers of honor, and lovers of gain."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 115,
+        "fields": {
+            "author": 4,
+            "content": "Courage is knowing what not to fear."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 116,
+        "fields": {
+            "author": 4,
+            "content": "In politics we presume that everyone who knows how to get votes knows how to administer a city or a state. When we are ill... we do not ask for the handsomest physician, or the most eloquent one."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 117,
+        "fields": {
+            "author": 4,
+            "content": "You should not honor men more than truth."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 118,
+        "fields": {
+            "author": 4,
+            "content": "There are two things a person should never be angry at, what they can help, and what they cannot."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 119,
+        "fields": {
+            "author": 4,
+            "content": "When men speak ill of thee, live so as nobody may believe them."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 120,
+        "fields": {
+            "author": 4,
+            "content": "The beginning is the most important part of the work."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 121,
+        "fields": {
+            "author": 5,
+            "content": "Knowing yourself is the beginning of all wisdom."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 122,
+        "fields": {
+            "author": 5,
+            "content": "It is the mark of an educated mind to be able to entertain a thought without accepting it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 123,
+        "fields": {
+            "author": 5,
+            "content": "What is a friend? A single soul dwelling in two bodies."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 124,
+        "fields": {
+            "author": 5,
+            "content": "Educating the mind without educating the heart is no education at all."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 125,
+        "fields": {
+            "author": 5,
+            "content": "Hope is a waking dream."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 126,
+        "fields": {
+            "author": 5,
+            "content": "No great mind has ever existed without a touch of madness."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 127,
+        "fields": {
+            "author": 5,
+            "content": "Happiness depends upon ourselves."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 128,
+        "fields": {
+            "author": 5,
+            "content": "Anybody can become angry \u2014 that is easy, but to be angry with the right person and to the right degree and at the right time and for the right purpose, and in the right way \u2014 that is not within everybody's power and is not easy."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 129,
+        "fields": {
+            "author": 5,
+            "content": "Excellence is never an accident. It is always the result of high intention, sincere effort, and intelligent execution; it represents the wise choice of many alternatives - choice, not chance, determines your destiny."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 130,
+        "fields": {
+            "author": 5,
+            "content": "Wishing to be friends is quick work, but friendship is a slow ripening fruit."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 131,
+        "fields": {
+            "author": 5,
+            "content": "A friend to all is a friend to none."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 132,
+        "fields": {
+            "author": 5,
+            "content": "Happiness is the meaning and the purpose of life, the whole aim and end of human existence."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 133,
+        "fields": {
+            "author": 5,
+            "content": "Patience is bitter, but its fruit is sweet."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 134,
+        "fields": {
+            "author": 5,
+            "content": "Those who educate children well are more to be honored than they who produce them; for these only gave them life, those the art of living well."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 135,
+        "fields": {
+            "author": 5,
+            "content": "To perceive is to suffer."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 136,
+        "fields": {
+            "author": 5,
+            "content": "Those who know, do. Those that understand, teach."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 137,
+        "fields": {
+            "author": 5,
+            "content": "He who has overcome his fears will truly be free."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 138,
+        "fields": {
+            "author": 5,
+            "content": "The educated differ from the uneducated as much as the living differ from the dead."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 139,
+        "fields": {
+            "author": 5,
+            "content": "Whosoever is delighted in solitude, is either a wild beast or a god."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 140,
+        "fields": {
+            "author": 5,
+            "content": "I count him braver who overcomes his desires than him who conquers his enemies, for the hardest victory is over self."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 141,
+        "fields": {
+            "author": 5,
+            "content": "Poverty is the parent of revolution and crime."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 142,
+        "fields": {
+            "author": 5,
+            "content": "The aim of art is to represent not the outward appearance of things, but their inward significance."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 143,
+        "fields": {
+            "author": 5,
+            "content": "It is not enough to win a war; it is more important to organize the peace."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 144,
+        "fields": {
+            "author": 5,
+            "content": "The antidote for fifty enemies is one friend."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 145,
+        "fields": {
+            "author": 5,
+            "content": "Pleasure in the job puts perfection in the work."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 146,
+        "fields": {
+            "author": 5,
+            "content": "The high-minded man must care more for the truth than for what people think."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 147,
+        "fields": {
+            "author": 5,
+            "content": "To write well, express yourself like the common people, but think like a wise man."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 148,
+        "fields": {
+            "author": 5,
+            "content": "One swallow does not make a summer, neither does one fine day; similarly one day or brief time of happiness does not make a person entirely happy."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 149,
+        "fields": {
+            "author": 5,
+            "content": "Learning is not child's play; we cannot learn without pain."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 150,
+        "fields": {
+            "author": 5,
+            "content": "The whole is greater than the sum of its parts."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 151,
+        "fields": {
+            "author": 6,
+            "content": "Curiosity is the lust of the mind."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 152,
+        "fields": {
+            "author": 6,
+            "content": "Hell is truth seen too late."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 153,
+        "fields": {
+            "author": 6,
+            "content": "Scientia potentia est.\n\nKnowledge is power."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 154,
+        "fields": {
+            "author": 6,
+            "content": "For such is the nature of man, that howsoever they may acknowledge many others to be more witty, or more eloquent, or more learned; Yet they will hardly believe there be many so wise as themselves: For they see their own wit at hand, and other mens at a distance."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 155,
+        "fields": {
+            "author": 6,
+            "content": "The condition of man . . . is a condition of war of everyone against everyone"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 156,
+        "fields": {
+            "author": 6,
+            "content": "Whatsoever therefore is consequent to a time of war, where every man is enemy to every man, the same consequent to the time wherein men live without other security than what their own strength and their own invention shall furnish them withal. In such condition there is no place for industry... no knowledge of the face of the earth; no account of time; no arts; no letters; no society; and which is worst of all, continual fear, and danger of violent death; and the life of man, solitary, poor, nasty, brutish, and short."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 157,
+        "fields": {
+            "author": 6,
+            "content": "Leisure is the mother of Philosophy"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 158,
+        "fields": {
+            "author": 6,
+            "content": "Life is nasty, brutish, and short"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 159,
+        "fields": {
+            "author": 6,
+            "content": "The source of every crime, is some defect of the understanding; or some error in reasoning; or some sudden force of the passions. Defect in the understanding is ignorance; in reasoning, erroneous opinion."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 160,
+        "fields": {
+            "author": 6,
+            "content": "So that in the nature of man,\nwe find three principal causes of quarrel:\n\nFirst, Competition;\nSecondly, Dissidence;\nThirdly, Glory.\n\nThe first, maketh men invade for Gain;\nthe second, for Safety;\nand the third, for Reputation.\n\nThe first use Violence, to make themselves Masters of other men's persons, wives, children and cattle;\nthe second, to defend them;\nthe third, for trifles, as a word, a smile, a different opinion, and any other sign of undervalue, either direct in their Persons, or by reflexion in their Kindred, their Friends, their Nation, their Profession, or their Name."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 161,
+        "fields": {
+            "author": 6,
+            "content": "Force and fraud are in war the two cardinal virtues."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 162,
+        "fields": {
+            "author": 6,
+            "content": "Homo homini lupus"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 163,
+        "fields": {
+            "author": 6,
+            "content": "Words are the counters of wise men, and the money of fools."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 164,
+        "fields": {
+            "author": 6,
+            "content": "No arts; no letters; no society; and which is worst of all, continual fear and danger of violent death; and the life of man solitary, poor, nasty, brutish, and short."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 165,
+        "fields": {
+            "author": 6,
+            "content": "The first and fundamental law of Nature, which is, to seek peace and follow it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 166,
+        "fields": {
+            "author": 6,
+            "content": "Covenants, without the sword, are but words and of no strength to secure a man at all."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 167,
+        "fields": {
+            "author": 6,
+            "content": "For it can never be that war shall preserve life, and peace destroy it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 168,
+        "fields": {
+            "author": 6,
+            "content": "For to accuse requires less eloquence, such is man's nature, than to excuse; and condemnation, than absolution, more resembles justice."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 169,
+        "fields": {
+            "author": 6,
+            "content": "A great leap in the dark"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 170,
+        "fields": {
+            "author": 6,
+            "content": "Now I am about to take my last voyage, a great leap in the dark"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 171,
+        "fields": {
+            "author": 6,
+            "content": "When all the world is overcharged with inhabitants, then the last remedy of all is war, which provideth for every man, by victory or death."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 172,
+        "fields": {
+            "author": 6,
+            "content": "God put me on this Earth to accomplish a certain number of things. Right now I'm so far behind that I'll never die\"."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 173,
+        "fields": {
+            "author": 6,
+            "content": "... it is one thing to desire, another to be in capacity fit for what we desire."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 174,
+        "fields": {
+            "author": 6,
+            "content": "If men are naturally in a state of war, why do they always carry arms and why do they have keys to lock their doors?"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 175,
+        "fields": {
+            "author": 6,
+            "content": "It's not the pace of life I mind. It's the sudden stop at the end."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 176,
+        "fields": {
+            "author": 6,
+            "content": "A man's conscience and his judgment are the same thing, and, as the judgment, so also the conscience may be erroneous"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 177,
+        "fields": {
+            "author": 6,
+            "content": "The universe, the whole mass of things that are, is corporeal, that is to say, body, and hath the dimensions of magnitude, length, breadth and depth. Every part of the universe is \u2018body\u2019 and that which is not \u2018body\u2019 is no part of the universe, and because the universe is all, that which is no part of it is nothing, and consequently nowhere."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 178,
+        "fields": {
+            "author": 6,
+            "content": "What is the heart but a spring, and the nerves but so many strings, and the joints but so many wheels, giving motion to the whole body?"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 179,
+        "fields": {
+            "author": 6,
+            "content": "To this war of every man against every man, this also in consequent; that nothing can be unjust. The notions of right and wrong, justice and injustice have there no place. Where there is no common power, there is no law, where no law, no injustice. Force, and fraud, are in war the cardinal virtues."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 180,
+        "fields": {
+            "author": 6,
+            "content": "The source of every crime, is some defect of the understanding; or some error in reasoning; or some sudden force of the passions."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 181,
+        "fields": {
+            "author": 7,
+            "content": "I think; therefore I am."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 182,
+        "fields": {
+            "author": 7,
+            "content": "The reading of all good books is like conversation with the finest men of past centuries."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 183,
+        "fields": {
+            "author": 7,
+            "content": "Cogito ergo sum. (I think, therefore I am.)"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 184,
+        "fields": {
+            "author": 7,
+            "content": "If you would be a real seeker after truth, it is necessary that at least once in your life you doubt, as far as possible, all things."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 185,
+        "fields": {
+            "author": 7,
+            "content": "I suppose therefore that all things I see are illusions; I believe that nothing has ever existed of everything my lying memory tells me. I think I have no senses. I believe that body, shape, extension, motion, location are functions. What is there then that can be taken as true? Perhaps only this one thing, that nothing at all is certain."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 186,
+        "fields": {
+            "author": 7,
+            "content": "Conquer yourself rather than the world."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 187,
+        "fields": {
+            "author": 7,
+            "content": "Common sense is the most widely shared commodity in the world, for every man is convinced that he is well supplied with it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 188,
+        "fields": {
+            "author": 7,
+            "content": "Doubt is the origin of wisdom"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 189,
+        "fields": {
+            "author": 7,
+            "content": "Except our own thoughts, there is nothing absolutely in our power."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 190,
+        "fields": {
+            "author": 7,
+            "content": "It is not enough to have a good mind; the main thing is to use it well."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 191,
+        "fields": {
+            "author": 7,
+            "content": "To know what people really think, pay attention to what they do, rather than what they say."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 192,
+        "fields": {
+            "author": 7,
+            "content": "And thus, the actions of life often not allowing any delay, it is a truth very certain that, when it is not in our power to determine the most true opinions we ought to follow the most probable."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 193,
+        "fields": {
+            "author": 7,
+            "content": "The greatest minds are capable of the greatest vices as well as of the greatest virtues."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 194,
+        "fields": {
+            "author": 7,
+            "content": "I desire to live in peace and to continue the life I have begun under the motto 'to live well you must live unseen"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 195,
+        "fields": {
+            "author": 7,
+            "content": "Masked, I advance."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 196,
+        "fields": {
+            "author": 7,
+            "content": "It is only prudent never to place complete confidence in that by which we have even once been deceived."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 197,
+        "fields": {
+            "author": 7,
+            "content": "You just keep pushing. You just keep pushing. I made every mistake that could be made. But I just kept pushing."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 198,
+        "fields": {
+            "author": 7,
+            "content": "But in my opinion, all things in nature occur mathematically."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 199,
+        "fields": {
+            "author": 7,
+            "content": "Dubito, ergo cogito, ergo sum.\n\n(English: \"I doubt, therefore I think, therefore I am\")"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 200,
+        "fields": {
+            "author": 7,
+            "content": "To live without philosophizing is in truth the same as keeping the eyes closed without attempting to open them."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 201,
+        "fields": {
+            "author": 7,
+            "content": "In order to seek truth, it is necessary once in the course of our life to doubt, as far as possible, of all things."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 202,
+        "fields": {
+            "author": 7,
+            "content": "There is nothing more ancient than the truth."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 203,
+        "fields": {
+            "author": 7,
+            "content": "In order to improve the mind, we ought less to learn than to contemplate."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 204,
+        "fields": {
+            "author": 7,
+            "content": "For I found myself embarrassed with so many doubts and errors that it seemed to me that the effort to instruct myself had no effect other than the increasing discovery of my own ignorance"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 205,
+        "fields": {
+            "author": 7,
+            "content": "Divide each difficulty into as many parts as is feasible and necessary to resolve it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 206,
+        "fields": {
+            "author": 7,
+            "content": "He who hid well, lived well."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 207,
+        "fields": {
+            "author": 7,
+            "content": "Each problem that I solved became a rule which served afterwards to solve other problems"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 208,
+        "fields": {
+            "author": 7,
+            "content": "At last I will devote myself sincerely and without reservation to the general demolition of my opinions."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 209,
+        "fields": {
+            "author": 7,
+            "content": "Dubium sapientiae initium. (Doubt is the origin of wisdom.)"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 210,
+        "fields": {
+            "author": 7,
+            "content": "With me, everything turns into mathematics."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 211,
+        "fields": {
+            "author": 8,
+            "content": "Reading furnishes the mind only with materials of knowledge; it is thinking that makes what we read ours."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 212,
+        "fields": {
+            "author": 8,
+            "content": "I have always thought the actions of men the best interpreters of their thoughts."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 213,
+        "fields": {
+            "author": 8,
+            "content": "New opinions are always suspected, and usually opposed, without any other reason but because they are not common."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 214,
+        "fields": {
+            "author": 8,
+            "content": "The only defense against the world is a thorough knowledge of it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 215,
+        "fields": {
+            "author": 8,
+            "content": "We are like chameleons, we take our hue and the color of our moral character, from those who are around us."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 216,
+        "fields": {
+            "author": 8,
+            "content": "Parents wonder why the streams are bitter, when they themselves poison the fountain."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 217,
+        "fields": {
+            "author": 8,
+            "content": "Being all equal and independent, no one ought to harm another in his life, health, liberty, or possessions."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 218,
+        "fields": {
+            "author": 8,
+            "content": "Education begins the gentleman, but reading, good company and reflection must finish him."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 219,
+        "fields": {
+            "author": 8,
+            "content": "To love truth for truth's sake is the principal part of human perfection in this world, and the seed-plot of all other virtues."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 220,
+        "fields": {
+            "author": 8,
+            "content": "Revolt is the right of the people"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 221,
+        "fields": {
+            "author": 8,
+            "content": "No man's knowledge here can go beyond his experience."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 222,
+        "fields": {
+            "author": 8,
+            "content": "There is frequently more to be learned from the unexpected questions of a child than the discourses of men."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 223,
+        "fields": {
+            "author": 8,
+            "content": "So that, in effect, religion, which should most distinguish us from beasts, and ought most peculiarly to elevate us, as rational creatures, above brutes, is that wherein men often appear most irrational, and more senseless than beasts themselves."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 224,
+        "fields": {
+            "author": 8,
+            "content": "The Bible is one of the greatest blessings bestowed by God on the children of men. It has God for its Author, salvation for its end, and truth without any mixture for its matter. It is all pure, all sincere; nothing too much; nothing wanting!"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 225,
+        "fields": {
+            "author": 8,
+            "content": "To prejudge other men's notions before we have looked into them is not to show their darkness but to put out our own eyes."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 226,
+        "fields": {
+            "author": 8,
+            "content": "The great question which, in all ages, has disturbed mankind, and brought on them the greatest part of their mischiefs ... has been, not whether be power in the world, nor whence it came, but who should have it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 227,
+        "fields": {
+            "author": 8,
+            "content": "All wealth is the product of labor."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 228,
+        "fields": {
+            "author": 8,
+            "content": "Our Business here is not to know all things, but those which concern our conduct."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 229,
+        "fields": {
+            "author": 8,
+            "content": "For where is the man that has incontestable evidence of the truth of all that he holds, or of the falsehood of all he condemns; or can say that he has examined to the bottom all his own, or other men's opinions? The necessity of believing without knowledge, nay often upon very slight grounds, in this fleeting state of action and blindness we are in, should make us more busy and careful to inform ourselves than constrain others."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 230,
+        "fields": {
+            "author": 8,
+            "content": "The acts of the mind, wherein it exerts its power over simple ideas, are chiefly these three: 1. Combining several simple ideas into one compound one, and thus all complex ideas are made. 2. The second is bringing two ideas, whether simple or complex, together, and setting them by one another so as to take a view of them at once, without uniting them into one, by which it gets all its ideas of relations. 3. The third is separating them from all other ideas that accompany them in their real existence: this is called abstraction, and thus all its general ideas are made."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 231,
+        "fields": {
+            "author": 8,
+            "content": "A sound mind in a sound body, is a short, but full description of a Happy state in this World: he that has these two, has little more to wish for; and he that wants either of them, will be little better for anything else."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 232,
+        "fields": {
+            "author": 8,
+            "content": "Reverie is when ideas float in our mind without reflection or regard of the understanding."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 233,
+        "fields": {
+            "author": 8,
+            "content": "Few men think, yet all will have opinions. Hence men\u2019s opinions are superficial and confused."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 234,
+        "fields": {
+            "author": 8,
+            "content": "One unerring mark of the love of truth is not entertaining any proposition with greater assurance than the proofs it is built upon will warrant."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 235,
+        "fields": {
+            "author": 8,
+            "content": "But what if he neglect the care of his soul? I answer: What if he neglect the care of his health or of his estate, which things are nearlier related to the government of the magistrate than the other? Will the magistrate provide by an express law that such a one shall not become poor or sick? Laws provide, as much as is possible, that the goods and health of subjects be not injured by the fraud and violence of others; they do not guard them from the negligence or ill-husbandry of the possessors themselves. No man can be forced to be rich or healthful whether he will or no. Nay, God Himself will not save men against their wills."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 236,
+        "fields": {
+            "author": 8,
+            "content": "Men being, as has been said, by nature, all free, equal and independent, no one can be put out of this estate, and subjected to the political power of another, without his own consent."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 237,
+        "fields": {
+            "author": 8,
+            "content": "I pretend not to teach, but to inquire; and therefore cannot but confess here again,\u2013that external and internal sensation are the only passages I can find of knowledge to the understanding. These alone, as far as I can discover, are the windows by which light is let into this DARK ROOM. For, methinks, the understanding is not much unlike a closet wholly shut from light, with only some little openings left, to let in external visible resemblances, or ideas of things without: which, would they but stay there, and lie so orderly as to be found upon occasion, it would very much resemble the understanding of a man, in reference to all objects of sight, and the ideas of them."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 238,
+        "fields": {
+            "author": 8,
+            "content": "Whosoever will list himself under the banner of Christ, must, in the first place and above all things, make war upon his own lusts and vices. It is in vain for any man to usurp the name of Christian, without holiness of life, purity of manners, benignity and meekness of spirit."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 239,
+        "fields": {
+            "author": 8,
+            "content": "Fortitude is the guard and support of the other virtues."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 240,
+        "fields": {
+            "author": 8,
+            "content": "New opinions are always suspected, and usually opposed, without any other reason but because they are not already common."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 241,
+        "fields": {
+            "author": 9,
+            "content": "The highest activity a human being can attain is learning for understanding, because to understand is to be free."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 242,
+        "fields": {
+            "author": 9,
+            "content": "The more you struggle to live, the less you live. Give up the notion that you must be sure of what you are doing. Instead, surrender to what is real within you, for that alone is sure....you are above everything distressing."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 243,
+        "fields": {
+            "author": 9,
+            "content": "I do not know how to teach philosophy without becoming a disturber of the peace."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 244,
+        "fields": {
+            "author": 9,
+            "content": "No matter how thin you slice it, there will always be two sides."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 245,
+        "fields": {
+            "author": 9,
+            "content": "If you want the present to be different from the past, study the past."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 246,
+        "fields": {
+            "author": 9,
+            "content": "Everything excellent is as difficult as it is rare."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 247,
+        "fields": {
+            "author": 9,
+            "content": "I have made a ceaseless effort not to ridicule, not to bewail, not to scorn human actions, but to understand them."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 248,
+        "fields": {
+            "author": 9,
+            "content": "The more clearly you understand yourself and your emotions, the more you become a lover of what is."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 249,
+        "fields": {
+            "author": 9,
+            "content": "Peace is not the absence of war, it is a virtue, a state of mind, a disposition of benevolence, confidence, justice."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 250,
+        "fields": {
+            "author": 9,
+            "content": "Those who wish to seek out the cause of miracles and to understand the things of nature as philosophers, and not to stare at them in astonishment like fools, are soon considered heretical and impious, and proclaimed as such by those whom the mob adores as the interpreters of nature and the gods. For these men know that, once ignorance is put aside, that wonderment would be taken away, which is the only means by which their authority is preserved."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 251,
+        "fields": {
+            "author": 9,
+            "content": "Do not weep. Do not wax indignant. Understand."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 252,
+        "fields": {
+            "author": 9,
+            "content": "When a man is prey to his emotions, he is not his own master."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 253,
+        "fields": {
+            "author": 9,
+            "content": "What Paul says about Peter tells us more about Paul than about Peter"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 254,
+        "fields": {
+            "author": 9,
+            "content": "Be not astonished at new ideas; for it is well known to you that a thing does not therefore cease to be true because it is not accepted by many."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 255,
+        "fields": {
+            "author": 9,
+            "content": "I would warn you that I do not attribute to nature either beauty or deformity, order or confusion. Only in relation to our imagination can things be called beautiful or ugly, well-ordered or confused."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 256,
+        "fields": {
+            "author": 9,
+            "content": "There is no hope unmingled with fear, and no fear unmingled with hope."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 257,
+        "fields": {
+            "author": 9,
+            "content": "I have striven not to laugh at human actions, not to weep at them, nor to hate them, but to understand them."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 258,
+        "fields": {
+            "author": 9,
+            "content": "In so far as the mind sees things in their eternal aspect, it participates in eternity."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 259,
+        "fields": {
+            "author": 9,
+            "content": "The endeavor to understand is the first and only basis of virtue."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 260,
+        "fields": {
+            "author": 9,
+            "content": "Emotion, which is suffering, ceases to be suffering as soon as we form a clear and precise picture of it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 261,
+        "fields": {
+            "author": 9,
+            "content": "Further conceive, I beg, that a stone, while continuing in motion, should be capable of thinking and knowing, that it is endeavoring, as far as it can, to continue to move. Such a stone, being conscious merely of its own endeavor and not at all indifferent, would believe itself to be completely free, and would think that it continued in motion solely because of its own wish. This is that human freedom, which all boast that they possess, and which consists solely in the fact, that men are conscious of their own desire, but are ignorant of the causes whereby that desire has been determined."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 262,
+        "fields": {
+            "author": 9,
+            "content": "The greatest secret of monarchic rule...is to keep men deceived and to cloak in the specious name of religion the fear by which they must be checked, so that they will fight for slavery as they would for salvation, and will think it not shameful, but a most honorable achievement, to give their life and blood that one man may have a ground for boasting."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 263,
+        "fields": {
+            "author": 9,
+            "content": "Pride is pleasure arising from a man's thinking too highly of himself."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 264,
+        "fields": {
+            "author": 9,
+            "content": "No to laugh, not to lament, not to detest, but to understand."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 265,
+        "fields": {
+            "author": 9,
+            "content": "There can be no hope without fear, and no fear without hope."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 266,
+        "fields": {
+            "author": 9,
+            "content": "In practical life we are compelled to follow what is most probable ; in speculative thought we are compelled to follow truth."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 267,
+        "fields": {
+            "author": 9,
+            "content": "Happiness is not the reward of virtue, but is virtue itself; nor do we delight in happiness because we restrain from our lusts; but on the contrary, because we delight in it, therefore we are able to restrain them."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 268,
+        "fields": {
+            "author": 9,
+            "content": "Of all the things that are beyond my power, I value nothing more highly than to be allowed the honor of entering into bonds of friendship with people who sincerely love truth. For, of things beyond our power, I believe there is nothing in the world which we can love with tranquility except such men."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 269,
+        "fields": {
+            "author": 9,
+            "content": "A free man thinks of nothing less than of death, and his wisdom is a meditation, not on death, but on life."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 270,
+        "fields": {
+            "author": 9,
+            "content": "Better that right counsels be known to enemies than that the evil secrets of tyrants should be concealed from the citizens. They who can treat secretly of the affairs of a nation have it absolutely under their authority; and as they plot against the enemy in time of war, so do they against the citizens in time of peace."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 271,
+        "fields": {
+            "author": 10,
+            "content": "Beauty is no quality in things themselves: It exists merely in the mind which contemplates them; and each mind perceives a different beauty."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 272,
+        "fields": {
+            "author": 10,
+            "content": "Generally speaking, the errors in religion are dangerous; those in philosophy only ridiculous."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 273,
+        "fields": {
+            "author": 10,
+            "content": "No man ever threw away life while it was worth keeping."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 274,
+        "fields": {
+            "author": 10,
+            "content": "Epicurus's old questions are still unanswered: Is he (God) willing to prevent evil, but not able? then he is impotent. Is he able, but not willing? then he is malevolent. Is he both able and willing? then whence evil?"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 275,
+        "fields": {
+            "author": 10,
+            "content": "In our reasonings concerning matter of fact, there are all imaginable degrees of assurance, from the highest certainty to the lowest species of moral evidence. A wise man, therefore, proportions his belief to the evidence."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 276,
+        "fields": {
+            "author": 10,
+            "content": "Reason is, and ought only to be the slave of the passions."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 277,
+        "fields": {
+            "author": 10,
+            "content": "Reading and sauntering and lounging and dosing, which I call thinking, is my supreme Happiness."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 278,
+        "fields": {
+            "author": 10,
+            "content": "But the life of a man is of no greater importance to the universe than that of an oyster."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 279,
+        "fields": {
+            "author": 10,
+            "content": "Be a philosopher; but, amidst all your philosophy, be still a man."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 280,
+        "fields": {
+            "author": 10,
+            "content": "The truth springs from arguments amongst friends."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 281,
+        "fields": {
+            "author": 10,
+            "content": "He is happy whose circumstances suit his temper, but he is more excellent who can suit his temper to his circumstance."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 282,
+        "fields": {
+            "author": 10,
+            "content": "When men are most sure and arrogant they are commonly most mistaken, giving views to passion without that proper deliberation which alone can secure them from the grossest absurdities."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 283,
+        "fields": {
+            "author": 10,
+            "content": "If we take in our hand any volume; of divinity or school metaphysics, for instance; let us ask, Does it contain any abstract reasoning concerning quantity or number? No. Does it contain any experimental reasoning concerning matter of fact and existence? No. Commit it then to the flames: for it can contain nothing but sophistry and illusion."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 284,
+        "fields": {
+            "author": 10,
+            "content": "It is an absurdity to believe that the Deity has human passions, and one of the lowest of human passions, a restless appetite for applause"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 285,
+        "fields": {
+            "author": 10,
+            "content": "Where am I, or what? From what causes do I derive my existence, and to what condition shall I return? ... I am confounded with all these questions, and begin to fancy myself in the most deplorable condition imaginable, environed with the deepest darkness, and utterly deprived of the use of every member and faculty.\n\nMost fortunately it happens, that since Reason is incapable of dispelling these clouds, Nature herself suffices to that purpose, and cures me of this philosophical melancholy and delirium, either by relaxing this bent of mind, or by some avocation, and lively impression of my senses, which obliterate all these chimeras. I dine, I play a game of backgammon, I converse, and am merry with my friends. And when, after three or four hours' amusement, I would return to these speculations, they appear so cold, and strained, and ridiculous, that I cannot find in my heart to enter into them any farther."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 286,
+        "fields": {
+            "author": 10,
+            "content": "When anyone tells me that he saw a dead man restored to life, I immediately consider with myself whether it be more probable that this person should either deceive or be deceived or that the fact which he relates should really have happened. I weigh the one miracle against the other and according to the superiority which I discover, I pronounce my decision. Always I reject the greater miracle. If the falsehood of his testimony would be more miraculous than the event which he relates, then and not till then, can he pretend to command my belief or opinion."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 287,
+        "fields": {
+            "author": 10,
+            "content": "Reason is, and ought only to be the slave of the passions, and can never pretend to any other office than to serve and obey them."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 288,
+        "fields": {
+            "author": 10,
+            "content": "Does a man of sense run after every silly tale of hobgoblins or fairies, and canvass particularly the evidence? I never knew anyone, that examined and deliberated about nonsense who did not believe it before the end of his enquiries."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 289,
+        "fields": {
+            "author": 10,
+            "content": "Liberty of any kind is never lost all at once."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 290,
+        "fields": {
+            "author": 10,
+            "content": "Your corn is ripe today; mine will be so tomorrow. 'Tis profitable for us both, that I should labour with you today, and that you should aid me tomorrow. I have no kindness for you, and know you have as little for me. I will not, therefore, take any pains upon your account; and should I labour with you upon my own account, in expectation of a return, I know I should be disappointed, and that I should in vain depend upon your gratitude. Here then I leave you to labour alone; You treat me in the same manner. The seasons change; and both of us lose our harvests for want of mutual confidence and security."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 291,
+        "fields": {
+            "author": 10,
+            "content": "...no testimony is sufficient to establish a miracle, unless the testimony be of such a kind, that its falsehood would be more miraculous, than the fact, which it endeavors to establish."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 292,
+        "fields": {
+            "author": 10,
+            "content": "For my part, when I enter most intimately into what I call myself, I always stumble on some particular perception or other, of heat or cold, light or shade, love or hatred, pain or pleasure. I never can catch myself at any time without a perception, and never can observe any thing but the perception\u2026. If any one, upon serious and unprejudic'd reflection thinks he has a different notion of himself, I must confess I can reason no longer with him. All I can allow him is, that he may be in the right as well as I, and that we are essentially different in this particular. He may, perhaps, perceive something simple and continu'd, which he calls himself; tho' I am certain there is no such principle in me."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 293,
+        "fields": {
+            "author": 10,
+            "content": "Beauty in things exists in the mind which contemplates them"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 294,
+        "fields": {
+            "author": 10,
+            "content": "All sentiment is right; because sentiment has a reference to nothing beyond itself, and is always real, wherever a man is conscious of it. But all determinations of the understanding are not right; because they have a reference to something beyond themselves, to wit, real matter of fact; and are not always conformable to that standard."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 295,
+        "fields": {
+            "author": 10,
+            "content": "A wise man apportions his beliefs to the evidence."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 296,
+        "fields": {
+            "author": 10,
+            "content": "Stercus accidit."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 297,
+        "fields": {
+            "author": 10,
+            "content": "The identity that we ascribe to things is only a fictitious one, established by the mind, not a peculiar nature belonging to what we\u2019re talking about."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 298,
+        "fields": {
+            "author": 10,
+            "content": "The sweetest and most inoffensive path of life leads through the avenues of science and learning; and whoever can either remove any obstructions in this way, or open up any new prospect, ought so far to be esteemed a benefactor to mankind."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 299,
+        "fields": {
+            "author": 10,
+            "content": "How can we satisfy ourselves without going on in infinitum? And, after all, what satisfaction is there in that infinite progression? Let us remember the story of the Indian philosopher and his elephant. It was never more applicable than to the present subject. If the material world rests upon a similar ideal world, this ideal world must rest upon some other; and so on, without end. It were better, therefore, never to look beyond the present material world."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 300,
+        "fields": {
+            "author": 10,
+            "content": "Any pride or haughtiness, is displeasing to us, merely because it shocks our own pride, and leads us by sympathy into comparison, which causes the disagreeable passion of humility."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 301,
+        "fields": {
+            "author": 11,
+            "content": "People who know little are usually great talkers, while men who know much say little."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 302,
+        "fields": {
+            "author": 11,
+            "content": "I prefer liberty with danger than peace with slavery."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 303,
+        "fields": {
+            "author": 11,
+            "content": "Man is born free, and everywhere he is in chains."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 304,
+        "fields": {
+            "author": 11,
+            "content": "The world of reality has its limits; the world of imagination is boundless."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 305,
+        "fields": {
+            "author": 11,
+            "content": "I am not made like any of those I have seen. I venture to believe that I am not made like any of those who are in existence. If I am not better, at least I am different."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 306,
+        "fields": {
+            "author": 11,
+            "content": "The first person who, having enclosed a plot of land, took it into his head to say this is mine and found people simple enough to believe him was the true founder of civil society. What crimes, wars, murders, what miseries and horrors would the human race have been spared, had some one pulled up the stakes or filled in the ditch and cried out to his fellow men: \"Do not listen to this imposter. You are lost if you forget that the fruits of the earth belong to all and the earth to no one!"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 307,
+        "fields": {
+            "author": 11,
+            "content": "I would rather be a man of paradoxes than a man of prejudices."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 308,
+        "fields": {
+            "author": 11,
+            "content": "It is too difficult to think nobly when one thinks only of earning a living."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 309,
+        "fields": {
+            "author": 11,
+            "content": "To be sane in a world of madman is in itself madness."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 310,
+        "fields": {
+            "author": 11,
+            "content": "What wisdom can you find greater than kindness."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 311,
+        "fields": {
+            "author": 11,
+            "content": "Why should we build our happiness on the opinons of others, when we can find it in our own hearts?"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 312,
+        "fields": {
+            "author": 11,
+            "content": "Every person has a right to risk their own life for the preservation of it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 313,
+        "fields": {
+            "author": 11,
+            "content": "To write a good love letter, you ought to begin without knowing what you mean to say, and to finish without knowing what you have written."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 314,
+        "fields": {
+            "author": 11,
+            "content": "Or, rather, let us be more simple and less vain."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 315,
+        "fields": {
+            "author": 11,
+            "content": "Those that are most slow in making a promise are the most faithful in the performance of it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 316,
+        "fields": {
+            "author": 11,
+            "content": "Civilization is a hopeless race to discover remedies for the evils it produces."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 317,
+        "fields": {
+            "author": 11,
+            "content": "Man was born free, and he is everywhere in chains. Those who think themselves the masters of others are indeed greater slaves than they."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 318,
+        "fields": {
+            "author": 11,
+            "content": "Every man having been born free and master of himself, no one else may under any pretext whatever subject him without his consent. To assert that the son of a slave is born a slave is to assert that he is not born a man."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 319,
+        "fields": {
+            "author": 11,
+            "content": "All my misfortunes come of having thought too well of my fellows."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 320,
+        "fields": {
+            "author": 11,
+            "content": "They say that Caliph Omar, when consulted about what had to be done with the library of Alexandria, answered as follows: 'If the books of this library contain matters opposed to the Koran, they are bad and must be burned. If they contain only the doctrine of the Koran, burn them anyway, for they are superfluous.' Our learned men have cited this reasoning as the height of absurdity. However, suppose Gregory the Great was there instead of Omar and the Gospel instead of the Koran. The library would still have been burned, and that might well have been the finest moment in the life of this illustrious pontiff."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 321,
+        "fields": {
+            "author": 11,
+            "content": "I have never thought, for my part, that man's freedom consists in his being able to do whatever he wills, but that he should not, by any human power, be forced to do what is against his will."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 322,
+        "fields": {
+            "author": 11,
+            "content": "I perceive God everywhere in His works. I sense Him in me; I see Him all around me."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 323,
+        "fields": {
+            "author": 11,
+            "content": "The first man who, having fenced in a piece of land, said \"This is mine,\" and found people na\u00efve enough to believe him, that man was the true founder of civil society. From how many crimes, wars, and murders, from how many horrors and misfortunes might not any one have saved mankind, by pulling up the stakes, or filling up the ditch, and crying to his fellows: Beware of listening to this impostor; you are undone if you once forget that the fruits of the earth belong to us all, and the earth itself to nobody."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 324,
+        "fields": {
+            "author": 11,
+            "content": "Everything is good as it comes from the hands of the Maker of the world, but degenerates once it gets into the hands of man"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 325,
+        "fields": {
+            "author": 11,
+            "content": "...in respect of riches, no citizen shall ever be wealthy enough to buy another, and none poor enough to be forced to sell himself."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 326,
+        "fields": {
+            "author": 11,
+            "content": "In truth, laws are always useful to those with possessions and harmful to those who have nothing; from which it follows that the social state is advantageous to men only when all possess something and none has too much."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 327,
+        "fields": {
+            "author": 11,
+            "content": "There are times when I am so unlike myself that I might be taken for someone else of an entirely opposite character."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 328,
+        "fields": {
+            "author": 11,
+            "content": "I hate books; they only teach us to talk about things we know nothing about."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 329,
+        "fields": {
+            "author": 11,
+            "content": "Trust your heart rather than your head."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 330,
+        "fields": {
+            "author": 11,
+            "content": "To live is not to breathe but to act. It is to make use of our organs, our senses, our faculties, of all the parts of ourselves which give us the sentiment of our existence. The man who has lived the most is not he who has counted the most years but he who has most felt life."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 331,
+        "fields": {
+            "author": 12,
+            "content": "We are not rich by what we possess but by what we can do without."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 332,
+        "fields": {
+            "author": 12,
+            "content": "He who is cruel to animals becomes hard also in his dealings with men. We can judge the heart of a man by his treatment of animals."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 333,
+        "fields": {
+            "author": 12,
+            "content": "Act in such a way that you treat humanity, whether in your own person or in the person of any other, never merely as a means to an end, but always at the same time as an end."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 334,
+        "fields": {
+            "author": 12,
+            "content": "Enlightenment is man's release from his self-incurred tutelage. Tutelage is man's inability to make use of his understanding without direction from another. Self-incurred is this tutelage when its cause lies not in lack of reason but in lack of resolution and courage to use it without direction from another. Sapere aude! 'Have courage to use your own reason!'- that is the motto of enlightenment."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 335,
+        "fields": {
+            "author": 12,
+            "content": "Look closely. The beautiful may be small."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 336,
+        "fields": {
+            "author": 12,
+            "content": "Dare to think!"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 337,
+        "fields": {
+            "author": 12,
+            "content": "Two things fill the mind with ever-increasing wonder and awe, the more often and the more intensely the mind of thought is drawn to them: the starry heavens above me and the moral law within me."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 338,
+        "fields": {
+            "author": 12,
+            "content": "I had to deny knowledge in order to make room for faith."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 339,
+        "fields": {
+            "author": 12,
+            "content": "One who makes himself a worm cannot complain afterwards if people step on him."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 340,
+        "fields": {
+            "author": 12,
+            "content": "All our knowledge begins with the senses, proceeds then to the understanding, and ends with reason. There is nothing higher than reason."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 341,
+        "fields": {
+            "author": 12,
+            "content": "Two things fill the mind with ever new and increasing admiration and awe, the more often and steadily we reflect upon them: the starry heavens above me and the moral law within me. I do not seek or conjecture either of them as if they were veiled obscurities or extravagances beyond the horizon of my vision; I see them before me and connect them immediately with the consciousness of my existence."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 342,
+        "fields": {
+            "author": 12,
+            "content": "Whereas the beautiful is limited, the sublime is limitless, so that the mind in the presence of the sublime, attempting to imagine what it cannot, has pain in the failure but pleasure in contemplating the immensity of the attempt"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 343,
+        "fields": {
+            "author": 12,
+            "content": "For peace to reign on Earth, humans must evolve into new beings who have learned to see the whole first."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 344,
+        "fields": {
+            "author": 12,
+            "content": "Out of the crooked timber of humanity, no straight thing was ever made."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 345,
+        "fields": {
+            "author": 12,
+            "content": "Rules for happiness: something to do, someone to love, something to hope for."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 346,
+        "fields": {
+            "author": 12,
+            "content": "Seek not the favor of the multitude; it is seldom got by honest and lawful means. But seek the testimony of few; and number not voices, but weigh them."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 347,
+        "fields": {
+            "author": 12,
+            "content": "The busier we are, the more acutely we feel that we live, the more conscious we are of life."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 348,
+        "fields": {
+            "author": 12,
+            "content": "Genius is the ability to independently arrive at and understand concepts that would normally have to be taught by another person."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 349,
+        "fields": {
+            "author": 12,
+            "content": "Laziness and cowardice are the reasons why so great a portion of mankind, after nature has long since discharged them from external direction (naturaliter maiorennes), nevertheless remains under lifelong tutelage, and why it is so easy for others to set themselves up as their guardians. It is so easy not to be of age. If I have a book which understands for me, a pastor who has a conscience for me, a physician who decides my diet, and so forth, I need not trouble myself. I need not think, if I can only pay - others will easily undertake the irksome work for me.\n\nThat the step to competence is held to be very dangerous by the far greater portion of mankind..."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 350,
+        "fields": {
+            "author": 12,
+            "content": "The death of dogma is the birth of morality."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 351,
+        "fields": {
+            "author": 12,
+            "content": "But only he who, himself enlightened, is not afraid of shadows."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 352,
+        "fields": {
+            "author": 12,
+            "content": "Space and time are the framework within which the mind is constrained to construct its experience of reality."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 353,
+        "fields": {
+            "author": 12,
+            "content": "Thoughts without content are empty, intuitions without concepts are blind."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 354,
+        "fields": {
+            "author": 12,
+            "content": "Have patience awhile; slanders are not long-lived. Truth is the child of time; erelong she shall appear to vindicate thee."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 355,
+        "fields": {
+            "author": 12,
+            "content": "We are enriched not by what we possess, but by what we can do without."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 356,
+        "fields": {
+            "author": 12,
+            "content": "But to unite in a permanent religious institution which is not to be subject to doubt before the public even in the lifetime of one man, and thereby to make a period of time fruitless in the progress of mankind toward improvement, thus working to the disadvantage of posterity - that is absolutely forbidden. For himself (and only for a short time) a man may postpone enlightenment in what he ought to know, but to renounce it for posterity is to injure and trample on the rights of mankind."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 357,
+        "fields": {
+            "author": 12,
+            "content": "Dare to know! Have the courage to use your own intelligence!"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 358,
+        "fields": {
+            "author": 12,
+            "content": "Treat people as an end, and never as a means to an end"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 359,
+        "fields": {
+            "author": 12,
+            "content": "The reading of all good books is like a conversation with the finest minds of past centuries."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 360,
+        "fields": {
+            "author": 12,
+            "content": "Have the courage to use your own reason- That is the motto of enlightenment.\n\"Foundations of the Metaphysics of\nMorals\" (1785)"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 361,
+        "fields": {
+            "author": 13,
+            "content": "Nothing great in the world was accomplished without passion."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 362,
+        "fields": {
+            "author": 13,
+            "content": "We learn from history that we do not learn from history."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 363,
+        "fields": {
+            "author": 13,
+            "content": "To be independent of public opinion is the first formal condition of achieving anything great."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 364,
+        "fields": {
+            "author": 13,
+            "content": "Genuine tragedies in the world are not conflicts between right and wrong. They are conflicts between two rights"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 365,
+        "fields": {
+            "author": 13,
+            "content": "What experience and history teaches us is that people and governments have never learned anything from history, or acted on principles deduced from it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 366,
+        "fields": {
+            "author": 13,
+            "content": "Truth is found neither in the thesis nor the antithesis, but in an emergent synthesis which reconciles the two."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 367,
+        "fields": {
+            "author": 13,
+            "content": "Evil resides in the very gaze which perceives Evil all around itself."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 368,
+        "fields": {
+            "author": 13,
+            "content": "Only one man ever understood me, and he didn't understand me."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 369,
+        "fields": {
+            "author": 13,
+            "content": "Education is the art of making man ethical"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 370,
+        "fields": {
+            "author": 13,
+            "content": "It is solely by risking life that freedom is obtained; . . . the individual who has not staked his or her life may, no doubt, be recognized as a Person; but he or she has not attained the truth of this recognition as an independent self-consciousness."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 371,
+        "fields": {
+            "author": 13,
+            "content": "The valor that struggles is better than the weakness that endures."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 372,
+        "fields": {
+            "author": 13,
+            "content": "...this is love. I have my self-consciousness not in myself but in the other. I am satisfied and have peace with myself only in this other and I AM only because I have peace with myself; if I did not have it then I would be a contradiction that falls to pieces. This other, because it likewise exists outside itself, has its self-consciousness only in me; and both the other and I are only this consciousness of being-outside-ourselves and of our identity; we are only this intuition, feeling, and knowledge of our unity. This is love, and without knowing that love is both a distinguishing and the sublation of this distinction, one speaks emptily of it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 373,
+        "fields": {
+            "author": 13,
+            "content": "The bud disappears when the blossom breaks through, and we might say that the former is refuted by the latter; in the same way when the fruit comes, the blossom may be explained to be a false form of the plant\u2019s existence, for the fruit appears as its true nature in place of the blossom. The ceaseless activity of their own inherent nature makes these stages moments of an organic unity, where they not merely do not contradict one another, but where one is as necessary as the other; and constitutes thereby the life of the whole."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 374,
+        "fields": {
+            "author": 13,
+            "content": "When liberty is mentioned, we must always be careful to observe whether it is not really the assertion of private interests which is thereby designated."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 375,
+        "fields": {
+            "author": 13,
+            "content": "Too fair to worship, too divine to love."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 376,
+        "fields": {
+            "author": 13,
+            "content": "The owl of Minerva begins its flight only with the coming of the dusk."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 377,
+        "fields": {
+            "author": 13,
+            "content": "The ignorant man is not free, because what confronts him is an alien world, something outside him and in the offing, on which he depends, without his having made this foreign world for himself and therefore without being at home in it by himself as in something his own. The impulse of curiosity, the pressure for knowledge, from the lowest level up to the highest rung of philosophical insight arises only from the struggle to cancel this situation of unfreedom and to make the world one's own in one's ideas and thought."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 378,
+        "fields": {
+            "author": 13,
+            "content": "People who are too fastidious towards the finite never reach actuality, but linger in abstraction, and their light dies away."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 379,
+        "fields": {
+            "author": 13,
+            "content": "Once the state has been founded, there can no longer be any heroes. They come on the scene only in uncivilized conditions."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 380,
+        "fields": {
+            "author": 13,
+            "content": "An idea is always a generalization, and generalization is a property of thinking. To generalize means to think"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 381,
+        "fields": {
+            "author": 13,
+            "content": "America is therefore the land of the future, where, in the ages that lie before us, the burden of the World's History shall reveal itself."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 382,
+        "fields": {
+            "author": 13,
+            "content": "We may affirm absolutely that nothing great in the world has been accomplished without passion."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 383,
+        "fields": {
+            "author": 13,
+            "content": "If we go on to cast a look at the fate of world historical personalities... we shall find it to have been no happy one. They attained no calm enjoyment; their whole life was labor and trouble; their whole nature was nothing but their master passion. When their object is attained they fall off like empty hulls from the kernel. They die early, like Alexander; they are murdered, like Casear; transported to St. Helena, like Napoleon."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 384,
+        "fields": {
+            "author": 13,
+            "content": "Art does not simply reveal God: it is one of the ways in which God reveals, and thus actualizes, himself."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 385,
+        "fields": {
+            "author": 13,
+            "content": "The state of man's mind, or the elementary phase of mind which he so far possesses, conforms precisely to the state of the world as he so far views it"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 386,
+        "fields": {
+            "author": 13,
+            "content": "History is not the soil in which happiness grows. The periods of happiness in it are the blank pages of history."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 387,
+        "fields": {
+            "author": 13,
+            "content": "World history is a court of judgment"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 388,
+        "fields": {
+            "author": 13,
+            "content": "History in general is therefore the development of Spirit in Time, as Nature is the development of the Idea is Space."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 389,
+        "fields": {
+            "author": 13,
+            "content": "If we are in a general way permitted to regard human activity in the realm of the beautiful as a liberation of the soul, as a release from constraint and restriction, in short to consider that art does actually alleviate the most overpowering and tragic catastrophes by means of the creations it offers to our contemplation and enjoyment, it is the art of music which conducts us to the final summit of that ascent to freedom."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 390,
+        "fields": {
+            "author": 13,
+            "content": "The length of the journey has to be borne with, for every moment is necessary."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 391,
+        "fields": {
+            "author": 14,
+            "content": "Life can only be understood backwards; but it must be lived forwards."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 392,
+        "fields": {
+            "author": 14,
+            "content": "The function of prayer is not to influence God, but rather to change the nature of the one who prays."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 393,
+        "fields": {
+            "author": 14,
+            "content": "People demand freedom of speech as a compensation for the freedom of thought which they seldom use."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 394,
+        "fields": {
+            "author": 14,
+            "content": "Anxiety is the dizziness of freedom."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 395,
+        "fields": {
+            "author": 14,
+            "content": "People understand me so poorly that they don't even understand my complaint about them not understanding me."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 396,
+        "fields": {
+            "author": 14,
+            "content": "Life is not a problem to be solved, but a reality to be experienced."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 397,
+        "fields": {
+            "author": 14,
+            "content": "There are two ways to be fooled. One is to believe what isn't true; the other is to refuse to believe what is true."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 398,
+        "fields": {
+            "author": 14,
+            "content": "The most common form of despair is not being who you are."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 399,
+        "fields": {
+            "author": 14,
+            "content": "It is perfectly true, as philosophers say, that life must be understood backwards. But they forget the other proposition, that it must be lived forwards."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 400,
+        "fields": {
+            "author": 14,
+            "content": "The greatest hazard of all, losing one\u2019s self, can occur very quietly in the world, as if it were nothing at all. No other loss can occur so quietly; any other loss - an arm, a leg, five dollars, a wife, etc. - is sure to be noticed."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 401,
+        "fields": {
+            "author": 14,
+            "content": "I see it all perfectly; there are two possible situations \u2014 one can either do this or that. My honest opinion and my friendly advice is this: do it or do not do it \u2014 you will regret both."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 402,
+        "fields": {
+            "author": 14,
+            "content": "What labels me, negates me."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 403,
+        "fields": {
+            "author": 14,
+            "content": "The most painful state of being is remembering the future, particularly the one you'll never have."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 404,
+        "fields": {
+            "author": 14,
+            "content": "The Bible is very easy to understand. But we Christians are a bunch of scheming swindlers. We pretend to be unable to understand it because we know very well that the minute we understand, we are obliged to act accordingly."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 405,
+        "fields": {
+            "author": 14,
+            "content": "Marry, and you will regret it; don\u2019t marry, you will also regret it; marry or don\u2019t marry, you will regret it either way. Laugh at the world\u2019s foolishness, you will regret it; weep over it, you will regret that too; laugh at the world\u2019s foolishness or weep over it, you will regret both. Believe a woman, you will regret it; believe her not, you will also regret it\u2026 Hang yourself, you will regret it; do not hang yourself, and you will regret that too; hang yourself or don\u2019t hang yourself, you\u2019ll regret it either way; whether you hang yourself or do not hang yourself, you will regret both. This, gentlemen, is the essence of all philosophy."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 406,
+        "fields": {
+            "author": 14,
+            "content": "In addition to my other numerous acquaintances, I have one more intimate confidant\u2026 My depression is the most faithful mistress I have known \u2014 no wonder, then, that I return the love."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 407,
+        "fields": {
+            "author": 14,
+            "content": "What is a poet? An unhappy man who hides deep anguish in his heart, but whose lips are so formed that when the sigh and cry pass through them, it sounds like lovely music.... And people flock around the poet and say: 'Sing again soon' - that is, 'May new sufferings torment your soul but your lips be fashioned as before, for the cry would only frighten us, but the music, that is blissful."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 408,
+        "fields": {
+            "author": 14,
+            "content": "A fire broke out backstage in a theatre. The clown came out to warn the public; they thought it was a joke and applauded. He repeated it; the acclaim was even greater. I think that's just how the world will come to an end: to general applause from wits who believe it's a joke."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 409,
+        "fields": {
+            "author": 14,
+            "content": "Love is the expression of the one who loves, not of the one who is loved. Those who think they can love only the people they prefer do not love at all. Love discovers truths about individuals that others cannot see"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 410,
+        "fields": {
+            "author": 14,
+            "content": "What if everything in the world were a misunderstanding, what if laughter were really tears?"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 411,
+        "fields": {
+            "author": 14,
+            "content": "Once you label me you negate me."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 412,
+        "fields": {
+            "author": 14,
+            "content": "If I were to wish for anything, I should not wish for wealth and power, but for the passionate sense of the potential, for the eye which, ever young and ardent, sees the possible. Pleasure disappoints, possibility never. And what wine is so sparkling, what so fragrant, what so intoxicating, as possibility!"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 413,
+        "fields": {
+            "author": 14,
+            "content": "To dare is to lose one's footing momentarily. Not to dare is to lose oneself."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 414,
+        "fields": {
+            "author": 14,
+            "content": "The tyrant dies and his rule is over, the martyr dies and his rule begins."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 415,
+        "fields": {
+            "author": 14,
+            "content": "To venture causes anxiety, but not to venture is to lose one's self.... And to venture in the highest is precisely to be conscious of one's self."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 416,
+        "fields": {
+            "author": 14,
+            "content": "Face the facts of being what you are, for that is what changes what you are."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 417,
+        "fields": {
+            "author": 14,
+            "content": "God creates out of nothing. Wonderful you say. Yes, to be sure, but he does what is still more wonderful: he makes saints out of sinners."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 418,
+        "fields": {
+            "author": 14,
+            "content": "To cheat oneself out of love is the most terrible deception; it is an eternal loss for which there is no reparation, either in time or in eternity."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 419,
+        "fields": {
+            "author": 14,
+            "content": "If anyone on the verge of action should judge himself according to the outcome, he would never begin."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 420,
+        "fields": {
+            "author": 14,
+            "content": "Above all, do not lose your desire to walk. Everyday, I walk myself into a state of well-being & walk away from every illness. I have walked myself into my best thoughts, and I know of no thought so burdensome that one cannot walk away from it. But by sitting still, & the more one sits still, the closer one comes to feeling ill. Thus if one just keeps on walking, everything will be all right."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 421,
+        "fields": {
+            "author": 15,
+            "content": "The philosophers have only interpreted the world, in various ways. The point, however, is to change it.\n\n[These words are also inscribed upon his grave]"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 422,
+        "fields": {
+            "author": 15,
+            "content": "The oppressed are allowed once every few years to decide which particular representatives of the oppressing class are to represent and repress them."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 423,
+        "fields": {
+            "author": 15,
+            "content": "Surround yourself with people who make you happy. People who make you laugh, who help you when you\u2019re in need. People who genuinely care. They are the ones worth keeping in your life. Everyone else is just passing through."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 424,
+        "fields": {
+            "author": 15,
+            "content": "The last capitalist we hang shall be the one who sold us the rope."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 425,
+        "fields": {
+            "author": 15,
+            "content": "The foundation of irreligious criticism is: Man makes religion, religion does not make man. Religion is, indeed, the self-consciousness and self-esteem of man who has either not yet won through to himself, or has already lost himself again. But man is no abstract being squatting outside the world. Man is the world of man \u2013 state, society. This state and this society produce religion, which is an inverted consciousness of the world, because they are an inverted world...\n\nReligious suffering is, at one and the same time, the expression of real suffering and a protest against real suffering. Religion is the sigh of the oppressed creature, the heart of a heartless world, and the soul of soulless conditions. It is the opium of the people.\n\nThe abolition of religion as the illusory happiness of the people is the demand for their real happiness. To call on them to give up their illusions about their condition is to call on them to give up a condition that requires illusions. The criticism of religion is, therefore, in embryo, the criticism of that vale of tears of which religion is the halo.\n\nCriticism has plucked the imaginary flowers on the chain not in order that man shall continue to bear that chain without fantasy or consolation, but so that he shall throw off the chain and pluck the living flower. The criticism of religion disillusions man, so that he will think, act, and fashion his reality like a man who has discarded his illusions and regained his senses, so that he will move around himself as his own true Sun. Religion is only the illusory Sun which revolves around man as long as he does not revolve around himself."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 426,
+        "fields": {
+            "author": 15,
+            "content": "The history of all hitherto existing society is the history of class struggles.\n\nFreeman and slave, patrician and plebeian, lord and serf, guildmaster and journeyman, in a word, oppressor and oppressed, stood in constant opposition to one another, carried on an uninterrupted, now hidden, now open fight, that each time ended, either in the revolutionary reconstitution of society at large, or in the common ruin of the contending classes."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 427,
+        "fields": {
+            "author": 15,
+            "content": "Hegel remarks somewhere that all great, world-historical facts and personages occur, as it were, twice. He has forgotten to add: the first time as tragedy, the second as farce."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 428,
+        "fields": {
+            "author": 15,
+            "content": "Men make their own history, but they do not make it as they please; they do not make it under self-selected circumstances, but under circumstances existing already, given and transmitted from the past. The tradition of all dead generations weighs like a nightmare on the brains of the living. And just as they seem to be occupied with revolutionizing themselves and things, creating something that did not exist before, precisely in such epochs of revolutionary crisis they anxiously conjure up the spirits of the past to their service, borrowing from them names, battle slogans, and costumes in order to present this new scene in world history in time-honored disguise and borrowed language."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 429,
+        "fields": {
+            "author": 15,
+            "content": "The less you eat, drink and read books; the less you go to the theatre, the dance hall, the public house; the less you think, love, theorize, sing, paint, fence, etc., the more you save-the greater becomes your treasure which neither moths nor dust will devour-your capital. The less you are, the more you have; the less you express your own life, the greater is your alienated life-the greater is the store of your estranged being."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 430,
+        "fields": {
+            "author": 15,
+            "content": "A specter is haunting Europe\u2014the specter of Communism. All the powers of old Europe have entered into a holy alliance to exorcise this specter; Pope and Czar, Metternich and Guizot, French radicals and German police spies.\n\nWhere is the party in opposition that has not been decried as Communistic by its opponents in power? Where the opposition that has not hurled back the branding reproach of Communism, against the more advanced opposition parties, as well as against its reactionary adversaries?\n\nTwo things result from this fact.\n\nI. Communism is already acknowledged by all European powers to be in itself a power.\n\nII. It is high time that Communists should openly, in the face of the whole world, publish their views, their aims, their tendencies, and meet this nursery tale of the Specter of Communism with a Manifesto of the party itself."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 431,
+        "fields": {
+            "author": 15,
+            "content": "Let the ruling classes tremble at a Communistic revolution. The proletarians have nothing to lose but their chains. They have a world to win.\n\nWorkingmen of all countries unite!"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 432,
+        "fields": {
+            "author": 15,
+            "content": "The bourgeoisie, wherever it has got the upper hand, has put an end to all feudal, patriarchal, idyllic relations. It has pitilessly torn asunder the motley feudal ties that bound man to his 'natural superiors,' and has left remaining no other nexus between man and man than naked self-interest, callous 'cash payment.' It has drowned the most heavenly ecstasies of religious fervor, of chivalrous enthusiasm, of philistine sentimentalism, in the icy water of egotistical calculation. It has resolved personal worth into exchange value, and in place of the numberless indefeasible chartered freedoms, has set up that single, unconscionable freedom\u2014Free Trade. In one word, for exploitation, veiled by religious and political illusions, it has substituted naked, shameless, direct, brutal exploitation.\n\nThe bourgeoisie has stripped of its halo every occupation hitherto honored and looked up to with reverent awe. It has converted the physician, the lawyer, the priest, the poet, the man of science, into its paid wage laborers.\n\nThe bourgeoisie has torn away from the family its sentimental veil, and has reduced the family relation to a mere money relation."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 433,
+        "fields": {
+            "author": 15,
+            "content": "Reason has always existed, but not always in a reasonable form."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 434,
+        "fields": {
+            "author": 15,
+            "content": "I am nothing but I must be everything."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 435,
+        "fields": {
+            "author": 15,
+            "content": "To be radical is to grasp things by the root."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 436,
+        "fields": {
+            "author": 15,
+            "content": "Go on, get out! Last words are for fools who haven't said enough!"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 437,
+        "fields": {
+            "author": 15,
+            "content": "In a higher phase of communist society, after the enslaving subordination of the individual to the division of labor, and therewith also the antithesis between mental and physical labor, has vanished; after labor has become not only a means of life but life's prime want; after the productive forces have also increased with the all-around development of the individual, and all the springs of co-operative wealth flow more abundantly\u2014only then can the narrow horizon of bourgeois right be crossed in its entirety and society inscribe on its banners: From each according to his ability, to each according to his needs!"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 438,
+        "fields": {
+            "author": 15,
+            "content": "It is not the consciousness of men that determines their being, but, on the contrary, their social being that determines their consciousness."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 439,
+        "fields": {
+            "author": 15,
+            "content": "The bourgeoisie cannot exist without constantly revolutionizing the instruments of production, and thereby the relations of production, and with them the whole relations of society. Conservation of the old modes of production in unaltered forms, was, on the contrary, the first condition of existence for all earlier industrial classes. Constant revolutionizing of production, uninterrupted disturbance of all social conditions, everlasting uncertainty and agitation, distinguish the bourgeois epoch from all earlier ones. All fixed, fast-frozen relations, with their train of ancient and venerable prejudices and opinions, are swept away; all new-formed ones become antiquated before they can ossify. All that is solid melts into air, all that is holy is profaned, and man is at last compelled to face with sober senses his real conditions of life and his relations with his kind."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 440,
+        "fields": {
+            "author": 15,
+            "content": "The ideas of the ruling class are in every epoch the ruling ideas, i.e. the class which is the ruling material force of society, is at the same time its ruling intellectual force. The class which has the means of material production at its disposal, has control at the same time over the means of mental production, so that thereby, generally speaking, the ideas of those who lack the means of mental production are subject to it. The ruling ideas are nothing more than the ideal expression of the dominant material relationships, the dominant material relationships grasped as ideas."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 441,
+        "fields": {
+            "author": 15,
+            "content": "...[G]reat progress was evident in the last Congress of the American 'Labour Union' in that among other things, it treated working women with complete equality. While in this respect the English, and still more the gallant French, are burdened with a spirit of narrow-mindedness. Anybody who knows anything of history knows that great social changes are impossible without the feminine ferment. Social progress can be measured exactly by the social position of the fair sex (the ugly ones included)."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 442,
+        "fields": {
+            "author": 15,
+            "content": "Religion is the impotence of the human mind to deal with occurrences it cannot understand."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 443,
+        "fields": {
+            "author": 15,
+            "content": "If anything is certain, it is that I myself am not a Marxist.\n\n[In a letter about the peculiar 'Marxism' which arose in France 1882]"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 444,
+        "fields": {
+            "author": 15,
+            "content": "The proletarians have nothing to loose but their chains. They have a world to win."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 445,
+        "fields": {
+            "author": 15,
+            "content": "There is no royal road to science, and only those who do not dread the fatiguing climb of its steep paths have a chance of gaining its luminous summits."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 446,
+        "fields": {
+            "author": 15,
+            "content": "If money is the bond binding me to human life, binding society to me, connecting me with nature and man, is not money the bond of all bonds? Can it not dissolve and bind all ties? Is it not, therefore, also the universal agent of separation?"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 447,
+        "fields": {
+            "author": 15,
+            "content": "The bourgeoisie, by the rapid improvement of all instruments of production, by the immensely facilitated means of communication, draws all, even the most barbarian, nations into civilization. The cheap prices of its commodities are the heavy artillery with which it batters down all Chinese walls, with which it forces the barbarians' intensely obstinate hatred of foreigners to capitulate. It compels all nations, on pain of extinction, to adopt the bourgeois mode of production; it compels them to introduce what it calls civilization into their midst, i.e., to become bourgeois themselves. In one word, it creates a world after its own image."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 448,
+        "fields": {
+            "author": 15,
+            "content": "Modern bourgeois society with its relations of production, of exchange, and of property, a society that has conjured up such gigantic means of production and of exchange, is like the sorcerer, who is no longer able to control the powers of the nether world whom he has called up by his spells."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 449,
+        "fields": {
+            "author": 15,
+            "content": "For as soon as the distribution of labour comes into being, each man has a particular, exclusive sphere of activity, which is forced upon him and from which he cannot escape. He is a hunter, a fisherman, a herdsman, or a critical critic, and must remain so if he does not want to lose his means of livelihood; while in communist society, where nobody has one exclusive sphere of activity but each can become accomplished in any branch he wishes, society regulates the general production and thus makes it possible for me to do one thing today and another tomorrow, to hunt in the morning, fish in the afternoon, rear cattle in the evening, criticise after dinner, just as I have a mind, without ever becoming hunter, fisherman, herdsman or critic."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 450,
+        "fields": {
+            "author": 15,
+            "content": "In proportion therefore, as the repulsiveness of the work increases, the wage decreases."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 451,
+        "fields": {
+            "author": 16,
+            "content": "Without music, life would be a mistake."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 452,
+        "fields": {
+            "author": 16,
+            "content": "It is not a lack of love, but a lack of friendship that makes unhappy marriages."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 453,
+        "fields": {
+            "author": 16,
+            "content": "That which does not kill us makes us stronger."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 454,
+        "fields": {
+            "author": 16,
+            "content": "I'm not upset that you lied to me, I'm upset that from now on I can't believe you."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 455,
+        "fields": {
+            "author": 16,
+            "content": "And those who were seen dancing were thought to be insane by those who could not hear the music."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 456,
+        "fields": {
+            "author": 16,
+            "content": "It is hard enough to remember my opinions, without also remembering my reasons for them!"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 457,
+        "fields": {
+            "author": 16,
+            "content": "Whoever fights monsters should see to it that in the process he does not become a monster. And if you gaze long enough into an abyss, the abyss will gaze back into you."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 458,
+        "fields": {
+            "author": 16,
+            "content": "There is always some madness in love. But there is also always some reason in madness."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 459,
+        "fields": {
+            "author": 16,
+            "content": "You must have chaos within you to give birth to a dancing star."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 460,
+        "fields": {
+            "author": 16,
+            "content": "You have your way. I have my way. As for the right way, the correct way, and the only way, it does not exist."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 461,
+        "fields": {
+            "author": 16,
+            "content": "Sometimes people don't want to hear the truth because they don't want their illusions destroyed."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 462,
+        "fields": {
+            "author": 16,
+            "content": "In heaven, all the interesting people are missing."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 463,
+        "fields": {
+            "author": 16,
+            "content": "He who has a why to live for can bear almost any how."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 464,
+        "fields": {
+            "author": 16,
+            "content": "There are no facts, only interpretations."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 465,
+        "fields": {
+            "author": 16,
+            "content": "The man of knowledge must be able not only to love his enemies but also to hate his friends."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 466,
+        "fields": {
+            "author": 16,
+            "content": "The individual has always had to struggle to keep from being overwhelmed by the tribe. If you try it, you will be lonely often, and sometimes frightened. But no price is too high to pay for the privilege of owning yourself."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 467,
+        "fields": {
+            "author": 16,
+            "content": "We should consider every day lost on which we have not danced at least once."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 468,
+        "fields": {
+            "author": 16,
+            "content": "When we are tired, we are attacked by ideas we conquered long ago."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 469,
+        "fields": {
+            "author": 16,
+            "content": "I cannot believe in a God who wants to be praised all the time."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 470,
+        "fields": {
+            "author": 16,
+            "content": "The snake which cannot cast its skin has to die. As well the minds which are prevented from changing their opinions; they cease to be mind."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 471,
+        "fields": {
+            "author": 16,
+            "content": "In individuals, insanity is rare; but in groups, parties, nations and epochs, it is the rule."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 472,
+        "fields": {
+            "author": 16,
+            "content": "No one can construct for you the bridge upon which precisely you must cross the stream of life, no one but you yourself alone."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 473,
+        "fields": {
+            "author": 16,
+            "content": "The surest way to corrupt a youth is to instruct him to hold in higher esteem those who think alike than those who think differently."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 474,
+        "fields": {
+            "author": 16,
+            "content": "The advantage of a bad memory is that one enjoys several times the same good things for the first time."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 475,
+        "fields": {
+            "author": 16,
+            "content": "Is man merely a mistake of God's? Or God merely a mistake of man?"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 476,
+        "fields": {
+            "author": 16,
+            "content": "Man is the cruelest animal."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 477,
+        "fields": {
+            "author": 16,
+            "content": "I am a forest, and a night of dark trees: but he who is not afraid of my darkness, will find banks full of roses under my cypresses."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 478,
+        "fields": {
+            "author": 16,
+            "content": "The thought of suicide is a great consolation: by means of it one gets through many a dark night."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 479,
+        "fields": {
+            "author": 16,
+            "content": "Every deep thinker is more afraid of being understood than of being misunderstood."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 480,
+        "fields": {
+            "author": 16,
+            "content": "Thoughts are the shadows of our feelings -- always darker, emptier and simpler."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 481,
+        "fields": {
+            "author": 17,
+            "content": "There are two motives for reading a book; one, that you enjoy it; the other, that you can boast about it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 482,
+        "fields": {
+            "author": 17,
+            "content": "Do not fear to be eccentric in opinion, for every opinion now accepted was once eccentric."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 483,
+        "fields": {
+            "author": 17,
+            "content": "Of all forms of caution, caution in love is perhaps the most fatal to true happiness."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 484,
+        "fields": {
+            "author": 17,
+            "content": "The fundamental cause of the trouble is that in the modern world the stupid are cocksure while the intelligent are full of doubt."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 485,
+        "fields": {
+            "author": 17,
+            "content": "To fear love is to fear life, and those who fear life are already 3-parts dead."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 486,
+        "fields": {
+            "author": 17,
+            "content": "I would never die for my beliefs because I might be wrong."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 487,
+        "fields": {
+            "author": 17,
+            "content": "And if there were a God, I think it very unlikely that He would have such an uneasy vanity as to be offended by those who doubt His existence"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 488,
+        "fields": {
+            "author": 17,
+            "content": "A stupid man's report of what a clever man says can never be accurate, because he unconsciously translates what he hears into something he can understand."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 489,
+        "fields": {
+            "author": 17,
+            "content": "Three passions, simple but overwhelmingly strong have governed my life: the longing for love, the search for knowledge, and unbearable pity for the suffering of mankind."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 490,
+        "fields": {
+            "author": 17,
+            "content": "In all affairs it's a healthy thing now and then to hang a question mark on the things you have long taken for granted."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 491,
+        "fields": {
+            "author": 17,
+            "content": "I do not pretend to be able to prove that there is no God. I equally cannot prove that Satan is a fiction. The Christian god may exist; so may the gods of Olympus, or of ancient Egypt, or of Babylon. But no one of these hypotheses is more probable than any other: they lie outside the region of even probable knowledge, and therefore there is no reason to consider any of them."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 492,
+        "fields": {
+            "author": 17,
+            "content": "Our great democracies still tend to think that a stupid man is more likely to be honest than a clever man, and our politicians take advantage of this prejudice by pretending to be even more stupid than nature made them."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 493,
+        "fields": {
+            "author": 17,
+            "content": "One of the symptoms of an approaching nervous breakdown is the belief that one\u2019s work is terribly important."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 494,
+        "fields": {
+            "author": 17,
+            "content": "Fear is the main source of superstition, and one of the main sources of cruelty. To conquer fear is the beginning of wisdom."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 495,
+        "fields": {
+            "author": 17,
+            "content": "The hardest thing to learn in life is which bridge to cross and which to burn."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 496,
+        "fields": {
+            "author": 17,
+            "content": "It's easy to fall in love. The hard part is finding someone to catch you."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 497,
+        "fields": {
+            "author": 17,
+            "content": "To teach how to live without certainty, and yet without being paralyzed by hesitation, is perhaps the chief thing that philosophy, in our age, can still do for those who study it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 498,
+        "fields": {
+            "author": 17,
+            "content": "Most people would sooner die than think; in fact, they do so."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 499,
+        "fields": {
+            "author": 17,
+            "content": "Men fear thought as they fear nothing else on earth -- more than ruin, more even than death. Thought is subversive and revolutionary, destructive and terrible, thought is merciless to privilege, established institutions, and comfortable habits; thought is anarchic and lawless, indifferent to authority, careless of the well-tried wisdom of the ages. Thought looks into the pit of hell and is not afraid ... Thought is great and swift and free, the light of the world, and the chief glory of man."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 500,
+        "fields": {
+            "author": 17,
+            "content": "My desire and wish is that the things I start with should be so obvious that you wonder why I spend my time stating them. This is what I aim at because the point of philosophy is to start with something so simple as not to seem worth stating, and to end with something so paradoxical that no one will believe it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 501,
+        "fields": {
+            "author": 17,
+            "content": "It is the preoccupation with possessions, more than anything else, that prevents us from living freely and nobly."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 502,
+        "fields": {
+            "author": 17,
+            "content": "Those who have never known the deep intimacy and the intense companionship of happy mutual love have missed the best thing that life has to give."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 503,
+        "fields": {
+            "author": 17,
+            "content": "That is the idea -- that we should all be wicked if we did not hold to the Christian religion. It seems to me that the people who have held to it have been for the most part extremely wicked. You find this curious fact, that the more intense has been the religion of any period and the more profound has been the dogmatic belief, the greater has been the cruelty and the worse has been the state of affairs. In the so-called ages of faith, when men really did believe the Christian religion in all its completeness, there was the Inquisition, with all its tortures; there were millions of unfortunate women burned as witches; and there was every kind of cruelty practiced upon all sorts of people in the name of religion.\n\nYou find as you look around the world that every single bit of progress in humane feeling, every improvement in the criminal law, every step toward the diminution of war, every step toward better treatment of the colored races, or every mitigation of slavery, every moral progress that there has been in the world, has been consistently opposed by the organized churches of the world. I say quite deliberately that the Christian religion, as organized in its churches, has been and still is the principal enemy of moral progress in the world.\n\nYou may think that I am going too far when I say that that is still so. I do not think that I am. Take one fact. You will bear with me if I mention it. It is not a pleasant fact, but the churches compel one to mention facts that are not pleasant. Supposing that in this world that we live in today an inexperienced girl is married to a syphilitic man; in that case the Catholic Church says, 'This is an indissoluble sacrament. You must endure celibacy or stay together. And if you stay together, you must not use birth control to prevent the birth of syphilitic children.' Nobody whose natural sympathies have not been warped by dogma, or whose moral nature was not absolutely dead to all sense of suffering, could maintain that it is right and proper that that state of things should continue.\n\nThat is only an example. There are a great many ways in which, at the present moment, the church, by its insistence upon what it chooses to call morality, inflicts upon all sorts of people undeserved and unnecessary suffering. And of course, as we know, it is in its major part an opponent still of progress and improvement in all the ways that diminish suffering in the world, because it has chosen to label as morality a certain narrow set of rules of conduct which have nothing to do with human happiness; and when you say that this or that ought to be done because it would make for human happiness, they think that has nothing to do with the matter at all. 'What has human happiness to do with morals? The object of morals is not to make people happy."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 504,
+        "fields": {
+            "author": 17,
+            "content": "When you want to teach children to think, you begin by treating them seriously when they are little, giving them responsibilities, talking to them candidly, providing privacy and solitude for them, and making them readers and thinkers of significant thoughts from the beginning. That\u2019s if you want to teach them to think."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 505,
+        "fields": {
+            "author": 17,
+            "content": "We know very little, and yet it is astonishing that we know so much, and still more astonishing that so little knowledge can give us so much power."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 506,
+        "fields": {
+            "author": 17,
+            "content": "Collective fear stimulates herd instinct, and tends to produce ferocity toward those who are not regarded as members of the herd."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 507,
+        "fields": {
+            "author": 17,
+            "content": "No one gossips about other people\u2019s secret virtues."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 508,
+        "fields": {
+            "author": 17,
+            "content": "It has been said that man is a rational animal. All my life I have been searching for evidence which could support this."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 509,
+        "fields": {
+            "author": 17,
+            "content": "One should as a rule respect public opinion in so far as is necessary to avoid starvation and to keep out of prison, but anything that goes beyond this is voluntary submission to an unnecessary tyranny, and is likely to interfere with happiness in all kinds of ways."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 510,
+        "fields": {
+            "author": 17,
+            "content": "If I were to suggest that between the Earth and Mars there is a china teapot revolving about the sun in an elliptical orbit, nobody would be able to disprove my assertion provided I were careful to add that the teapot is too small to be revealed even by our most powerful telescopes. But if I were to go on to say that, since my assertion cannot be disproved, it is an intolerable presumption on the part of human reason to doubt it, I should rightly be thought to be talking nonsense. If, however, the existence of such a teapot were affirmed in ancient books, taught as the sacred truth every Sunday, and instilled into the minds of children at school, hesitation to believe in its existence would become a mark of eccentricity and entitle the doubter to the attentions of the psychiatrist in an enlightened age or of the Inquisitor in an earlier time."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 511,
+        "fields": {
+            "author": 18,
+            "content": "A serious and good philosophical work could be written consisting entirely of jokes."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 512,
+        "fields": {
+            "author": 18,
+            "content": "The limits of my language means the limits of my world."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 513,
+        "fields": {
+            "author": 18,
+            "content": "I don't know why we are here, but I'm pretty sure that it is not in order to enjoy ourselves."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 514,
+        "fields": {
+            "author": 18,
+            "content": "Whereof one cannot speak, thereof one must be silent."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 515,
+        "fields": {
+            "author": 18,
+            "content": "Hell isn't other people. Hell is yourself."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 516,
+        "fields": {
+            "author": 18,
+            "content": "The real question of life after death isn't whether or not it exists, but even if it does what problem this really solves."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 517,
+        "fields": {
+            "author": 18,
+            "content": "Nothing is so difficult as not deceiving oneself."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 518,
+        "fields": {
+            "author": 18,
+            "content": "I am my world."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 519,
+        "fields": {
+            "author": 18,
+            "content": "If people never did silly things nothing intelligent would ever get done."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 520,
+        "fields": {
+            "author": 18,
+            "content": "Only describe, don't explain."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 521,
+        "fields": {
+            "author": 18,
+            "content": "A man will be imprisoned in a room with a door that's unlocked and opens inwards; as long as it does not occur to him to pull rather than push."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 522,
+        "fields": {
+            "author": 18,
+            "content": "Death is not an event in life: we do not live to experience death. If we take eternity to mean not infinite temporal duration but timelessness, then eternal life belongs to those who live in the present. Our life has no end in the way in which our visual field has no limits."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 523,
+        "fields": {
+            "author": 18,
+            "content": "If we take eternity to mean not infinite temporal duration but timelessness, then eternal life belongs to those who live in the present."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 524,
+        "fields": {
+            "author": 18,
+            "content": "Don't for heaven's sake, be afraid of talking nonsense! But you must pay attention to your nonsense."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 525,
+        "fields": {
+            "author": 18,
+            "content": "The problems are solved, not by giving new information, but by arranging what we have known since long."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 526,
+        "fields": {
+            "author": 18,
+            "content": "I am sitting with a philosopher in the garden; he says again and again 'I know that that\u2019s a tree', pointing to a tree that is near us. Someone else arrives and hears this, and I tell him: 'This fellow isn\u2019t insane. We are only doing philosophy."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 527,
+        "fields": {
+            "author": 18,
+            "content": "We are asleep. Our Life is a dream. But we wake up sometimes, just enough to know that we are dreaming."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 528,
+        "fields": {
+            "author": 18,
+            "content": "Not how the world is, but that it is, is the mystery."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 529,
+        "fields": {
+            "author": 18,
+            "content": "Philosophy is a battle against the bewitchment of our intelligence by means of language."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 530,
+        "fields": {
+            "author": 18,
+            "content": "Never stay up on the barren heights of cleverness, but come down into the green valleys of silliness."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 531,
+        "fields": {
+            "author": 18,
+            "content": "How small a thought it takes to fill a life."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 532,
+        "fields": {
+            "author": 18,
+            "content": "When we can't think for ourselves, we can always quote"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 533,
+        "fields": {
+            "author": 18,
+            "content": "If you and I are to live religious lives, it mustn't be that we talk a lot about religion, but that our manner of life is different. It is my belief that only if you try to be helpful to other people will you in the end find your way to God."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 534,
+        "fields": {
+            "author": 18,
+            "content": "We feel that even if all possible scientific questions be answered, the problems of life have still not been touched at all."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 535,
+        "fields": {
+            "author": 18,
+            "content": "To imagine a language is to imagine a form of life."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 536,
+        "fields": {
+            "author": 18,
+            "content": "I act with complete certainty. But this certainty is my own."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 537,
+        "fields": {
+            "author": 18,
+            "content": "If anyone is unwilling to descend into himself, because this is too painful, he will remain superficial in his writing. . . If I perform to myself, then it\u2019s this that the style expresses. And then the style cannot be my own. If you are unwilling to know what you are, your writing is a form of deceit."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 538,
+        "fields": {
+            "author": 18,
+            "content": "At the core of all well-founded belief lies belief that is unfounded."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 539,
+        "fields": {
+            "author": 18,
+            "content": "What can be shown, cannot be said."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 540,
+        "fields": {
+            "author": 18,
+            "content": "Ethics and aesthetics are one."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 541,
+        "fields": {
+            "author": 19,
+            "content": "People know what they do; frequently they know why they do what they do; but what they don't know is what what they do does."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 542,
+        "fields": {
+            "author": 19,
+            "content": "I don't feel that it is necessary to know exactly what I am. The main interest in life and work is to become someone else that you were not in the beginning."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 543,
+        "fields": {
+            "author": 19,
+            "content": "Where there is power, there is resistance."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 544,
+        "fields": {
+            "author": 19,
+            "content": "What strikes me is the fact that in our society, art has become something which is related only to objects and not to individuals, or to life. That art is something which is specialized or which is done by experts who are artists. But couldn't everyone's life become a work of art? Why should the lamp or the house be an art object, but not our life?"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 545,
+        "fields": {
+            "author": 19,
+            "content": "I'm no prophet. My job is making windows where there were once walls."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 546,
+        "fields": {
+            "author": 19,
+            "content": "Knowledge is not for knowing: knowledge is for cutting."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 547,
+        "fields": {
+            "author": 19,
+            "content": "...if you are not like everybody else, then you are abnormal, if you are abnormal , then you are sick. These three categories, not being like everybody else, not being normal and being sick are in fact very different but have been reduced to the same thing"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 548,
+        "fields": {
+            "author": 19,
+            "content": "I don't write a book so that it will be the final word; I write a book so that other books are possible, not necessarily written by me."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 549,
+        "fields": {
+            "author": 19,
+            "content": "The strategic adversary is fascism... the fascism in us all, in our heads and in our everyday behavior, the fascism that causes us to love power, to desire the very thing that dominates and exploits us."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 550,
+        "fields": {
+            "author": 19,
+            "content": "Maybe the target nowadays is not to discover what we are but to refuse what we are."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 551,
+        "fields": {
+            "author": 19,
+            "content": "I don\u2019t feel that it is necessary to know exactly what I am. The main interest in life and work is to become someone else that you were not in the beginning. If you knew when you began a book what you would say at the end, do you think that you would have the courage to write it?\nWhat is true for writing and for love relationships is true also for life. The game is worthwhile insofar as we don\u2019t know where it will end."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 552,
+        "fields": {
+            "author": 19,
+            "content": "The real political task in a society such as ours is to criticize the workings of institutions that appear to be both neutral and independent, to criticize and attack them in such a manner that the political violence that has always exercised itself obscurely through them will be unmasked, so that one can fight against them."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 553,
+        "fields": {
+            "author": 19,
+            "content": "The work of an intellectual is not to mould the political will of others; it is, through the analyses that he does in his own field, to re-examine evidence and assumptions, to shake up habitual ways of working and thinking, to dissipate conventional familiarities, to re-evaluate rules and institutions and to participate in the formation of a political will (where he has his role as citizen to play)."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 554,
+        "fields": {
+            "author": 19,
+            "content": "Do not ask who I am and do not ask me to remain the same. More than one person, doubtless like me, writes in order to have no face."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 555,
+        "fields": {
+            "author": 19,
+            "content": "Schools serve the same social functions as prisons and mental institutions- to define, classify, control, and regulate people."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 556,
+        "fields": {
+            "author": 19,
+            "content": "A critique does not consist in saying that things aren't good the way they are. It consists in seeing on just what type of assumptions, of familiar notions, of established and unexamined ways of thinking the accepted practices are based... To do criticism is to make harder those acts which are now too easy."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 557,
+        "fields": {
+            "author": 19,
+            "content": "The 'Enlightenment', which discovered the liberties, also invented the disciplines."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 558,
+        "fields": {
+            "author": 19,
+            "content": "The imaginary is not formed in opposition to reality as its denial or compensation; it grows among signs, from book to book, in the interstice of repetitions and commentaries; it is born and takes shape in the interval between books. It is the phenomena of the library."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 559,
+        "fields": {
+            "author": 19,
+            "content": "Do not ask who I am and do not ask me to remain the same."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 560,
+        "fields": {
+            "author": 19,
+            "content": "The intellectual was rejected and persecuted at the precise moment when the facts became incontrovertible, when it was forbidden to say that the emperor had no clothes."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 561,
+        "fields": {
+            "author": 19,
+            "content": "What desire can be contrary to nature since it was given to man by nature itself?"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 562,
+        "fields": {
+            "author": 19,
+            "content": "There is no power relation without the correlative constitution of a field of knowledge, nor any knowledge that does not presuppose and constitute at the same time power relations"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 563,
+        "fields": {
+            "author": 19,
+            "content": "But the guilty person is only one of the targets of punishment. For punishment is directed above all at others, at all the potentially guilty."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 564,
+        "fields": {
+            "author": 19,
+            "content": "Visibility is a trap."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 565,
+        "fields": {
+            "author": 19,
+            "content": "...it's my hypothesis that the individual is not a pre-given entity which is seized on by the exercise of power. The individual, with his identity and characteristics, is the product of a relation of power exercised over bodies, multiplicities, movements, desires, forces."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 566,
+        "fields": {
+            "author": 19,
+            "content": "Do not think that one has to be sad in order to be militant, even though the thing one is fighting is abominable."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 567,
+        "fields": {
+            "author": 19,
+            "content": "Justice must always question itself, just as society can exist only by means of the work it does on itself and on its institutions."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 568,
+        "fields": {
+            "author": 19,
+            "content": "From the idea that the self is not given to us, I think there is only one practical consequence: we have to create ourselves as a work of art."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 569,
+        "fields": {
+            "author": 19,
+            "content": "Are you going to change yet again, shift your position according to the questions that are put to you, and say that the objections are not really directed at the place from which you are speaking? Are you going to declare yet again that you have never been what you have been reproached with being? Are you already preparing the way out that will enable you in your next book to spring up somewhere else and declare as you're now doing: no, no, I'm not where you are lying in wait for me, but over here, laughing at you?'\n'What, do you imagine that I would take so much trouble and so much pleasure in writing, do you think that I would keep so persistently to my task, if I were not preparing \u2013 with a rather shaky hand \u2013 a labyrinth into which I can venture, into which I can move my discourse... in which I can lose myself and appear at last to eyes that I will never have to meet again. I am no doubt not the only one who writes in order to have no face. Do not ask who I am and do not ask me to remain the same: leave it to our bureaucrats and our police to see that our papers are in order. At least spare us their morality when we write."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 570,
+        "fields": {
+            "author": 19,
+            "content": "Death left its old tragic heaven and became the lyrical core of man: his invisible truth, his visible secret."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 571,
+        "fields": {
+            "author": 20,
+            "content": "If you're lonely when you're alone, you're in bad company."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 572,
+        "fields": {
+            "author": 20,
+            "content": "Do you think that I count the days? There is only one day left, always starting over: it is given to us at dawn and taken away from us at dusk."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 573,
+        "fields": {
+            "author": 20,
+            "content": "I'm going to smile, and my smile will sink down into your pupils, and heaven knows what it will become."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 574,
+        "fields": {
+            "author": 20,
+            "content": "Hell is\u2014other people!"
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 575,
+        "fields": {
+            "author": 20,
+            "content": "Man is condemned to be free; because once thrown into the world, he is responsible for everything he does.\nIt is up to you to give [life] a meaning."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 576,
+        "fields": {
+            "author": 20,
+            "content": "Freedom is what we do with what is done to us."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 577,
+        "fields": {
+            "author": 20,
+            "content": "We are our choices."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 578,
+        "fields": {
+            "author": 20,
+            "content": "Better to die on one's feet than to live on one's knees."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 579,
+        "fields": {
+            "author": 20,
+            "content": "It's quite an undertaking to start loving somebody. You have to have energy, generosity, blindness. There is even a moment right at the start where you have to jump across an abyss: if you think about it you don't do it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 580,
+        "fields": {
+            "author": 20,
+            "content": "I am alone in the midst of these happy, reasonable voices. All these creatures spend their time explaining, realizing happily that they agree with each other. In Heaven's name, why is it so important to think the same things all together."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 581,
+        "fields": {
+            "author": 20,
+            "content": "When the rich wage war it's the poor who die."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 582,
+        "fields": {
+            "author": 20,
+            "content": "Three o'clock is always too late or too early for anything you want to do."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 583,
+        "fields": {
+            "author": 20,
+            "content": "There may be more beautiful times, but this one is ours."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 584,
+        "fields": {
+            "author": 20,
+            "content": "You are -- your life, and nothing else."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 585,
+        "fields": {
+            "author": 20,
+            "content": "Everything has been figured out, except how to live."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 586,
+        "fields": {
+            "author": 20,
+            "content": "Life begins on the other side of despair."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 587,
+        "fields": {
+            "author": 20,
+            "content": "My thought is me: that's why I can't stop. I exist because I think\u2026 and I can't stop myself from thinking. At this very moment - it's frightful - if I exist, it is because I am horrified at existing. I am the one who pulls myself from the nothingness to which I aspire."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 588,
+        "fields": {
+            "author": 20,
+            "content": "I want to leave, to go somewhere where I should be really in my place, where I would fit in . . . but my place is nowhere; I am unwanted."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 589,
+        "fields": {
+            "author": 20,
+            "content": "She believed in nothing. Only her scepticism kept her from being an atheist."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 590,
+        "fields": {
+            "author": 20,
+            "content": "All that I know about my life, it seems, I have learned in books."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 591,
+        "fields": {
+            "author": 20,
+            "content": "Like all dreamers I confuse disenchantment with truth."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 592,
+        "fields": {
+            "author": 20,
+            "content": "Man can will nothing unless he has first understood that he must count on no one but himself; that he is alone, abandoned on earth in the midst of his infinite responsibilities, without help, with no other aim than the one he sets himself, with no other destiny than the one he forges for himself on this earth."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 593,
+        "fields": {
+            "author": 20,
+            "content": "Words are loaded pistols."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 594,
+        "fields": {
+            "author": 20,
+            "content": "Life has no meaning a priori\u2026 It is up to you to give it a meaning, and value is nothing but the meaning that you choose."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 595,
+        "fields": {
+            "author": 20,
+            "content": "The more sand that has escaped from the hourglass of our life, the clearer we should see through it."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 596,
+        "fields": {
+            "author": 20,
+            "content": "He was free, free in every way, free to behave like a fool or a machine, free to accept, free to refuse, free to equivocate; to marry, to give up the game, to drag this death weight about with him for years to come. He could do what he liked, no one had the right to advise him, there would be for him no Good or Evil unless he thought them into being."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 597,
+        "fields": {
+            "author": 20,
+            "content": "In love, one and one are one."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 598,
+        "fields": {
+            "author": 20,
+            "content": "I am going to outlive myself. Eat, sleep, sleep, eat. Exist slowly, softly, like these trees, like a puddle of water, like the red bench in the streetcar."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 599,
+        "fields": {
+            "author": 20,
+            "content": "It is therefore senseless to think of complaining since nothing foreign has decided what we feel, what we live, or what we are."
+        }
+    },
+    {
+        "model": "quotes.quote",
+        "pk": 600,
+        "fields": {
+            "author": 20,
+            "content": "Smooth and smiling faces everywhere, but ruin in their eyes."
+        }
+    }
+]
