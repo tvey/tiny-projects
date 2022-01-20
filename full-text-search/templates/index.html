@@ -12,7 +12,7 @@
     <form>
       <div class="form-group row">
         <div class="col-sm-12">
-          <input type="search" class="form-control form-control-lg" name="q" placeholder="I'm looking for...">
+          <input type="search" class="form-control form-control-lg" name="q" placeholder="I'm looking for..." autofocus>
         </div>
       </div>
       <div class="form-group row">
@@ -25,7 +25,7 @@
     {% if quotes %}
       {% for quote in quotes %}
         <blockquote class="blockquote">
-          <p class="mb-0">{{ quote.content }}</p>
+          <p class="mb-0">{{ quote.headline|safe }}</p>
           <footer class="blockquote-footer">{{ quote.author.name }}</cite></footer>
         </blockquote>
       {% endfor %}
