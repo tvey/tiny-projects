@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.http import JsonResponse
+from django.views.generic import TemplateView
 from django.contrib.postgres.search import (
     SearchHeadline,
     SearchRank,
@@ -9,7 +11,11 @@ from django.contrib.postgres.search import (
 from .models import Quote
 
 
-def home(request):
+class IndexView(TemplateView):
+    template_name = 'index.html'
+
+
+def search(request):
     q = request.GET.get('q')
 
     if q:
@@ -23,7 +29,7 @@ def home(request):
             .order_by('-rank')
             .filter(rank__gt=0)
         )
-    else:
-        quotes = []
+        result = list(quotes.values('headline', 'author__name'))
+        return JsonResponse(result, safe=False)
 
-    return render(request, 'index.html', {'quotes': quotes})
+    return JsonResponse([])
