@@ -9,10 +9,11 @@
 <body>
   <main class="container mt-5">
     <h1 class="mb-3">Quote Searcher</h1>
-    <form>
+    <form onsubmit="return false">
       <div class="form-group row">
         <div class="col-sm-12">
           <input type="search" class="form-control form-control-lg" name="q" placeholder="I'm looking for..." autofocus>
+          <p class="form-text text-muted mt-1">E.g. <strong>love</strong>, <strong>knowledge</strong>, <strong>truth</strong></p>
         </div>
       </div>
     </form>
@@ -27,23 +28,22 @@
     const searchElem = document.querySelector('input[name="q"]');
 
     searchElem.addEventListener('keyup', (event) => {
+      event.preventDefault();
       const query = event.target.value;
       if (query) {
         let url = `search/?q=${query}`
         fetch(url)
-            .then((response) => {
-              return response.json();
-            })
-            .then((data) => {
-              addQuotes(data);
-            })
-            .catch(err => console.log(err));
-
-        event.preventDefault();
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+            displayQuotes(data);
+          })
+          .catch(err => console.log(err));
       }
     });
 
-    function addQuotes(data) {
+    function displayQuotes(data) {
       const quoteContainer = document.getElementById('quotes');
       if (data.length) {
         let quotes = '';

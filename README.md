@@ -2,6 +2,8 @@
 
 ## Contents
 
+* [Full Text Search](#full-text-search)
+
 * [Google Books Explorer](#google-books-explorer)
 
 * [Hey FastAPI](#hey-fastapi)
@@ -13,6 +15,14 @@
 * [STL-Flask](#stl-flask)
 
 * [Tiny Flask](#tiny-flask)
+
+## Full Text Search
+
+Thanks to [`django.contrib.postgres.search`](https://docs.djangoproject.com/en/4.0/ref/contrib/postgres/search/) module we can easily use PostgreSQL’s full text search functionality.
+
+Classes such as `SearchVector` and `SearchRank` allow to narrow down fields and pick the most relevant results from a queryset.
+
+[django-full-text-search.herokuapp.com/](https://django-full-text-search.herokuapp.com/)
 
 ## Google Books Explorer
 
