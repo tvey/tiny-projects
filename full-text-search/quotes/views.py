@@ -19,7 +19,7 @@ def search(request):
     q = request.GET.get('q')
 
     if q:
-        vector = SearchVector('content', 'author__name')
+        vector = SearchVector('content', 'author__name_en')
         query = SearchQuery(q)
         rank = SearchRank(vector, query)
         search_headline = SearchHeadline('content', query, highlight_all=True)
@@ -29,7 +29,7 @@ def search(request):
             .order_by('-rank')
             .filter(rank__gt=0)
         )
-        result = list(quotes.values('headline', 'author__name'))
+        result = list(quotes.values('headline', 'author__name_en'))
         return JsonResponse(result, safe=False)
 
     return JsonResponse([])
