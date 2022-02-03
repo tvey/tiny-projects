@@ -21,8 +21,8 @@ class Quote(models.Model):
 
     def __str__(self):
         if len(self.content) < 100:
-            return f'{self.content} ({self.author.name_en})'
-        return f'{self.content[:100]}... ({self.author.name_en})'
+            return f'{self.content} ({self.author})'
+        return f'{self.content[:100]}... ({self.author})'
 
     class Meta:
         ordering = ['content']

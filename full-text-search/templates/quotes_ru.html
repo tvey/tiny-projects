@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form onsubmit="return false">
+  <div class="form-group row">
+    <div class="col-sm-12">
+      <input type="search" class="form-control form-control-lg" name="q" placeholder="Что найти..." autofocus>
+      <p class="form-text text-muted mt-1">Например, <strong>любовь</strong>, <strong>мудрость</strong>, <strong>время</strong></p>
+    </div>
+  </div>
+</form>
+{% endblock content %}

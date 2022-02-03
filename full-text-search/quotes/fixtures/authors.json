@@ -3,140 +3,160 @@
         "model": "quotes.author",
         "pk": 1,
         "fields": {
-            "name": "Confucius"
+            "name_en": "Confucius",
+            "name_ru": "Конфуций"
         }
     },
     {
         "model": "quotes.author",
         "pk": 2,
         "fields": {
-            "name": "Lao Tzu"
+            "name_en": "Lao Tzu",
+            "name_ru": "Лао-цзы"
         }
     },
     {
         "model": "quotes.author",
         "pk": 3,
         "fields": {
-            "name": "Socrates"
+            "name_en": "Socrates",
+            "name_ru": "Сократ"
         }
     },
     {
         "model": "quotes.author",
         "pk": 4,
         "fields": {
-            "name": "Plato"
+            "name_en": "Plato",
+            "name_ru": "Платон"
         }
     },
     {
         "model": "quotes.author",
         "pk": 5,
         "fields": {
-            "name": "Aristotle"
+            "name_en": "Aristotle",
+            "name_ru": "Аристотель"
         }
     },
     {
         "model": "quotes.author",
         "pk": 6,
         "fields": {
-            "name": "Thomas Hobbes"
+            "name_en": "Thomas Hobbes",
+            "name_ru": "Томас Гоббс"
         }
     },
     {
         "model": "quotes.author",
         "pk": 7,
         "fields": {
-            "name": "Rene Descartes"
+            "name_en": "Rene Descartes",
+            "name_ru": "Рене Декарт"
         }
     },
     {
         "model": "quotes.author",
         "pk": 8,
         "fields": {
-            "name": "John Locke"
+            "name_en": "John Locke",
+            "name_ru": "Джон Локк"
         }
     },
     {
         "model": "quotes.author",
         "pk": 9,
         "fields": {
-            "name": "Baruch Spinoza"
+            "name_en": "Baruch Spinoza",
+            "name_ru": "Бенедикт Спиноза"
         }
     },
     {
         "model": "quotes.author",
         "pk": 10,
         "fields": {
-            "name": "David Hume"
+            "name_en": "David Hume",
+            "name_ru": "Дэвид Юм"
         }
     },
     {
         "model": "quotes.author",
         "pk": 11,
         "fields": {
-            "name": "Jean-Jacques Rousseau"
+            "name_en": "Jean-Jacques Rousseau",
+            "name_ru": "Жан-Жак Руссо"
         }
     },
     {
         "model": "quotes.author",
         "pk": 12,
         "fields": {
-            "name": "Immanuel Kant"
+            "name_en": "Immanuel Kant",
+            "name_ru": "Иммануил Кант"
         }
     },
     {
         "model": "quotes.author",
         "pk": 13,
         "fields": {
-            "name": "G.W.F. Hegel"
+            "name_en": "G.W.F. Hegel",
+            "name_ru": "Георг Гегель"
         }
     },
     {
         "model": "quotes.author",
         "pk": 14,
         "fields": {
-            "name": "Soren Kierkegaard"
+            "name_en": "Soren Kierkegaard",
+            "name_ru": "Сёрен Кьеркегор"
         }
     },
     {
         "model": "quotes.author",
         "pk": 15,
         "fields": {
-            "name": "Karl Marx"
+            "name_en": "Karl Marx",
+            "name_ru": "Карл Маркс"
         }
     },
     {
         "model": "quotes.author",
         "pk": 16,
         "fields": {
-            "name": "Friedrich Nietzsche"
+            "name_en": "Friedrich Nietzsche",
+            "name_ru": "Фридрих Ницше"
         }
     },
     {
         "model": "quotes.author",
         "pk": 17,
         "fields": {
-            "name": "Bertrand Russell"
+            "name_en": "Bertrand Russell",
+            "name_ru": "Бертран Рассел"
         }
     },
     {
         "model": "quotes.author",
         "pk": 18,
         "fields": {
-            "name": "Ludwig Wittgenstein"
+            "name_en": "Ludwig Wittgenstein",
+            "name_ru": "Людвиг Витгенштейн"
         }
     },
     {
         "model": "quotes.author",
         "pk": 19,
         "fields": {
-            "name": "Michel Foucault"
+            "name_en": "Michel Foucault",
+            "name_ru": "Мишель Фуко"
         }
     },
     {
         "model": "quotes.author",
         "pk": 20,
         "fields": {
-            "name": "Jean-Paul Sartre"
+            "name_en": "Jean-Paul Sartre",
+            "name_ru": "Жан-Поль Сартр"
         }
     }
 ]
