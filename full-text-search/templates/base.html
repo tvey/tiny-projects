@@ -35,8 +35,6 @@
           }
         });
       }
-      console.log(window.location.href)
-      console.log(window.location.href.indexOf('ru'))
 
       function displayQuotes(data) {
         const quoteContainer = document.getElementById('quotes');
@@ -47,7 +45,6 @@
             if (window.location.href.indexOf('ru') > -1) {
               author = item.author__name_ru;
             }
-            console.log(author)
             let quote = `
               <blockquote class="blockquote">
                 <p class="mb-0">${ item.headline }</p>

@@ -15,26 +15,15 @@ class IndexView(TemplateView):
     template_name = 'index.html'
 
 
-class QuotesEn(TemplateView):
-    template_name = 'quotes_en.html'
-
-
-class QuotesRu(TemplateView):
-    template_name = 'quotes_ru.html'
-
-
-def search_util(lang):
-    if lang == 'en':
-        pass
-    elif lang == 'ru':
-        pass
+class QuotesView(TemplateView):
+    template_name = 'quotes.html'
 
 
 def search(request):
     q = request.GET.get('q')
 
     if q:
-        vector = SearchVector('content')
+        vector = SearchVector('content', 'author__name_en', 'author__name_ru')
         query = SearchQuery(q)
         rank = SearchRank(vector, query)
         search_headline = SearchHeadline('content', query, highlight_all=True)
@@ -44,9 +33,7 @@ def search(request):
             .order_by('-rank')
             .filter(rank__gt=0)
         )
-        print(quotes)
         result = quotes.values('headline', 'author__name_en', 'author__name_ru')
-        # print(list(result))
         return JsonResponse(list(result), safe=False)
 
     return JsonResponse([])

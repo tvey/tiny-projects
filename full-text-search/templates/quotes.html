@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form onsubmit="return false">
+  <div class="form-group row">
+    <div class="col-sm-12">
+      <input 
+      type="search" 
+      class="form-control form-control-lg" 
+      name="q" 
+      placeholder={% if 'ru' in request.path %}"Что найти..."{% else %}"I'm looking for..."{% endif %}
+      autofocus>
+      <p class="form-text text-muted mt-1">
+        {% if 'ru' in request.path %}
+          Например, <strong>любовь</strong>, <strong>мудрость</strong>, <strong>время</strong>
+        {% else %}
+          E.g. <strong>love</strong>, <strong>knowledge</strong>, <strong>truth</strong>
+        {% endif %}
+      </p>
+    </div>
+  </div>
+</form>
+{% endblock content %}
