@@ -5,9 +5,9 @@ name = "pypi"
 
 [packages]
 flask = "*"
-python-dotenv = "*"
 flask-pymongo = "*"
 pymongo = {extras = ["srv"], version = "*"}
+python-dotenv = "*"
 
 [dev-packages]
 

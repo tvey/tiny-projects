@@ -3,9 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flask + MongoDB To-do</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <title>Flask + MongoDB To-Do</title>
 </head>
 <body>
-  <h1>Hi there</h1>
+  <div class="container">
+    <h1 class="mb-2">To-Do</h1>
+      <h2 class="mb-2">I'm going...</h2>
+      <form action="{{ url_for('add_todo') }}" method="POST" id="todo-form" class="mb-3">
+        <input name="new-todo" type="text" placeholder="...to do">
+        <button type="submit" class="btn">Add</button>
+      </form>
+
+      <ul id="todo-list" class="mb-3">
+        {% for todo in todos %}
+        <a class="item {% if todo.is_done %}done{% endif %}" href="{{ url_for('mark_done', pk=todo._id) }}" title="Click to complete">
+          <li>{{ todo.text }}</li>
+        </a>
+        {% endfor %}
+      </ul>
+
+      {% if count > 0 %}
+      <div class="actions">
+        <a href="{{ url_for('delete_done') }}" class="">Delete Completed</a>
+        <a href="{{ url_for('clear') }}">Clear All</a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
 </body>
 </html>
