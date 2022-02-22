@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==3.2.11"
-psycopg2 = "*"
+django = "~=3.2"
+psycopg2-binary = "*"
 django-environ = "*"
 dj-database-url = "*"
 gunicorn = "*"
@@ -14,4 +14,4 @@ whitenoise = "*"
 [dev-packages]
 
 [requires]
-python_version = "3.9"
+python_version = "3.10"
