@@ -4,11 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-praw = "*"
 python-dotenv = "*"
 fastapi = "*"
 uvicorn = "*"
-requests = "*"
+httpx = "*"
+install = "*"
+asyncpraw = "*"
 
 [dev-packages]
 
