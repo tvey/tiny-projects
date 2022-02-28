@@ -9,7 +9,6 @@ let Books = {
   },
   delimiters: ['[[', ']]'],
   mounted() {
-    console.log('bonjour');
     window.onscroll = () => {
       if (window.scrollY + window.innerHeight >= document.body.offsetHeight - 1000) {
         this.currentPage += 1;
@@ -35,12 +34,12 @@ let Books = {
       let response = await fetch(`/search/?q=${encodeURI(q)}&page=${encodeURI(this.currentPage)}`);
       let moreBooks = await response.json();
       if (!moreBooks.length) {
-        console.log('No more books');
+        // console.log('No more books');
         this.loading = false;
         return
       } else {     
         this.books.push(...moreBooks);
-        console.log(this.books.length);
+        // console.log(this.books.length);
       }
 
       if (moreBooks.length) {

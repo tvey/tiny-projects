@@ -37,7 +37,7 @@ def call_books_api(query, page=0):
     if items:
         for item in items:
             book = {}
-            info = item['volumeInfo']
+            info = item.get('volumeInfo')
             book['title'] = info.get('title')
             authors = info.get('authors')
             book['authors'] = ', '.join(authors) if authors else []
