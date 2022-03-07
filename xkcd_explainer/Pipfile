@@ -8,6 +8,7 @@ aiogram = "*"
 python-dotenv = "*"
 aiohttp-client-cache = "*"
 aiosqlite = "*"
+beautifulsoup4 = "*"
 
 [dev-packages]
 

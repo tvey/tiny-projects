@@ -2,6 +2,8 @@
 
 ## Contents
 
+* [Catloaf API](#catloaf-api)
+
 * [Full Text Search](#full-text-search)
 
 * [Google Books Explorer](#google-books-explorer)
@@ -16,6 +18,14 @@
 
 * [Tiny Flask](#tiny-flask)
 
+* [xkcd Explainer](#xkcd-explainer)
+
+## Catloaf API
+
+A bit silly couple-liner that streams catloaf images from Reddit straight to a tiny FastAPI app.
+
+[https://catloaf.herokuapp.com/](https://catloaf.herokuapp.com/)
+
 ## Full Text Search
 
 Thanks to [`django.contrib.postgres.search`](https://docs.djangoproject.com/en/4.0/ref/contrib/postgres/search/) module we can easily use PostgreSQL’s full text search functionality.
@@ -28,6 +38,8 @@ Classes such as `SearchVector` and `SearchRank` allow to narrow down fields and 
 
 There is Django calling Google Books API on the backend and returning its json responses.
 And there is Vue from cdn accepting queries and displaying fetched results.
+
+[https://google-books-explorer.herokuapp.com/](https://google-books-explorer.herokuapp.com/)
 
 ## Hey FastAPI
 
@@ -65,3 +77,9 @@ or compose with premade images and with Nginx on port 80
 ```bash
 bash run-prod-compose.sh
 ```
+
+## xkcd Explainer
+
+Here's a Telegram bot that can send a random comic from [xkcd.com](https://xkcd.com/) and fetch its explanation from [explainxkcd.com](https://www.explainxkcd.com/).
+
+[@Thexkcdbot](https://t.me/Thexkcdbot)
