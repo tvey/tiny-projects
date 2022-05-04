@@ -21,7 +21,7 @@ async def set_commands(bot: Bot):
     commands = [
         BotCommand(command='/calc', description='Валютный калькулятор'),
         BotCommand(command='/date', description='Курсы на определённую дату'),
-        BotCommand(command='/cancel', description='Отменить текущее действие')
+        BotCommand(command='/cancel', description='Отменить текущее действие'),
     ]
     await bot.set_my_commands(commands)
 
@@ -43,7 +43,6 @@ async def main():
 
     await dp.skip_updates()
     await dp.start_polling()
-
 
 
 if __name__ == '__main__':

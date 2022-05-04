@@ -1,11 +1,11 @@
 from aiogram import types
 
-from utils import CURRENCIES
+from utils import CURRENCIES, currency_symbols
 
 
 def get_main_keyboard():
     kb = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    kb.row(*['$', '€'])
+    kb.row(*currency_symbols)
     kb.row('Все валюты')
     kb.row('Калькулятор')
     kb.row('Курс на определённую дату')
@@ -18,7 +18,7 @@ def get_all_currencies_keyboard():
         types.InlineKeyboardButton(
             text=f"{v['nominal']} {v['name']}", callback_data=k
         )
-        for k, v in CURRENCIES.items()
+        for k, v in CURRENCIES.items() if k not in currency_symbols
     ]
     kb.add(*currency_buttons)
 

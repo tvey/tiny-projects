@@ -4,178 +4,183 @@ import xmltodict
 URL_DAILY = 'http://www.cbr.ru/scripts/XML_daily.asp'
 URL_DYNAMIC = 'http://www.cbr.ru/scripts/XML_dynamic.asp'
 
+currency_symbols = ['$', '€']
+
 CURRENCIES = {
     'AUD': {
         'cbr_id': 'R01010',
-        'name': 'Австралийский доллар',
+        'name': 'австралийский доллар',
         'nominal': '1',
     },
     'AZN': {
         'cbr_id': 'R01020A',
-        'name': 'Азербайджанский манат',
+        'name': 'азербайджанский манат',
         'nominal': '1',
     },
     'GBP': {
         'cbr_id': 'R01035',
-        'name': 'Фунт стерлингов Соединенного королевства',
+        'name': 'фунт стерлингов',
         'nominal': '1',
     },
     'AMD': {
         'cbr_id': 'R01060',
-        'name': 'Армянских драмов',
+        'name': 'армянских драмов',
         'nominal': '100',
     },
     'BYN': {
         'cbr_id': 'R01090B',
-        'name': 'Белорусский рубль',
+        'name': 'белорусский рубль',
         'nominal': '1',
     },
     'BGN': {
         'cbr_id': 'R01100',
-        'name': 'Болгарский лев',
+        'name': 'болгарский лев',
         'nominal': '1',
     },
     'BRL': {
         'cbr_id': 'R01115',
-        'name': 'Бразильский реал',
+        'name': 'бразильский реал',
         'nominal': '1',
     },
     'HUF': {
         'cbr_id': 'R01135',
-        'name': 'Венгерских форинтов',
+        'name': 'венгерских форинтов',
         'nominal': '100',
     },
     'HKD': {
         'cbr_id': 'R01200',
-        'name': 'Гонконгских долларов',
+        'name': 'гонконгских долларов',
         'nominal': '10',
     },
     'DKK': {
         'cbr_id': 'R01215',
-        'name': 'Датская крона',
+        'name': 'датская крона',
         'nominal': '1',
     },
     'USD': {
         'cbr_id': 'R01235',
-        'name': 'Доллар США',
+        'name': 'доллар США',
         'nominal': '1',
     },
     'EUR': {
         'cbr_id': 'R01239',
-        'name': 'Евро',
+        'name': 'евро',
         'nominal': '1',
     },
     'INR': {
         'cbr_id': 'R01270',
-        'name': 'Индийских рупий',
+        'name': 'индийских рупий',
         'nominal': '100',
     },
     'KZT': {
         'cbr_id': 'R01335',
-        'name': 'Казахстанских тенге',
+        'name': 'казахстанских тенге',
         'nominal': '100',
     },
     'CAD': {
         'cbr_id': 'R01350',
-        'name': 'Канадский доллар',
+        'name': 'канадский доллар',
         'nominal': '1',
     },
     'KGS': {
         'cbr_id': 'R01370',
-        'name': 'Киргизских сомов',
+        'name': 'киргизских сомов',
         'nominal': '100',
     },
     'CNY': {
         'cbr_id': 'R01375',
-        'name': 'Китайский юань',
+        'name': 'китайский юань',
         'nominal': '1',
     },
     'MDL': {
         'cbr_id': 'R01500',
-        'name': 'Молдавских леев',
+        'name': 'молдавских леев',
         'nominal': '10',
     },
     'NOK': {
         'cbr_id': 'R01535',
-        'name': 'Норвежских крон',
+        'name': 'норвежских крон',
         'nominal': '10',
     },
     'PLN': {
         'cbr_id': 'R01565',
-        'name': 'Польский злотый',
+        'name': 'польский злотый',
         'nominal': '1',
     },
     'RON': {
         'cbr_id': 'R01585F',
-        'name': 'Румынский лей',
+        'name': 'румынский лей',
         'nominal': '1',
     },
     'XDR': {
         'cbr_id': 'R01589',
-        'name': 'СДР (специальные права заимствования)',
+        'name': 'СДР',
         'nominal': '1',
     },
     'SGD': {
         'cbr_id': 'R01625',
-        'name': 'Сингапурский доллар',
+        'name': 'сингапурский доллар',
         'nominal': '1',
     },
     'TJS': {
         'cbr_id': 'R01670',
-        'name': 'Таджикских сомони',
+        'name': 'таджикских сомони',
         'nominal': '10',
     },
     'TRY': {
         'cbr_id': 'R01700J',
-        'name': 'Турецких лир',
+        'name': 'турецких лир',
         'nominal': '10',
     },
     'TMT': {
         'cbr_id': 'R01710A',
-        'name': 'Новый туркменский манат',
+        'name': 'туркменский манат',
         'nominal': '1',
     },
     'UZS': {
         'cbr_id': 'R01717',
-        'name': 'Узбекских сумов',
+        'name': 'узбекских сумов',
         'nominal': '10000',
     },
     'UAH': {
         'cbr_id': 'R01720',
-        'name': 'Украинских гривен',
+        'name': 'украинских гривен',
         'nominal': '10',
     },
     'CZK': {
         'cbr_id': 'R01760',
-        'name': 'Чешских крон',
+        'name': 'чешских крон',
         'nominal': '10',
     },
     'SEK': {
         'cbr_id': 'R01770',
-        'name': 'Шведских крон',
+        'name': 'шведских крон',
         'nominal': '10',
     },
     'CHF': {
         'cbr_id': 'R01775',
-        'name': 'Швейцарский франк',
+        'name': 'швейцарский франк',
         'nominal': '1',
     },
     'ZAR': {
         'cbr_id': 'R01810',
-        'name': 'Южноафриканских рэндов',
+        'name': 'южноафриканских рэндов',
         'nominal': '10',
     },
     'KRW': {
         'cbr_id': 'R01815',
-        'name': 'Вон Республики Корея',
+        'name': 'вон Республики Корея',
         'nominal': '1000',
     },
     'JPY': {
         'cbr_id': 'R01820',
-        'name': 'Японских иен',
+        'name': 'японских иен',
         'nominal': '100',
     },
 }
+
+CURRENCIES['$'] = CURRENCIES['USD']
+CURRENCIES['€'] = CURRENCIES['EUR']
 
 
 async def get_rates(date: str = ''):
@@ -184,7 +189,6 @@ async def get_rates(date: str = ''):
 
     data = xmltodict.parse(r.content)['ValCurs']['Valute']
     rates = {i['CharCode']: i['Value'] for i in data}
-    print(rates)
 
     return rates | {'$': rates['USD'], '€': rates['EUR']}
 
@@ -216,4 +220,12 @@ async def calculate(direction, currency_code, amount):
         result = amount / currency_rate * nominal
     elif direction == 'to_rub':
         result = amount * currency_rate / nominal
-    return result
+    return round(result, 4)
+
+
+async def format_currency_message(currency_code, currency_rate):
+    if not currency_code in CURRENCIES.keys():
+        return ''  #
+
+    currency = CURRENCIES[currency_code]
+    return f"{currency['nominal']} {currency['name']} = {currency_rate} рублей"
