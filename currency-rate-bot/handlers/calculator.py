@@ -6,22 +6,22 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 import keyboards as kb
 from utils import calculate
 
-calc_directions = ['Из валюты в рубли', 'Из рублей в валюту', 'Отмена']
+calc_directions = ['Из валюты в рубли', 'Из рублей в валюту']
 calc_currencies = ['Доллар', 'Евро', 'Юань']
 currency_codes = ['USD', 'EUR', 'CNY']
 
 
 class CalcStates(StatesGroup):
-    direction_state = State()
-    currency_state = State()
-    amount_state = State()
+    direction = State()
+    currency = State()
+    amount = State()
 
 
 async def start_calculator(message: types.Message):
     kb = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
-    kb.add(*calc_directions)
+    kb.add(*calc_directions + ['Отмена'])
     await message.answer('Как посчитать?', reply_markup=kb)
-    await CalcStates.direction_state.set()
+    await CalcStates.direction.set()
 
 
 async def direction_currency(message: types.Message, state: FSMContext):
@@ -85,6 +85,6 @@ async def calc_result(message: types.Message, state: FSMContext):
 def register_calculator_handlers(dp: Dispatcher):
     dp.register_message_handler(start_calculator, commands='calc', state='*')
     dp.register_message_handler(start_calculator, Text(equals='Калькулятор'), state='*')
-    dp.register_message_handler(direction_currency, state=CalcStates.direction_state)
-    dp.register_message_handler(currency_amount, state=CalcStates.currency_state)
-    dp.register_message_handler(calc_result, state=CalcStates.amount_state)
+    dp.register_message_handler(direction_currency, state=CalcStates.direction)
+    dp.register_message_handler(currency_amount, state=CalcStates.currency)
+    dp.register_message_handler(calc_result, state=CalcStates.amount)

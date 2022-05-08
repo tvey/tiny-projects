@@ -8,6 +8,7 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.types import BotCommand
 
 from handlers.calculator import register_calculator_handlers
+from handlers.date import register_date_handlers
 from handlers.main import register_main_handlers
 
 logger = logging.getLogger(__name__)
@@ -38,6 +39,7 @@ async def main():
 
     register_main_handlers(dp)
     register_calculator_handlers(dp)
+    register_date_handlers(dp)
 
     await set_commands(bot)
 
