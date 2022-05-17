@@ -1,5 +1,3 @@
-import datetime
-
 from aiogram import Dispatcher, types
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Text
@@ -31,8 +29,12 @@ async def start_date_rates(message: types.Message):
     await DateStates.direction.set()
 
 
-async def handle_currencies():
-    pass
+async def handle_currencies(message: types.Message, state: FSMContext):
+    kb = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=3)
+    kb.add(*date_currencies)
+
+    await state.set_state(DateStates.currency)
+    await message.answer('Выберите валюту:', reply_markup=kb)
 
 
 async def handle_date(message: types.Message):

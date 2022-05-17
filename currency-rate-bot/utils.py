@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import httpx
 import xmltodict
 
@@ -193,11 +195,12 @@ async def get_rates(date: str = ''):
     return rates | {'$': rates['USD'], '€': rates['EUR']}
 
 
-async def get_dynamic_rates(cbr_code: str, date_one: str, date_two: str = ''):
+async def get_dynamic_rates(curr_code: str, date_one: str, date_two: str = ''):
+    cbr_id = CURRENCIES[curr_code]['cbr_id']
     params = {
-        'VAL_NM_RQ': cbr_code,
         'date_req1': date_one,
         'date_req2': date_one,
+        'VAL_NM_RQ': cbr_id,
     }
     if date_two:
         params['date_req2'] = date_two
@@ -208,6 +211,16 @@ async def get_dynamic_rates(cbr_code: str, date_one: str, date_two: str = ''):
     data = xmltodict.parse(r.content)['ValCurs']['Record']
 
     return [{'date': i['@Date'], 'value': i['Value']} for i in data]
+
+
+def format_date(date_str):
+    return datetime.strptime(date_str, '%d.%m.%Y').strftime('%d/%m/%Y')
+
+
+def get_currency_str(currency_code):
+    name = CURRENCIES[currency_code]['name']
+    nominal = CURRENCIES[currency_code]['nominal']
+    return f'{name} {nominal}'
 
 
 async def calculate(direction, currency_code, amount):
@@ -229,3 +242,28 @@ async def format_currency_message(currency_code, currency_rate):
 
     currency = CURRENCIES[currency_code]
     return f"{currency['nominal']} {currency['name']} = {currency_rate} рублей"
+
+
+async def format_date_message(
+    direction, date_one, currency_code='', date_two=''
+):
+    if direction == 'one_curr':
+        if currency_code and date_two:
+            rates = await get_dynamic_rates(currency_code, date_one, date_two)
+            intro = f'{get_currency_str(currency_code)} с {date_one} по {date_two}:'
+        else:
+            rates = await get_dynamic_rates(currency_code, date_one)
+            intro = f'{get_currency_str(currency_code)} на {date_one}:'
+
+        body = '\n'.join([f"{i['date']: {i['value']}}" for i in rates])
+
+    elif direction == 'many_curr':
+        intro = f'Курсы валют на {date_one}:'
+        rates = await get_rates(date=date_one)
+        rows = []
+        for value in rates:
+            row = f"{get_currency_str(currency_code)}: {value['currency_code']}"
+            rows.append(row)
+        body = '\n'.join(rows)
+
+    return '\n'.join([intro, body])

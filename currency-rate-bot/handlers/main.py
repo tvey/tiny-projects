@@ -1,3 +1,5 @@
+import logging
+
 from aiogram import Dispatcher, types
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Text
@@ -17,6 +19,10 @@ async def start(message: types.Message):
 
 
 async def cancel(message: types.Message, state: FSMContext):
+    current_state = await state.get_state()
+    if current_state is None:
+        return
+    logging.info(f'Cancelling state {repr(current_state)}')
     await state.finish()
     await message.answer(
         'Операция отменена.', reply_markup=kb.get_main_keyboard()
