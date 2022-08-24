@@ -184,6 +184,8 @@ CURRENCIES = {
 CURRENCIES['$'] = CURRENCIES['USD']
 CURRENCIES['€'] = CURRENCIES['EUR']
 
+date_directions = ['one_currency', 'all_currencies']
+
 
 async def get_rates(date: str = ''):
     async with httpx.AsyncClient() as client:
@@ -236,6 +238,10 @@ async def calculate(direction, currency_code, amount):
     return round(result, 4)
 
 
+def format_number(value: int) -> str:
+    return f'{value:,}'.replace(',', '\u2009').replace('.', ',')
+
+
 async def format_currency_message(currency_code, currency_rate):
     if not currency_code in CURRENCIES.keys():
         return ''  #
@@ -245,9 +251,10 @@ async def format_currency_message(currency_code, currency_rate):
 
 
 async def format_date_message(
-    direction, date_one, currency_code='', date_two=''
+    direction, date_one, date_two='', currency_code=''
 ):
-    if direction == 'one_curr':
+
+    if direction == date_directions[0]:
         if currency_code and date_two:
             rates = await get_dynamic_rates(currency_code, date_one, date_two)
             intro = f'{get_currency_str(currency_code)} с {date_one} по {date_two}:'
@@ -257,7 +264,7 @@ async def format_date_message(
 
         body = '\n'.join([f"{i['date']: {i['value']}}" for i in rates])
 
-    elif direction == 'many_curr':
+    elif direction == date_directions[1]:
         intro = f'Курсы валют на {date_one}:'
         rates = await get_rates(date=date_one)
         rows = []
