@@ -184,6 +184,8 @@ CURRENCIES = {
 CURRENCIES['$'] = CURRENCIES['USD']
 CURRENCIES['€'] = CURRENCIES['EUR']
 
+currencies = ['Доллар', 'Евро', 'Юань']
+currency_codes = ['USD', 'EUR', 'CNY']
 date_directions = ['one_currency', 'all_currencies']
 
 

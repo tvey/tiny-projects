@@ -4,11 +4,9 @@ from aiogram.dispatcher.filters import Text
 from aiogram.dispatcher.filters.state import State, StatesGroup
 
 import keyboards as kb
-from utils import calculate, format_number
+from utils import calculate, currencies, currency_codes, format_number
 
-calc_directions = ['Из валюты в рубли', 'Из рублей в валюту']
-calc_currencies = ['Доллар', 'Евро', 'Юань']
-currency_codes = ['USD', 'EUR', 'CNY']
+directions = ['Из валюты в рубли', 'Из рублей в валюту']
 
 
 class CalcStates(StatesGroup):
@@ -19,34 +17,34 @@ class CalcStates(StatesGroup):
 
 async def start_calculator(message: types.Message):
     kb = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
-    kb.add(*calc_directions + ['Отмена'])
+    kb.add(*directions + ['Отмена'])
     await message.answer('Как посчитать?', reply_markup=kb)
     await CalcStates.direction.set()
 
 
 async def direction_currency(message: types.Message, state: FSMContext):
-    if message.text not in calc_directions:
+    if message.text not in directions:
         text = 'Пожалуйста, выберите направление, используя клавиатуру ниже.'
         await message.answer(text)
         return
-    if message.text == calc_directions[0]:
+    if message.text == directions[0]:
         await state.update_data(direction='to_rub')
     else:
         await state.update_data(direction='from_rub')
 
     kb = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=3)
-    kb.add(*calc_currencies)
+    kb.add(*currencies)
 
     await CalcStates.next()
     await message.answer('Выберите валюту:', reply_markup=kb)
 
 
 async def currency_amount(message: types.Message, state: FSMContext):
-    if message.text not in calc_currencies:
+    if message.text not in currencies:
         text = 'Выберите валюту из тех, что представлены ниже.'
         await message.answer(text)
         return
-    currency_index = calc_currencies.index(message.text)
+    currency_index = currencies.index(message.text)
     await state.update_data(currency=currency_codes[currency_index])
 
     await CalcStates.next()
