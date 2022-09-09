@@ -36,7 +36,7 @@ async def show_all_currencies(message: types.Message):
 
 
 async def get_usd_eur(message: types.Message):
-    rate_data = await get_rates()
+    rate_data = await get_rates(extra=True)
     currency_code = message.text
     currency_rate = rate_data[currency_code]
     text = await format_currency_message(currency_code, currency_rate)

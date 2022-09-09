@@ -3,7 +3,7 @@ from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Text
 from aiogram.dispatcher.filters.state import State, StatesGroup
 
-import keyboards as kb
+from keyboards import get_main_keyboard
 from utils import calculate, currencies, currency_codes, format_number
 
 directions = ['Из валюты в рубли', 'Из рублей в валюту']
@@ -79,7 +79,7 @@ async def calc_result(message: types.Message, state: FSMContext):
     elif user_data['direction'] == 'to_rub':
         text = f"{f_amount} {user_data['currency']} = {f_result} RUB"
 
-    await message.answer(text, reply_markup=kb.get_main_keyboard())
+    await message.answer(text, reply_markup=get_main_keyboard())
     await state.finish()
 
 
