@@ -189,14 +189,17 @@ currency_codes = ['USD', 'EUR', 'CNY']
 date_directions = ['one_currency', 'all_currencies']
 
 
-async def get_rates(date: str = ''):
+async def get_rates(date: str = '', extra: bool = False):
     async with httpx.AsyncClient() as client:
         r = await client.get(URL_DAILY, params={'date_req': date})
 
     data = xmltodict.parse(r.content)['ValCurs']['Valute']
     rates = {i['CharCode']: i['Value'] for i in data}
 
-    return rates | {'$': rates['USD'], '€': rates['EUR']}
+    if extra:
+        return rates | {'$': rates['USD'], '€': rates['EUR']}
+
+    return rates
 
 
 async def get_dynamic_rates(curr_code: str, date_one: str, date_two: str = ''):
@@ -218,13 +221,16 @@ async def get_dynamic_rates(curr_code: str, date_one: str, date_two: str = ''):
 
 
 def format_date(date_str):
+    if '/' in date_str:
+        return datetime.strptime(date_str, '%d/%m/%Y').strftime('%d.%m.%Y')
+
     return datetime.strptime(date_str, '%d.%m.%Y').strftime('%d/%m/%Y')
 
 
 def get_currency_str(currency_code):
     name = CURRENCIES[currency_code]['name']
     nominal = CURRENCIES[currency_code]['nominal']
-    return f'{name} {nominal}'
+    return f'{nominal} {name}'
 
 
 async def calculate(direction, currency_code, amount):
@@ -245,7 +251,7 @@ def format_number(value: int) -> str:
 
 
 async def format_currency_message(currency_code, currency_rate):
-    if not currency_code in CURRENCIES.keys():
+    if currency_code not in CURRENCIES.keys():
         return ''  #
 
     currency = CURRENCIES[currency_code]
@@ -255,24 +261,38 @@ async def format_currency_message(currency_code, currency_rate):
 async def format_date_message(
     direction, date_one, date_two='', currency_code=''
 ):
-
     if direction == date_directions[0]:
         if currency_code and date_two:
             rates = await get_dynamic_rates(currency_code, date_one, date_two)
-            intro = f'{get_currency_str(currency_code)} с {date_one} по {date_two}:'
+            intro = (
+                f'{get_currency_str(currency_code)} с {date_one} по {date_two}:'
+            )
         else:
             rates = await get_dynamic_rates(currency_code, date_one)
             intro = f'{get_currency_str(currency_code)} на {date_one}:'
 
-        body = '\n'.join([f"{i['date']: {i['value']}}" for i in rates])
+        body = '\n'.join(
+            [f"{format_date(i['date']): {i['value']}}" for i in rates]
+        )
 
     elif direction == date_directions[1]:
-        intro = f'Курсы валют на {date_one}:'
+        intro = f'Курсы валют на {format_date(date_one)}:'
         rates = await get_rates(date=date_one)
         rows = []
-        for value in rates:
-            row = f"{get_currency_str(currency_code)}: {value['currency_code']}"
+        for code, value in rates.items():
+            row = f"{get_currency_str(code)}: {value}"
             rows.append(row)
         body = '\n'.join(rows)
 
     return '\n'.join([intro, body])
+
+
+"""
+!!!!
+Неизвестные значения кода валюты - например, BYR - то есть нужно добавить в мой список
+
+Найти границы дат - какая самая первая
+И дата не должна быть позже сеглдняшней по Москве
+
+
+"""
