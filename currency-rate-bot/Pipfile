@@ -8,6 +8,7 @@ aiogram = "*"
 httpx = "*"
 python-dotenv = "*"
 xmltodict = "*"
+pytz = "*"
 
 [dev-packages]
 

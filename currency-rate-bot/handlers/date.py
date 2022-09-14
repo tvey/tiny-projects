@@ -10,6 +10,7 @@ from utils import (
     date_directions,
     currencies,
     currency_codes,
+    verify_date,
     format_date,
     format_date_message,
 )
@@ -66,12 +67,12 @@ async def handle_currency(message: types.Message, state: FSMContext):
 
 
 async def handle_date(message: types.Message):
-    date = ''
+    date = message.text
 
     try:
-        date = format_date(message.text)
-    except ValueError:
-        await message.answer('Формат даты должен быть ДД.ММ.ГГГГ')
+        verify_date(date)
+    except ValueError as e:
+        await message.answer(e)  #
         return
 
     return date
@@ -79,7 +80,6 @@ async def handle_date(message: types.Message):
 
 async def handle_all_currencies(message: types.Message, state: FSMContext):
     """Show result for all currencies."""
-
     date = await handle_date(message)
 
     if date:
@@ -98,7 +98,6 @@ async def handle_dates(message: types.Message, state: FSMContext):
 
     if date and current_data['direction'] == date_directions[0]:
         await state.update_data(date_one=date)
-        print('updated date one for 1 curr')
     await DateStates.next()  # date_two
     await message.answer(
         'Введите дату окончания в формате ДД.ММ.ГГГГ или повторите начальную:',
@@ -106,8 +105,7 @@ async def handle_dates(message: types.Message, state: FSMContext):
 
 
 async def handle_one_currency(message: types.Message, state: FSMContext):
-    """Show result for one currency"""
-
+    """Show result for one currency."""
     date_two = await handle_date(message)
 
     if date_two:
@@ -145,6 +143,8 @@ def register_date_handlers(dp: Dispatcher):
     )
     dp.register_message_handler(handle_direction, state=DateStates.direction)
     dp.register_message_handler(handle_currency, state=DateStates.currency)
-    dp.register_message_handler(handle_all_currencies, state=DateStates.date_one)
+    dp.register_message_handler(
+        handle_all_currencies, state=DateStates.date_one
+    )
     dp.register_message_handler(handle_dates, state=DateStates.date_one)
     dp.register_message_handler(handle_one_currency, state=DateStates.date_two)

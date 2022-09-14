@@ -1,6 +1,8 @@
-from datetime import datetime
+import datetime
+from collections import OrderedDict
 
 import httpx
+import pytz
 import xmltodict
 
 URL_DAILY = 'http://www.cbr.ru/scripts/XML_daily.asp'
@@ -205,26 +207,55 @@ async def get_rates(date: str = '', extra: bool = False):
 async def get_dynamic_rates(curr_code: str, date_one: str, date_two: str = ''):
     cbr_id = CURRENCIES[curr_code]['cbr_id']
     params = {
-        'date_req1': date_one,
-        'date_req2': date_one,
+        'date_req1': format_date(date_one),
+        'date_req2': format_date(date_one),
         'VAL_NM_RQ': cbr_id,
     }
+
     if date_two:
-        params['date_req2'] = date_two
+        params['date_req2'] = format_date(date_two)
 
     async with httpx.AsyncClient() as client:
         r = await client.get(URL_DYNAMIC, params=params)
 
     data = xmltodict.parse(r.content)['ValCurs']['Record']
+    if isinstance(data, OrderedDict):
+        data = [data]
 
     return [{'date': i['@Date'], 'value': i['Value']} for i in data]
 
 
-def format_date(date_str):
-    if '/' in date_str:
-        return datetime.strptime(date_str, '%d/%m/%Y').strftime('%d.%m.%Y')
+def get_date_difference(date_one: str, date_two: str):
+    former = datetime.datetime.strptime(date_one, '%d.%m.%Y').date()
+    latter = datetime.datetime.strptime(date_two, '%d.%m.%Y').date()
 
-    return datetime.strptime(date_str, '%d.%m.%Y').strftime('%d/%m/%Y')
+    if latter < former:
+        raise ValueError('Date two must be later than date one.')
+
+    return (latter - former).days
+
+
+def format_date(date: str) -> str:
+    """Format a date string to use it as a URL parameter."""
+    return datetime.datetime.strptime(date, '%d.%m.%Y').strftime('%d/%m/%Y')
+
+
+def verify_date(date_value: str) -> bool:
+    initial_date = datetime.date(1992, 7, 1)
+    current_date = datetime.datetime.now(pytz.timezone('Europe/Moscow')).date()
+
+    try:
+        date = datetime.datetime.strptime(date_value, '%d.%m.%Y').date()
+    except ValueError:
+        raise ValueError('Формат даты должен быть ДД.ММ.ГГГГ')
+
+    if date < initial_date:
+        raise ValueError('Дата должна быть не ранее 01.07.1992')
+
+    if date > current_date:
+        raise ValueError('Дата не может быть позднее текущей даты')
+
+    return True
 
 
 def get_currency_str(currency_code):
@@ -271,12 +302,10 @@ async def format_date_message(
             rates = await get_dynamic_rates(currency_code, date_one)
             intro = f'{get_currency_str(currency_code)} на {date_one}:'
 
-        body = '\n'.join(
-            [f"{format_date(i['date']): {i['value']}}" for i in rates]
-        )
+        body = '\n'.join([f"{i['date']: {i['value']}}" for i in rates])
 
     elif direction == date_directions[1]:
-        intro = f'Курсы валют на {format_date(date_one)}:'
+        intro = f'Курсы валют на {date_one}:'
         rates = await get_rates(date=date_one)
         rows = []
         for code, value in rates.items():
@@ -285,14 +314,3 @@ async def format_date_message(
         body = '\n'.join(rows)
 
     return '\n'.join([intro, body])
-
-
-"""
-!!!!
-Неизвестные значения кода валюты - например, BYR - то есть нужно добавить в мой список
-
-Найти границы дат - какая самая первая
-И дата не должна быть позже сеглдняшней по Москве
-
-
-"""
