@@ -1,0 +1,320 @@
+{
+    "AMD": {
+        "cbr_id": "R01060",
+        "is_current": true,
+        "name": "армянских драмов",
+        "nominal": "100"
+    },
+    "ATS": {
+        "cbr_id": "R01015",
+        "is_current": false,
+        "name": "австрийских шиллингов",
+        "nominal": "10"
+    },
+    "AUD": {
+        "cbr_id": "R01010",
+        "is_current": true,
+        "name": "австралийский доллар",
+        "nominal": "1"
+    },
+    "AZN": {
+        "cbr_id": "R01020A",
+        "is_current": true,
+        "name": "азербайджанский манат",
+        "nominal": "1"
+    },
+    "BEF": {
+        "cbr_id": "R01095",
+        "is_current": false,
+        "name": "бельгийских франков",
+        "nominal": "100"
+    },
+    "BGN": {
+        "cbr_id": "R01100",
+        "is_current": true,
+        "name": "болгарский лев",
+        "nominal": "1"
+    },
+    "BRL": {
+        "cbr_id": "R01115",
+        "is_current": true,
+        "name": "бразильский реал",
+        "nominal": "1"
+    },
+    "BYB": {
+        "cbr_id": "R01090A",
+        "is_current": false,
+        "name": "белoрусских рублей",
+        "nominal": "1000000"
+    },
+    "BYN": {
+        "cbr_id": "R01090B",
+        "is_current": true,
+        "name": "белорусский рубль",
+        "nominal": "1"
+    },
+    "BYR": {
+        "cbr_id": "R01090",
+        "is_current": false,
+        "name": "белорусских рублей",
+        "nominal": "10000"
+    },
+    "CAD": {
+        "cbr_id": "R01350",
+        "is_current": true,
+        "name": "канадский доллар",
+        "nominal": "1"
+    },
+    "CHF": {
+        "cbr_id": "R01775",
+        "is_current": true,
+        "name": "швейцарский франк",
+        "nominal": "1"
+    },
+    "CNY": {
+        "cbr_id": "R01375",
+        "is_current": true,
+        "name": "китайский юань",
+        "nominal": "1"
+    },
+    "CZK": {
+        "cbr_id": "R01760",
+        "is_current": true,
+        "name": "чешских крон",
+        "nominal": "10"
+    },
+    "DEM": {
+        "cbr_id": "R01510",
+        "is_current": false,
+        "name": "немецкая марка",
+        "nominal": "1"
+    },
+    "DKK": {
+        "cbr_id": "R01215",
+        "is_current": true,
+        "name": "датская крона",
+        "nominal": "1"
+    },
+    "EEK": {
+        "cbr_id": "R01795",
+        "is_current": false,
+        "name": "эстонских крон",
+        "nominal": "10"
+    },
+    "ESP": {
+        "cbr_id": "R01315",
+        "is_current": false,
+        "name": "испанских песет",
+        "nominal": "100"
+    },
+    "EUR": {
+        "cbr_id": "R01239",
+        "is_current": true,
+        "name": "евро",
+        "nominal": "1"
+    },
+    "FIM": {
+        "cbr_id": "R01740",
+        "is_current": false,
+        "name": "финляндских марок",
+        "nominal": "10"
+    },
+    "FRF": {
+        "cbr_id": "R01750",
+        "is_current": false,
+        "name": "французских франков",
+        "nominal": "10"
+    },
+    "GBP": {
+        "cbr_id": "R01035",
+        "is_current": true,
+        "name": "фунт стерлингов",
+        "nominal": "1"
+    },
+    "GRD": {
+        "cbr_id": "R01205",
+        "is_current": false,
+        "name": "греческих драхм",
+        "nominal": "1000"
+    },
+    "HKD": {
+        "cbr_id": "R01200",
+        "is_current": true,
+        "name": "гонконгских долларов",
+        "nominal": "10"
+    },
+    "HUF": {
+        "cbr_id": "R01135",
+        "is_current": true,
+        "name": "венгерских форинтов",
+        "nominal": "100"
+    },
+    "IEP": {
+        "cbr_id": "R01305",
+        "is_current": false,
+        "name": "ирландский фунт",
+        "nominal": "1"
+    },
+    "INR": {
+        "cbr_id": "R01270",
+        "is_current": true,
+        "name": "индийских рупий",
+        "nominal": "100"
+    },
+    "ISK": {
+        "cbr_id": "R01310",
+        "is_current": false,
+        "name": "исландских крон",
+        "nominal": "100"
+    },
+    "ITL": {
+        "cbr_id": "R01325",
+        "is_current": false,
+        "name": "итальянских лир",
+        "nominal": "1000"
+    },
+    "JPY": {
+        "cbr_id": "R01820",
+        "is_current": true,
+        "name": "японских иен",
+        "nominal": "100"
+    },
+    "KGS": {
+        "cbr_id": "R01370",
+        "is_current": true,
+        "name": "киргизских сомов",
+        "nominal": "100"
+    },
+    "KRW": {
+        "cbr_id": "R01815",
+        "is_current": true,
+        "name": "вон Республики Корея",
+        "nominal": "1000"
+    },
+    "KZT": {
+        "cbr_id": "R01335",
+        "is_current": true,
+        "name": "казахстанских тенге",
+        "nominal": "100"
+    },
+    "LTL": {
+        "cbr_id": "R01435",
+        "is_current": false,
+        "name": "литовский лит",
+        "nominal": "1"
+    },
+    "LVL": {
+        "cbr_id": "R01405",
+        "is_current": false,
+        "name": "латвийский лат",
+        "nominal": "1"
+    },
+    "MDL": {
+        "cbr_id": "R01500",
+        "is_current": true,
+        "name": "молдавских леев",
+        "nominal": "10"
+    },
+    "NLG": {
+        "cbr_id": "R01523",
+        "is_current": false,
+        "name": "нидерландский гульден",
+        "nominal": "1"
+    },
+    "NOK": {
+        "cbr_id": "R01535",
+        "is_current": true,
+        "name": "норвежских крон",
+        "nominal": "10"
+    },
+    "PLN": {
+        "cbr_id": "R01565",
+        "is_current": true,
+        "name": "польский злотый",
+        "nominal": "1"
+    },
+    "PTE": {
+        "cbr_id": "R01570",
+        "is_current": false,
+        "name": "португальских эскудо",
+        "nominal": "100"
+    },
+    "RON": {
+        "cbr_id": "R01585F",
+        "is_current": true,
+        "name": "румынский лей",
+        "nominal": "1"
+    },
+    "SEK": {
+        "cbr_id": "R01770",
+        "is_current": true,
+        "name": "шведских крон",
+        "nominal": "10"
+    },
+    "SGD": {
+        "cbr_id": "R01625",
+        "is_current": true,
+        "name": "сингапурский доллар",
+        "nominal": "1"
+    },
+    "TJS": {
+        "cbr_id": "R01670",
+        "is_current": true,
+        "name": "таджикских сомони",
+        "nominal": "10"
+    },
+    "TMT": {
+        "cbr_id": "R01710A",
+        "is_current": true,
+        "name": "новый туркменский манат",
+        "nominal": "1"
+    },
+    "TRL": {
+        "cbr_id": "R01700",
+        "is_current": false,
+        "name": "турецких лир",
+        "nominal": "1000000"
+    },
+    "TRY": {
+        "cbr_id": "R01700J",
+        "is_current": true,
+        "name": "турецких лир",
+        "nominal": "10"
+    },
+    "UAH": {
+        "cbr_id": "R01720",
+        "is_current": true,
+        "name": "украинских гривен",
+        "nominal": "10"
+    },
+    "USD": {
+        "cbr_id": "R01235",
+        "is_current": true,
+        "name": "доллар США",
+        "nominal": "1"
+    },
+    "UZS": {
+        "cbr_id": "R01717",
+        "is_current": true,
+        "name": "узбекских сумов",
+        "nominal": "10000"
+    },
+    "XDR": {
+        "cbr_id": "R01589",
+        "is_current": true,
+        "name": "СДР",
+        "nominal": "1"
+    },
+    "XEU": {
+        "cbr_id": "R01790",
+        "is_current": false,
+        "name": "ЭКЮ",
+        "nominal": "1"
+    },
+    "ZAR": {
+        "cbr_id": "R01810",
+        "is_current": true,
+        "name": "южноафриканских рэндов",
+        "nominal": "10"
+    }
+}

@@ -4,7 +4,12 @@ from aiogram.dispatcher.filters import Text
 from aiogram.dispatcher.filters.state import State, StatesGroup
 
 from keyboards import get_main_keyboard
-from utils import calculate, currencies, currency_codes, format_number
+from utils import (
+    calculate,
+    selected_currencies,
+    currency_codes,
+    format_number,
+)
 
 directions = ['Из валюты в рубли', 'Из рублей в валюту']
 
@@ -33,18 +38,18 @@ async def direction_currency(message: types.Message, state: FSMContext):
         await state.update_data(direction='from_rub')
 
     kb = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=3)
-    kb.add(*currencies)
+    kb.add(*selected_currencies + ['Отмена'])
 
     await CalcStates.next()
     await message.answer('Выберите валюту:', reply_markup=kb)
 
 
 async def currency_amount(message: types.Message, state: FSMContext):
-    if message.text not in currencies:
+    if message.text not in selected_currencies:
         text = 'Выберите валюту из тех, что представлены ниже.'
         await message.answer(text)
         return
-    currency_index = currencies.index(message.text)
+    currency_index = selected_currencies.index(message.text)
     await state.update_data(currency=currency_codes[currency_index])
 
     await CalcStates.next()

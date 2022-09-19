@@ -1,6 +1,6 @@
 from aiogram import types
 
-from utils import CURRENCIES, currency_symbols
+from utils import current_currencies, currency_symbols
 
 
 def get_main_keyboard():
@@ -18,7 +18,7 @@ def get_all_currencies_keyboard():
         types.InlineKeyboardButton(
             text=f"{v['nominal']} {v['name']}", callback_data=k
         )
-        for k, v in CURRENCIES.items() if k not in currency_symbols
+        for k, v in current_currencies.items() if k not in currency_symbols
     ]
     kb.add(*currency_buttons)
 

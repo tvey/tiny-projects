@@ -8,10 +8,9 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 from keyboards import get_main_keyboard
 from utils import (
     date_directions,
-    currencies,
+    selected_currencies,
     currency_codes,
     verify_date,
-    format_date,
     format_date_message,
 )
 
@@ -40,7 +39,7 @@ async def handle_direction(message: types.Message, state: FSMContext):
     if message.text == directions[0]:
         await state.update_data(direction=date_directions[0])
         kb = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=3)
-        kb.add(*currencies + ['Отмена'])
+        kb.add(*selected_currencies + ['Отмена'])
         await DateStates.next()
         await message.answer('Выберите валюту:', reply_markup=kb)
     else:
@@ -52,38 +51,17 @@ async def handle_direction(message: types.Message, state: FSMContext):
         )
 
 
-async def handle_currency(message: types.Message, state: FSMContext):
-    if message.text not in currencies:
-        text = 'Выберите валюту из тех, что представлены ниже.'
-        await message.answer(text)
-        return
-    currency_index = currencies.index(message.text)
-    await state.update_data(currency=currency_codes[currency_index])
-    await DateStates.next()  # date_one
-    await message.answer(
-        'Введите начальную дату в формате ДД.ММ.ГГГГ:',
-        reply_markup=types.ReplyKeyboardRemove(),
-    )
-
-
-async def handle_date(message: types.Message):
+async def handle_all_currencies(message: types.Message, state: FSMContext):
+    """Show result for all currencies."""
     date = message.text
 
     try:
         verify_date(date)
     except ValueError as e:
-        await message.answer(e)  #
+        await message.answer(str(e))
         return
 
-    return date
-
-
-async def handle_all_currencies(message: types.Message, state: FSMContext):
-    """Show result for all currencies."""
-    date = await handle_date(message)
-
-    if date:
-        await state.update_data(date_one=date)
+    await state.update_data(date_one=date)
 
     state_data = await state.get_data()
 
@@ -92,8 +70,31 @@ async def handle_all_currencies(message: types.Message, state: FSMContext):
         await state.finish()
 
 
-async def handle_dates(message: types.Message, state: FSMContext):
-    date = await handle_date(message)
+async def handle_currency(message: types.Message, state: FSMContext):
+    """Currency state and date_one."""
+    if message.text not in selected_currencies:
+        text = 'Выберите валюту из тех, что представлены ниже.'
+        await message.answer(text)
+        return
+    currency_index = selected_currencies.index(message.text)
+    await state.update_data(currency=currency_codes[currency_index])
+    await DateStates.next()  # date_one
+    await message.answer(
+        'Введите начальную дату в формате ДД.ММ.ГГГГ:',
+        reply_markup=types.ReplyKeyboardRemove(),
+    )
+
+
+async def handle_dates_one_currency(message: types.Message, state: FSMContext):
+    """From date_one to date_two for one_currency."""
+    date = message.text
+
+    try:
+        verify_date(date)
+    except ValueError as e:
+        await message.answer(str(e))
+        return
+
     current_data = await state.get_data()
 
     if date and current_data['direction'] == date_directions[0]:
@@ -106,10 +107,15 @@ async def handle_dates(message: types.Message, state: FSMContext):
 
 async def handle_one_currency(message: types.Message, state: FSMContext):
     """Show result for one currency."""
-    date_two = await handle_date(message)
+    date_two = message.text
 
-    if date_two:
-        await state.update_data(date_two=date_two)
+    try:
+        verify_date(date_two)
+    except ValueError as e:
+        await message.answer(str(e))
+        return
+
+    await state.update_data(date_two=date_two)
 
     state_data = await state.get_data()
 
@@ -119,10 +125,10 @@ async def handle_one_currency(message: types.Message, state: FSMContext):
 
 async def show_result(message: types.Message, state_data: Dict):
     direction = state_data.get('direction')
+    print(f'show_result - mgs: {message.text}, data: {state_data}')
 
     if direction == date_directions[0]:
-        currency_index = currencies.index(state_data.get('currency'))
-        currency_code = currency_codes[currency_index]
+        currency_code = state_data.get('currency')
         date_one = state_data.get('date_one')
         date_two = state_data.get('date_two')
         text = await format_date_message(
@@ -146,5 +152,7 @@ def register_date_handlers(dp: Dispatcher):
     dp.register_message_handler(
         handle_all_currencies, state=DateStates.date_one
     )
-    dp.register_message_handler(handle_dates, state=DateStates.date_one)
+    dp.register_message_handler(
+        handle_dates_one_currency, state=DateStates.date_one
+    )
     dp.register_message_handler(handle_one_currency, state=DateStates.date_two)

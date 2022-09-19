@@ -1,14 +1,24 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
+from sqlalchemy.orm import Session
+
+import models
+from database import SessionLocal, engine
+
+models.Base.metadata.create_all(bind=engine)
 
 
 app = FastAPI()
 
 
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
 @app.get('/')
-def index():
-    return {
-        'thought': (
-            'Peace cannot be kept by force; '
-            'it can only be achieved by understanding.'
-        )
-    }
+def index(db: Session = Depends(get_db)):
+    thoughts = db.query(models.Thought).all()
+    return {'thoughts': thoughts}

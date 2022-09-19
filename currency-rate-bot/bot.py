@@ -20,6 +20,7 @@ BOT_TOKEN = os.environ.get('BOT_TOKEN')
 
 async def set_commands(bot: Bot):
     commands = [
+        BotCommand(command='/main', description='Показать главное меню'),
         BotCommand(command='/calc', description='Валютный калькулятор'),
         BotCommand(command='/date', description='Курсы на определённую дату'),
         BotCommand(command='/cancel', description='Отменить текущее действие'),
