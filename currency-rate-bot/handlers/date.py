@@ -20,6 +20,7 @@ directions = ['Курс одной валюты', 'Курс всех досту�
 class DateStates(StatesGroup):
     direction = State()
     currency = State()
+    date = State()
     date_one = State()
     date_two = State()
 
@@ -44,7 +45,7 @@ async def handle_direction(message: types.Message, state: FSMContext):
         await message.answer('Выберите валюту:', reply_markup=kb)
     else:
         await state.update_data(direction=date_directions[1])
-        await DateStates.date_one.set()
+        await DateStates.date.set()
         await message.answer(
             'Введите дату в формате ДД.ММ.ГГГГ:',
             reply_markup=types.ReplyKeyboardRemove(),
@@ -52,7 +53,7 @@ async def handle_direction(message: types.Message, state: FSMContext):
 
 
 async def handle_all_currencies(message: types.Message, state: FSMContext):
-    """Show result for all currencies."""
+    """Show result for all_currencies direction."""
     date = message.text
 
     try:
@@ -61,7 +62,7 @@ async def handle_all_currencies(message: types.Message, state: FSMContext):
         await message.answer(str(e))
         return
 
-    await state.update_data(date_one=date)
+    await state.update_data(date=date)
 
     state_data = await state.get_data()
 
@@ -71,14 +72,14 @@ async def handle_all_currencies(message: types.Message, state: FSMContext):
 
 
 async def handle_currency(message: types.Message, state: FSMContext):
-    """Currency state and date_one."""
+    """Currency state and date_one for one_currency direction."""
     if message.text not in selected_currencies:
         text = 'Выберите валюту из тех, что представлены ниже.'
         await message.answer(text)
         return
     currency_index = selected_currencies.index(message.text)
     await state.update_data(currency=currency_codes[currency_index])
-    await DateStates.next()  # date_one
+    await DateStates.date_one.set()
     await message.answer(
         'Введите начальную дату в формате ДД.ММ.ГГГГ:',
         reply_markup=types.ReplyKeyboardRemove(),
@@ -106,7 +107,7 @@ async def handle_dates_one_currency(message: types.Message, state: FSMContext):
 
 
 async def handle_one_currency(message: types.Message, state: FSMContext):
-    """Show result for one currency."""
+    """Show result for one_currency direction."""
     date_two = message.text
 
     try:
@@ -124,8 +125,8 @@ async def handle_one_currency(message: types.Message, state: FSMContext):
 
 
 async def show_result(message: types.Message, state_data: Dict):
+    """Send a formatted message answer depending on a direction."""
     direction = state_data.get('direction')
-    print(f'show_result - mgs: {message.text}, data: {state_data}')
 
     if direction == date_directions[0]:
         currency_code = state_data.get('currency')
@@ -136,7 +137,7 @@ async def show_result(message: types.Message, state_data: Dict):
         )
 
     elif direction == date_directions[1]:
-        date = state_data.get('date_one')
+        date = state_data.get('date')
         text = await format_date_message(direction, date)
 
     await message.answer(text=text, reply_markup=get_main_keyboard())
@@ -148,10 +149,8 @@ def register_date_handlers(dp: Dispatcher):
         start_date_rates, Text(equals='Курс на определённую дату'), state='*'
     )
     dp.register_message_handler(handle_direction, state=DateStates.direction)
+    dp.register_message_handler(handle_all_currencies, state=DateStates.date)
     dp.register_message_handler(handle_currency, state=DateStates.currency)
-    dp.register_message_handler(
-        handle_all_currencies, state=DateStates.date_one
-    )
     dp.register_message_handler(
         handle_dates_one_currency, state=DateStates.date_one
     )
