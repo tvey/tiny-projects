@@ -3,318 +3,498 @@
         "cbr_id": "R01060",
         "is_current": true,
         "name": "армянских драмов",
-        "nominal": "100"
+        "name_plural": "армянских драмов",
+        "name_singular": "армянский драм",
+        "nominal": 100,
+        "redenominated": true
     },
     "ATS": {
         "cbr_id": "R01015",
         "is_current": false,
-        "name": "австрийских шиллингов",
-        "nominal": "10"
+        "name_plural": "австрийских шиллингов",
+        "name_singular": "австрийский шиллинг",
+        "nominal": 0,
+        "redenominated": true
     },
     "AUD": {
         "cbr_id": "R01010",
         "is_current": true,
         "name": "австралийский доллар",
-        "nominal": "1"
+        "name_plural": "",
+        "name_singular": "австралийский доллар",
+        "nominal": 1,
+        "redenominated": false
+    },
+    "AZM": {
+        "cbr_id": "R01020",
+        "is_current": false,
+        "name_plural": "",
+        "name_singular": "азербайджанский манат",
+        "nominal": 1,
+        "redenominated": false
     },
     "AZN": {
         "cbr_id": "R01020A",
         "is_current": true,
         "name": "азербайджанский манат",
-        "nominal": "1"
+        "name_plural": "",
+        "name_singular": "азербайджанский манат",
+        "nominal": 1,
+        "redenominated": false
     },
     "BEF": {
         "cbr_id": "R01095",
         "is_current": false,
-        "name": "бельгийских франков",
-        "nominal": "100"
+        "name_plural": "бельгийских франков",
+        "name_singular": "",
+        "nominal": 0,
+        "redenominated": true
     },
     "BGN": {
         "cbr_id": "R01100",
         "is_current": true,
         "name": "болгарский лев",
-        "nominal": "1"
+        "name_plural": "болгарских левов",
+        "name_singular": "болгарский лев",
+        "nominal": 1,
+        "redenominated": true
     },
     "BRL": {
         "cbr_id": "R01115",
         "is_current": true,
         "name": "бразильский реал",
-        "nominal": "1"
+        "name_plural": "",
+        "name_singular": "бразильский реал",
+        "nominal": 1,
+        "redenominated": false
     },
     "BYB": {
         "cbr_id": "R01090A",
         "is_current": false,
-        "name": "белoрусских рублей",
-        "nominal": "1000000"
+        "name_plural": "белoрусских рублей",
+        "name_singular": "",
+        "nominal": 0,
+        "redenominated": true
     },
     "BYN": {
         "cbr_id": "R01090B",
         "is_current": true,
         "name": "белорусский рубль",
-        "nominal": "1"
+        "name_plural": "",
+        "name_singular": "белорусский рубль",
+        "nominal": 1,
+        "redenominated": false
     },
     "BYR": {
         "cbr_id": "R01090",
         "is_current": false,
-        "name": "белорусских рублей",
-        "nominal": "10000"
+        "name_plural": "белорусских рублей",
+        "name_singular": "",
+        "nominal": 0,
+        "redenominated": true
     },
     "CAD": {
         "cbr_id": "R01350",
         "is_current": true,
         "name": "канадский доллар",
-        "nominal": "1"
+        "name_plural": "",
+        "name_singular": "канадский доллар",
+        "nominal": 1,
+        "redenominated": false
     },
     "CHF": {
         "cbr_id": "R01775",
         "is_current": true,
         "name": "швейцарский франк",
-        "nominal": "1"
+        "name_plural": "",
+        "name_singular": "швейцарский франк",
+        "nominal": 1,
+        "redenominated": false
     },
     "CNY": {
         "cbr_id": "R01375",
         "is_current": true,
         "name": "китайский юань",
-        "nominal": "1"
+        "name_plural": "китайских юаней",
+        "name_singular": "китайский юань",
+        "nominal": 1,
+        "redenominated": true
     },
     "CZK": {
         "cbr_id": "R01760",
         "is_current": true,
         "name": "чешских крон",
-        "nominal": "10"
+        "name_plural": "чешских крон",
+        "name_singular": "чешская крона",
+        "nominal": 10,
+        "redenominated": true
     },
     "DEM": {
         "cbr_id": "R01510",
         "is_current": false,
-        "name": "немецкая марка",
-        "nominal": "1"
+        "name_plural": "",
+        "name_singular": "немецкая марка",
+        "nominal": 1,
+        "redenominated": false
     },
     "DKK": {
         "cbr_id": "R01215",
         "is_current": true,
         "name": "датская крона",
-        "nominal": "1"
+        "name_plural": "датских крон",
+        "name_singular": "датская крона",
+        "nominal": 1,
+        "redenominated": true
     },
     "EEK": {
         "cbr_id": "R01795",
         "is_current": false,
-        "name": "эстонских крон",
-        "nominal": "10"
+        "name_plural": "эстонских крон",
+        "name_singular": "эстонская крона",
+        "nominal": 0,
+        "redenominated": true
     },
     "ESP": {
         "cbr_id": "R01315",
         "is_current": false,
-        "name": "испанских песет",
-        "nominal": "100"
+        "name_plural": "испанских песет",
+        "name_singular": "",
+        "nominal": 0,
+        "redenominated": true
     },
     "EUR": {
         "cbr_id": "R01239",
         "is_current": true,
         "name": "евро",
-        "nominal": "1"
+        "name_plural": "",
+        "name_singular": "евро",
+        "nominal": 1,
+        "redenominated": false
     },
     "FIM": {
         "cbr_id": "R01740",
         "is_current": false,
-        "name": "финляндских марок",
-        "nominal": "10"
+        "name_plural": "финляндских марок",
+        "name_singular": "финляндская марка",
+        "nominal": 0,
+        "redenominated": true
     },
     "FRF": {
         "cbr_id": "R01750",
         "is_current": false,
-        "name": "французских франков",
-        "nominal": "10"
+        "name_plural": "французских франков",
+        "name_singular": "французский франк",
+        "nominal": 0,
+        "redenominated": true
     },
     "GBP": {
         "cbr_id": "R01035",
         "is_current": true,
         "name": "фунт стерлингов",
-        "nominal": "1"
+        "name_plural": "",
+        "name_singular": "фунт стерлингов",
+        "nominal": 1,
+        "redenominated": false
+    },
+    "GEL": {
+        "cbr_id": "R01210",
+        "is_current": false,
+        "name_plural": "",
+        "name_singular": "грузинский лари",
+        "nominal": 1,
+        "redenominated": false
     },
     "GRD": {
         "cbr_id": "R01205",
         "is_current": false,
-        "name": "греческих драхм",
-        "nominal": "1000"
+        "name_plural": "греческих драхм",
+        "name_singular": "",
+        "nominal": 0,
+        "redenominated": true
     },
     "HKD": {
         "cbr_id": "R01200",
         "is_current": true,
         "name": "гонконгских долларов",
-        "nominal": "10"
+        "name_plural": "гонконгских долларов",
+        "name_singular": "гонконгский доллар",
+        "nominal": 10,
+        "redenominated": true
     },
     "HUF": {
         "cbr_id": "R01135",
         "is_current": true,
         "name": "венгерских форинтов",
-        "nominal": "100"
+        "name_plural": "венгерских форинтов",
+        "name_singular": "венгерский форинт",
+        "nominal": 100,
+        "redenominated": true
     },
     "IEP": {
         "cbr_id": "R01305",
         "is_current": false,
-        "name": "ирландский фунт",
-        "nominal": "1"
+        "name_plural": "",
+        "name_singular": "ирландский фунт",
+        "nominal": 1,
+        "redenominated": false
     },
     "INR": {
         "cbr_id": "R01270",
         "is_current": true,
         "name": "индийских рупий",
-        "nominal": "100"
+        "name_plural": "индийских рупий",
+        "name_singular": "индийская рупия",
+        "nominal": 100,
+        "redenominated": true
     },
     "ISK": {
         "cbr_id": "R01310",
         "is_current": false,
-        "name": "исландских крон",
-        "nominal": "100"
+        "name_plural": "исландских крон",
+        "name_singular": "исландская крона",
+        "nominal": 0,
+        "redenominated": true
     },
     "ITL": {
         "cbr_id": "R01325",
         "is_current": false,
-        "name": "итальянских лир",
-        "nominal": "1000"
+        "name_plural": "итальянских лир",
+        "name_singular": "",
+        "nominal": 0,
+        "redenominated": true
     },
     "JPY": {
         "cbr_id": "R01820",
         "is_current": true,
         "name": "японских иен",
-        "nominal": "100"
+        "name_plural": "японских иен",
+        "name_singular": "",
+        "nominal": 100,
+        "redenominated": true
     },
     "KGS": {
         "cbr_id": "R01370",
         "is_current": true,
         "name": "киргизских сомов",
-        "nominal": "100"
+        "name_plural": "киргизских сомов",
+        "name_singular": "киргизский сом",
+        "nominal": 100,
+        "redenominated": true
     },
     "KRW": {
         "cbr_id": "R01815",
         "is_current": true,
         "name": "вон Республики Корея",
-        "nominal": "1000"
+        "name_plural": "вон Республики Корея",
+        "name_singular": "",
+        "nominal": 1000,
+        "redenominated": false
     },
     "KZT": {
         "cbr_id": "R01335",
         "is_current": true,
         "name": "казахстанских тенге",
-        "nominal": "100"
+        "name_plural": "казахстанских тенге",
+        "name_singular": "казахстанский тенге",
+        "nominal": 100,
+        "redenominated": true
     },
     "LTL": {
         "cbr_id": "R01435",
         "is_current": false,
-        "name": "литовский лит",
-        "nominal": "1"
+        "name_plural": "",
+        "name_singular": "литовский лит",
+        "nominal": 1,
+        "redenominated": false
+    },
+    "LTT": {
+        "cbr_id": "R01436",
+        "is_current": false,
+        "name_plural": "",
+        "name_singular": "литовский талон",
+        "nominal": 1,
+        "redenominated": false
     },
     "LVL": {
         "cbr_id": "R01405",
         "is_current": false,
-        "name": "латвийский лат",
-        "nominal": "1"
+        "name_plural": "",
+        "name_singular": "латвийский лат",
+        "nominal": 1,
+        "redenominated": false
+    },
+    "LVR": {
+        "cbr_id": "R01406",
+        "is_current": false,
+        "name_plural": "",
+        "name_singular": "латвийский рублис",
+        "nominal": 1,
+        "redenominated": false
     },
     "MDL": {
         "cbr_id": "R01500",
         "is_current": true,
         "name": "молдавских леев",
-        "nominal": "10"
+        "name_plural": "молдавских леев",
+        "name_singular": "молдавский лей",
+        "nominal": 10,
+        "redenominated": true
     },
     "NLG": {
         "cbr_id": "R01523",
         "is_current": false,
-        "name": "нидерландский гульден",
-        "nominal": "1"
+        "name_plural": "",
+        "name_singular": "нидерландский гульден",
+        "nominal": 1,
+        "redenominated": false
     },
     "NOK": {
         "cbr_id": "R01535",
         "is_current": true,
         "name": "норвежских крон",
-        "nominal": "10"
+        "name_plural": "норвежских крон",
+        "name_singular": "норвежская крона",
+        "nominal": 10,
+        "redenominated": true
     },
     "PLN": {
         "cbr_id": "R01565",
         "is_current": true,
         "name": "польский злотый",
-        "nominal": "1"
+        "name_plural": "польских злотых",
+        "name_singular": "польский злотый",
+        "nominal": 1,
+        "redenominated": true
     },
     "PTE": {
         "cbr_id": "R01570",
         "is_current": false,
-        "name": "португальских эскудо",
-        "nominal": "100"
+        "name_plural": "португальских эскудо",
+        "name_singular": "",
+        "nominal": 0,
+        "redenominated": true
     },
     "RON": {
         "cbr_id": "R01585F",
         "is_current": true,
         "name": "румынский лей",
-        "nominal": "1"
+        "name_plural": "румынских леев",
+        "name_singular": "румынский лей",
+        "nominal": 1,
+        "redenominated": true
     },
     "SEK": {
         "cbr_id": "R01770",
         "is_current": true,
         "name": "шведских крон",
-        "nominal": "10"
+        "name_plural": "шведских крон",
+        "name_singular": "шведская крона",
+        "nominal": 10,
+        "redenominated": true
     },
     "SGD": {
         "cbr_id": "R01625",
         "is_current": true,
         "name": "сингапурский доллар",
-        "nominal": "1"
+        "name_plural": "",
+        "name_singular": "сингапурский доллар",
+        "nominal": 1,
+        "redenominated": false
     },
     "TJS": {
         "cbr_id": "R01670",
         "is_current": true,
         "name": "таджикских сомони",
-        "nominal": "10"
+        "name_plural": "таджикских сомони",
+        "name_singular": "таджикский сомони",
+        "nominal": 10,
+        "redenominated": true
     },
     "TMT": {
         "cbr_id": "R01710A",
         "is_current": true,
         "name": "новый туркменский манат",
-        "nominal": "1"
+        "name_plural": "новых туркменских манатов",
+        "name_singular": "новый туркменский манат",
+        "nominal": 1,
+        "redenominated": true
     },
     "TRL": {
         "cbr_id": "R01700",
         "is_current": false,
-        "name": "турецких лир",
-        "nominal": "1000000"
+        "name_plural": "турецких лир",
+        "name_singular": "",
+        "nominal": 0,
+        "redenominated": true
     },
     "TRY": {
         "cbr_id": "R01700J",
         "is_current": true,
         "name": "турецких лир",
-        "nominal": "10"
+        "name_plural": "турецких лир",
+        "name_singular": "турецкая лира",
+        "nominal": 10,
+        "redenominated": true
     },
     "UAH": {
         "cbr_id": "R01720",
         "is_current": true,
         "name": "украинских гривен",
-        "nominal": "10"
+        "name_plural": "украинских гривен",
+        "name_singular": "украинская гривна",
+        "nominal": 10,
+        "redenominated": true
+    },
+    "UAK": {
+        "cbr_id": "R01720A",
+        "is_current": false,
+        "name_plural": "украинских карбованецев",
+        "name_singular": "",
+        "nominal": 0,
+        "redenominated": true
     },
     "USD": {
         "cbr_id": "R01235",
         "is_current": true,
         "name": "доллар США",
-        "nominal": "1"
+        "name_plural": "",
+        "name_singular": "доллар США",
+        "nominal": 1,
+        "redenominated": false
     },
     "UZS": {
         "cbr_id": "R01717",
         "is_current": true,
         "name": "узбекских сумов",
-        "nominal": "10000"
+        "name_plural": "узбекских сумов",
+        "name_singular": "узбекский сум",
+        "nominal": 10000,
+        "redenominated": true
     },
     "XDR": {
         "cbr_id": "R01589",
         "is_current": true,
         "name": "СДР",
-        "nominal": "1"
+        "name_plural": "СДР",
+        "name_singular": "СДР",
+        "nominal": 1,
+        "redenominated": true
     },
     "XEU": {
         "cbr_id": "R01790",
         "is_current": false,
-        "name": "ЭКЮ",
-        "nominal": "1"
+        "name_plural": "",
+        "name_singular": "ЭКЮ",
+        "nominal": 1,
+        "redenominated": false
     },
     "ZAR": {
         "cbr_id": "R01810",
         "is_current": true,
         "name": "южноафриканских рэндов",
-        "nominal": "10"
+        "name_plural": "южноафриканских рэндов",
+        "name_singular": "",
+        "nominal": 10,
+        "redenominated": false
     }
 }
