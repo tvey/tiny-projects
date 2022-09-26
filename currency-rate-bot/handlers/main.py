@@ -46,17 +46,17 @@ async def show_all_currencies(message: types.Message):
 
 async def get_usd_eur(message: types.Message):
     rate_data = await get_rates(extra=True)
-    currency_code = message.text
-    currency_rate = rate_data[currency_code]
-    text = await format_currency_message(currency_code, currency_rate)
+    currency_id = message.text
+    currency_rate = rate_data[currency_id]['value']
+    text = await format_currency_message(currency_id, currency_rate)
     await message.answer(text)
 
 
 async def get_rate(callback: types.CallbackQuery):
     rate_data = await get_rates()
-    currency_code = callback.data
-    currency_rate = rate_data[currency_code]
-    text = await format_currency_message(currency_code, currency_rate)
+    currency_id = callback.data
+    currency_rate = rate_data[currency_id]['value']
+    text = await format_currency_message(currency_id, currency_rate)
     await callback.message.answer(text)
     await callback.answer()
 

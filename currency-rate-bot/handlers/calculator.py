@@ -1,3 +1,4 @@
+from logging import currentframe
 from aiogram import Dispatcher, types
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Text
@@ -7,7 +8,8 @@ from keyboards import get_main_keyboard
 from utils import (
     calculate,
     selected_currencies,
-    currency_codes,
+    selected_currency_ids,
+    CURRENCIES,
     format_number,
 )
 
@@ -50,7 +52,7 @@ async def currency_amount(message: types.Message, state: FSMContext):
         await message.answer(text)
         return
     currency_index = selected_currencies.index(message.text)
-    await state.update_data(currency=currency_codes[currency_index])
+    await state.update_data(currency=selected_currency_ids[currency_index])
 
     await CalcStates.next()
     await message.answer(
@@ -71,18 +73,19 @@ async def calc_result(message: types.Message, state: FSMContext):
     await state.update_data(amount=amount)
 
     user_data = await state.get_data()
+    currency_id = user_data['currency']
 
     result = await calculate(
-        user_data['direction'], user_data['currency'], user_data['amount']
+        user_data['direction'], currency_id, user_data['amount']
     )
 
     f_amount = format_number(user_data['amount'])
     f_result = format_number(result)
 
     if user_data['direction'] == 'from_rub':
-        text = f"{f_amount} RUB = {f_result} {user_data['currency']}"
+        text = f"{f_amount} RUB = {f_result} {CURRENCIES[currency_id]['code']}"
     elif user_data['direction'] == 'to_rub':
-        text = f"{f_amount} {user_data['currency']} = {f_result} RUB"
+        text = f"{f_amount} {CURRENCIES[currency_id]['code']} = {f_result} RUB"
 
     await message.answer(text, reply_markup=get_main_keyboard())
     await state.finish()
@@ -90,7 +93,9 @@ async def calc_result(message: types.Message, state: FSMContext):
 
 def register_calculator_handlers(dp: Dispatcher):
     dp.register_message_handler(start_calculator, commands='calc', state='*')
-    dp.register_message_handler(start_calculator, Text(equals='Калькулятор'), state='*')
+    dp.register_message_handler(
+        start_calculator, Text(equals='Калькулятор'), state='*'
+    )
     dp.register_message_handler(direction_currency, state=CalcStates.direction)
     dp.register_message_handler(currency_amount, state=CalcStates.currency)
     dp.register_message_handler(calc_result, state=CalcStates.amount)

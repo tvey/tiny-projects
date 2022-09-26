@@ -9,7 +9,7 @@ from keyboards import get_main_keyboard
 from utils import (
     date_directions,
     selected_currencies,
-    currency_codes,
+    selected_currency_ids,
     verify_date,
     format_date_message,
 )
@@ -78,7 +78,7 @@ async def handle_currency(message: types.Message, state: FSMContext):
         await message.answer(text)
         return
     currency_index = selected_currencies.index(message.text)
-    await state.update_data(currency=currency_codes[currency_index])
+    await state.update_data(currency=selected_currency_ids[currency_index])
     await DateStates.date_one.set()
     await message.answer(
         'Введите начальную дату в формате ДД.ММ.ГГГГ:',
@@ -129,11 +129,11 @@ async def show_result(message: types.Message, state_data: Dict):
     direction = state_data.get('direction')
 
     if direction == date_directions[0]:
-        currency_code = state_data.get('currency')
+        currency_id = state_data.get('currency')
         date_one = state_data.get('date_one')
         date_two = state_data.get('date_two')
         text = await format_date_message(
-            direction, date_one, currency_code=currency_code, date_two=date_two
+            direction, date_one, cbr_id=currency_id, date_two=date_two
         )
 
     elif direction == date_directions[1]:
