@@ -1,5 +1,3 @@
-from typing import Any, Dict
-
 from aiogram import Dispatcher, types
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Text
@@ -109,9 +107,10 @@ async def handle_dates_one_currency(message: types.Message, state: FSMContext):
 async def handle_one_currency(message: types.Message, state: FSMContext):
     """Show result for one_currency direction."""
     date_two = message.text
+    current_data = await state.get_data()
 
     try:
-        verify_date(date_two)
+        verify_date(date_two, date_one=current_data.get('date_one'))
     except ValueError as e:
         await message.answer(str(e))
         return
@@ -124,7 +123,7 @@ async def handle_one_currency(message: types.Message, state: FSMContext):
     await state.finish()
 
 
-async def show_result(message: types.Message, state_data: Dict):
+async def show_result(message: types.Message, state_data: dict):
     """Send a formatted message answer depending on a direction."""
     direction = state_data.get('direction')
 

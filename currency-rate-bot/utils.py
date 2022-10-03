@@ -15,11 +15,9 @@ with open('currencies.json', encoding='utf-8') as f:
 CURRENCIES['$'] = CURRENCIES['R01235']
 CURRENCIES['€'] = CURRENCIES['R01239']
 
-cbr_id_code_map = {k: v['code'] for k, v in CURRENCIES.items()}
-code_cbr_id_map = {v: k for k, v in cbr_id_code_map.items()}
 current_currencies = {k: v for k, v in CURRENCIES.items() if v['is_current']}
-selected_currencies = ['Доллар', 'Евро', 'Юань']
-selected_currency_ids = ['R01235', 'R01239', 'R01375']
+selected_currencies = ['Доллар', 'Евро', 'Юань', '', '', '']
+selected_currency_ids = ['R01235', 'R01239', 'R01375', '', '', '']
 currency_symbols = ['$', '€']
 date_directions = ['one_currency', 'all_currencies']
 
@@ -89,7 +87,7 @@ def format_date(date: str) -> str:
     return datetime.datetime.strptime(date, '%d.%m.%Y').strftime('%d/%m/%Y')
 
 
-def verify_date(date_value: str) -> bool:
+def verify_date(date_value: str, date_one: str = '') -> bool:
     initial_date = datetime.date(1992, 7, 1)
     current_date = get_current_date()
 
@@ -97,6 +95,14 @@ def verify_date(date_value: str) -> bool:
         date = datetime.datetime.strptime(date_value, '%d.%m.%Y').date()
     except ValueError as e:
         raise ValueError('Пожалуйста, введите правильную дату.')
+
+    if date_one:
+        previous_date = datetime.datetime.strptime(date_one, '%d.%m.%Y').date()
+        if date < previous_date:
+            raise ValueError(
+                'Вторая дата не может быть раньше предыдущей. Попробуйте снова.'
+            )       
+
 
     if date < initial_date:
         raise ValueError(
@@ -106,6 +112,8 @@ def verify_date(date_value: str) -> bool:
         raise ValueError(
             'Дата не может быть позднее текущей даты. Попробуйте снова.'
         )
+
+    id 
 
     return True
 
