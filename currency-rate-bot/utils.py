@@ -1,6 +1,7 @@
 import datetime
 import json
 from collections import OrderedDict
+from typing import Union
 
 import httpx
 import pytz
@@ -12,13 +13,21 @@ URL_DYNAMIC = 'http://www.cbr.ru/scripts/XML_dynamic.asp'
 with open('currencies.json', encoding='utf-8') as f:
     CURRENCIES = json.load(f)
 
-CURRENCIES['$'] = CURRENCIES['R01235']
-CURRENCIES['€'] = CURRENCIES['R01239']
-
 current_currencies = {k: v for k, v in CURRENCIES.items() if v['is_current']}
-selected_currencies = ['Доллар', 'Евро', 'Юань', '', '', '']
-selected_currency_ids = ['R01235', 'R01239', 'R01375', '', '', '']
-currency_symbols = ['$', '€']
+currency_symbols = {'$': 'R01235', '€': 'R01239', '£': 'R01035', '¥': 'R01375'}
+
+for k, v in currency_symbols.items():
+    CURRENCIES[k] = CURRENCIES[v]
+
+selected_currencies = {
+    'Доллар': 'R01235',
+    'Евро': 'R01239',
+    'Юань': 'R01375',
+    'Британский фунт': 'R01035',
+    'Швейцарский франк': 'R01775',
+    'Японская иена': 'R01820'
+}
+
 date_directions = ['one_currency', 'all_currencies']
 
 
@@ -36,7 +45,12 @@ async def get_rates(date: str = '', extra: bool = False) -> dict:
     }
 
     if extra:
-        return rates | {'$': rates['R01235'], '€': rates['R01239']}
+        return rates | {
+            '$': rates['R01235'],
+            '€': rates['R01239'],
+            '£': rates['R01035'],
+            '¥': rates['R01375']
+        }
 
     return rates
 
@@ -113,8 +127,6 @@ def verify_date(date_value: str, date_one: str = '') -> bool:
             'Дата не может быть позднее текущей даты. Попробуйте снова.'
         )
 
-    id 
-
     return True
 
 
@@ -146,7 +158,7 @@ async def calculate(direction: str, cbr_id: str, amount: float) -> float:
     return round(result, 4)
 
 
-def format_number(value: int) -> str:
+def format_number(value: Union[int, float]) -> str:
     return f'{value:,}'.replace(',', '\u2009').replace('.', ',')
 
 

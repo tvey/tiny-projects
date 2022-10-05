@@ -7,7 +7,6 @@ from keyboards import get_main_keyboard
 from utils import (
     date_directions,
     selected_currencies,
-    selected_currency_ids,
     verify_date,
     format_date_message,
 )
@@ -38,7 +37,7 @@ async def handle_direction(message: types.Message, state: FSMContext):
     if message.text == directions[0]:
         await state.update_data(direction=date_directions[0])
         kb = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=3)
-        kb.add(*selected_currencies + ['Отмена'])
+        kb.add(*list(selected_currencies.keys()) + ['Отмена'])
         await DateStates.next()
         await message.answer('Выберите валюту:', reply_markup=kb)
     else:
@@ -71,12 +70,11 @@ async def handle_all_currencies(message: types.Message, state: FSMContext):
 
 async def handle_currency(message: types.Message, state: FSMContext):
     """Currency state and date_one for one_currency direction."""
-    if message.text not in selected_currencies:
+    if message.text not in selected_currencies.keys():
         text = 'Выберите валюту из тех, что представлены ниже.'
         await message.answer(text)
         return
-    currency_index = selected_currencies.index(message.text)
-    await state.update_data(currency=selected_currency_ids[currency_index])
+    await state.update_data(currency=selected_currencies.get(message.text))
     await DateStates.date_one.set()
     await message.answer(
         'Введите начальную дату в формате ДД.ММ.ГГГГ:',

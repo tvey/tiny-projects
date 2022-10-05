@@ -1,4 +1,3 @@
-from logging import currentframe
 from aiogram import Dispatcher, types
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Text
@@ -8,7 +7,6 @@ from keyboards import get_main_keyboard
 from utils import (
     calculate,
     selected_currencies,
-    selected_currency_ids,
     CURRENCIES,
     format_number,
 )
@@ -40,24 +38,30 @@ async def direction_currency(message: types.Message, state: FSMContext):
         await state.update_data(direction='from_rub')
 
     kb = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=3)
-    kb.add(*selected_currencies + ['Отмена'])
+    kb.add(*list(selected_currencies.keys()) + ['Отмена'])
 
     await CalcStates.next()
     await message.answer('Выберите валюту:', reply_markup=kb)
 
 
 async def currency_amount(message: types.Message, state: FSMContext):
-    if message.text not in selected_currencies:
-        text = 'Выберите валюту из тех, что представлены ниже.'
-        await message.answer(text)
+    if message.text not in selected_currencies.keys():
+        await message.answer('Выберите валюту из тех, что представлены ниже.')
         return
-    currency_index = selected_currencies.index(message.text)
-    await state.update_data(currency=selected_currency_ids[currency_index])
+    await state.update_data(currency=selected_currencies.get(message.text))
 
     await CalcStates.next()
-    await message.answer(
-        'Введите сумму:', reply_markup=types.ReplyKeyboardRemove()
-    )
+
+    current_state = await state.get_data()
+    direction = current_state.get('direction')
+    msg = 'Введите сумму:'
+
+    if direction == 'to_rub':
+        msg = 'Введите сумму в валюте:'
+    elif direction == 'from_rub':
+        msg = 'Введите сумму в рублях:'
+
+    await message.answer(msg, reply_markup=types.ReplyKeyboardRemove())
 
 
 async def calc_result(message: types.Message, state: FSMContext):
