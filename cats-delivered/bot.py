@@ -1,5 +1,6 @@
 import asyncio
 import os
+import random
 
 import dotenv
 import aioschedule
@@ -11,17 +12,21 @@ dotenv.load_dotenv()
 
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 CHAT_ID = os.environ.get('CHAT_ID')
+IMAGE_FOLDER = 'img'
 
 bot = Bot(token=BOT_TOKEN, parse_mode=types.ParseMode.HTML)
 dp = Dispatcher(bot)
 
 
-async def send_meow():
-    await bot.send_message(CHAT_ID, 'Meow')
+async def send_pic():
+    pics = os.listdir(IMAGE_FOLDER)
+    random_pic_path = os.path.join(IMAGE_FOLDER, random.choice(pics))
+    pic_file = types.InputFile(random_pic_path)
+    await bot.send_photo(CHAT_ID, photo=pic_file)
 
 
 async def scheduler():
-    aioschedule.every(3).seconds.do(send_meow)
+    aioschedule.every(1).hours.do(send_pic)
     while True:
         await aioschedule.run_pending()
         await asyncio.sleep(1)
