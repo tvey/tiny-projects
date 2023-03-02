@@ -9,6 +9,7 @@ httpx = "*"
 python-dotenv = "*"
 aioschedule = "*"
 praw = "*"
+requests-html = "*"
 
 [dev-packages]
 

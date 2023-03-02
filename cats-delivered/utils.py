@@ -1,20 +1,13 @@
+import json
 import os
 
 import dotenv
 import httpx
 from praw import Reddit
+from prawcore.exceptions import Forbidden
+from requests_html import HTMLSession
 
 dotenv.load_dotenv()
-
-subreddits = [
-    'cats',
-    'catpics',
-    'kitten',
-    'Catloaf',
-    'CatsStandingUp',
-    'scrungycats',
-    'Blep',
-]
 
 
 def create_reddit_client() -> Reddit:
@@ -44,10 +37,26 @@ def download_pic(pic_url: str, save_to: str) -> None:
         f.write(r.content)
 
 
-if __name__ == '__main__':
+def get_cat_subs_info() -> None:
+    url = 'https://www.reddit.com/r/Catsubs/wiki/index/'
     client = create_reddit_client()
-    all_subreddits = '+'.join(subreddits)
-    pic_urls = get_pic_urls(client, all_subreddits)
+    s = HTMLSession()
 
-    for url in pic_urls:
-        download_pic(url, 'img')
+    r = s.get(url)
+    tables = r.html.find('table')
+    links = [i for table in tables for i in table.absolute_links]
+    titles = [link.strip('/').split('/')[-1] for link in links]
+
+    data = {}
+
+    for title in titles:
+        try:
+            subreddit = client.subreddit(title)
+            data[title] = subreddit.subscribers
+        except Forbidden:
+            continue
+
+    result = {k: v for k, v in sorted(data.items(), key=lambda i: -i[1])}
+
+    with open('cat_subs_info.json', 'w', encoding='utf-8') as f:
+        json.dump(result, f, indent=4)
