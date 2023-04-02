@@ -9,7 +9,8 @@ httpx = "*"
 python-dotenv = "*"
 aioschedule = "*"
 praw = "*"
-requests-html = "*"
+sqlalchemy = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
