@@ -1,4 +1,70 @@
 {
+    "R01235": {
+        "char_code": "USD",
+        "nominal": "1",
+        "name": "доллар США",
+        "name_singular": "Доллар США"
+    },
+    "R01375": {
+        "char_code": "CNY",
+        "nominal": "1",
+        "name": "китайский юань",
+        "name_singular": "Китайский юань"
+    },
+    "R01239": {
+        "char_code": "EUR",
+        "nominal": "1",
+        "name": "евро",
+        "name_singular": "Евро"
+    },
+    "R01035": {
+        "char_code": "GBP",
+        "nominal": "1",
+        "name": "фунт стерлингов",
+        "name_singular": "Фунт стерлингов"
+    },
+    "R01335": {
+        "char_code": "KZT",
+        "nominal": "100",
+        "name": "казахстанских тенге",
+        "name_singular": "Казахстанский тенге"
+    },
+    "R01090B": {
+        "char_code": "BYN",
+        "nominal": "1",
+        "name": "белорусский рубль",
+        "name_singular": "Белорусский рубль"
+    },
+    "R01775": {
+        "char_code": "CHF",
+        "nominal": "1",
+        "name": "швейцарский франк",
+        "name_singular": "Швейцарский франк"
+    },
+    "R01230": {
+        "char_code": "AED",
+        "nominal": "1",
+        "name": "дирхам ОАЭ",
+        "name_singular": "Дирхам ОАЭ"
+    },
+    "R01820": {
+        "char_code": "JPY",
+        "nominal": "100",
+        "name": "японских иен",
+        "name_singular": "Японская иена"
+    },
+    "R01625": {
+        "char_code": "SGD",
+        "nominal": "1",
+        "name": "сингапурский доллар",
+        "name_singular": "Сингапурский доллар"
+    },
+    "R01270": {
+        "char_code": "INR",
+        "nominal": "10",
+        "name": "индийских рупий",
+        "name_singular": "Индийская рупия"
+    },
     "R01010": {
         "char_code": "AUD",
         "nominal": "1",
@@ -11,23 +77,11 @@
         "name": "азербайджанский манат",
         "name_singular": "Азербайджанский манат"
     },
-    "R01035": {
-        "char_code": "GBP",
-        "nominal": "1",
-        "name": "фунт стерлингов",
-        "name_singular": "Фунт стерлингов"
-    },
     "R01060": {
         "char_code": "AMD",
         "nominal": "100",
         "name": "армянских драмов",
         "name_singular": "Армянский драм"
-    },
-    "R01090B": {
-        "char_code": "BYN",
-        "nominal": "1",
-        "name": "белорусский рубль",
-        "name_singular": "Белорусский рубль"
     },
     "R01100": {
         "char_code": "BGN",
@@ -71,47 +125,17 @@
         "name": "датская крона",
         "name_singular": "Датская крона"
     },
-    "R01230": {
-        "char_code": "AED",
-        "nominal": "1",
-        "name": "дирхам ОАЭ",
-        "name_singular": "дирхам ОАЭ"
-    },
-    "R01235": {
-        "char_code": "USD",
-        "nominal": "1",
-        "name": "доллар США",
-        "name_singular": "Доллар США"
-    },
-    "R01239": {
-        "char_code": "EUR",
-        "nominal": "1",
-        "name": "евро",
-        "name_singular": "Евро"
-    },
     "R01240": {
         "char_code": "EGP",
         "nominal": "10",
         "name": "египетских фунтов",
         "name_singular": "Египетский фунт"
     },
-    "R01270": {
-        "char_code": "INR",
-        "nominal": "10",
-        "name": "индийских рупий",
-        "name_singular": "Индийская рупия"
-    },
     "R01280": {
         "char_code": "IDR",
         "nominal": "10000",
         "name": "индонезийских рупий",
         "name_singular": "Индонезийская рупия"
-    },
-    "R01335": {
-        "char_code": "KZT",
-        "nominal": "100",
-        "name": "казахстанских тенге",
-        "name_singular": "Казахстанский тенге"
     },
     "R01350": {
         "char_code": "CAD",
@@ -130,12 +154,6 @@
         "nominal": "10",
         "name": "киргизских сомов",
         "name_singular": "Киргизский сом"
-    },
-    "R01375": {
-        "char_code": "CNY",
-        "nominal": "1",
-        "name": "китайский юань",
-        "name_singular": "Китайский юань"
     },
     "R01500": {
         "char_code": "MDL",
@@ -167,12 +185,6 @@
         "name": "румынский лей",
         "name_singular": "Румынский лей"
     },
-    "R01625": {
-        "char_code": "SGD",
-        "nominal": "1",
-        "name": "сингапурский доллар",
-        "name_singular": "Сингапурский доллар"
-    },
     "R01670": {
         "char_code": "TJS",
         "nominal": "10",
@@ -195,7 +207,7 @@
         "char_code": "TMT",
         "nominal": "1",
         "name": "новый туркменский манат",
-        "name_singular": "Новый туркменский манат"
+        "name_singular": "Туркменский манат"
     },
     "R01717": {
         "char_code": "UZS",
@@ -221,12 +233,6 @@
         "name": "шведских крон",
         "name_singular": "Шведская крона"
     },
-    "R01775": {
-        "char_code": "CHF",
-        "nominal": "1",
-        "name": "швейцарский франк",
-        "name_singular": "Швейцарский франк"
-    },
     "R01805F": {
         "char_code": "RSD",
         "nominal": "100",
@@ -244,11 +250,5 @@
         "nominal": "1000",
         "name": "вон Республики Корея",
         "name_singular": "Южнокорейская вона"
-    },
-    "R01820": {
-        "char_code": "JPY",
-        "nominal": "100",
-        "name": "японских иен",
-        "name_singular": "Японская иена"
     }
 }
