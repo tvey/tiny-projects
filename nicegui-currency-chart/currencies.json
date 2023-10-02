@@ -3,252 +3,294 @@
         "char_code": "USD",
         "nominal": "1",
         "name": "доллар США",
-        "name_singular": "Доллар США"
+        "display_name": "Доллар США",
+        "redenominated": false
     },
     "R01375": {
         "char_code": "CNY",
         "nominal": "1",
         "name": "китайский юань",
-        "name_singular": "Китайский юань"
+        "display_name": "Китайский юань",
+        "redenominated": true
     },
     "R01239": {
         "char_code": "EUR",
         "nominal": "1",
         "name": "евро",
-        "name_singular": "Евро"
+        "display_name": "Евро",
+        "redenominated": false
     },
     "R01035": {
         "char_code": "GBP",
         "nominal": "1",
         "name": "фунт стерлингов",
-        "name_singular": "Фунт стерлингов"
+        "display_name": "Фунт стерлингов",
+        "redenominated": false
     },
     "R01335": {
         "char_code": "KZT",
         "nominal": "100",
         "name": "казахстанских тенге",
-        "name_singular": "Казахстанский тенге"
+        "display_name": "Казахстанский тенге",
+        "redenominated": true
     },
     "R01090B": {
         "char_code": "BYN",
         "nominal": "1",
         "name": "белорусский рубль",
-        "name_singular": "Белорусский рубль"
+        "display_name": "Белорусский рубль",
+        "redenominated": false
     },
     "R01775": {
         "char_code": "CHF",
         "nominal": "1",
         "name": "швейцарский франк",
-        "name_singular": "Швейцарский франк"
+        "display_name": "Швейцарский франк",
+        "redenominated": false
     },
     "R01230": {
         "char_code": "AED",
         "nominal": "1",
         "name": "дирхам ОАЭ",
-        "name_singular": "Дирхам ОАЭ"
+        "display_name": "Дирхам ОАЭ",
+        "redenominated": false
     },
     "R01820": {
         "char_code": "JPY",
         "nominal": "100",
         "name": "японских иен",
-        "name_singular": "Японская иена"
+        "display_name": "Японская иена",
+        "redenominated": true
     },
     "R01625": {
         "char_code": "SGD",
         "nominal": "1",
         "name": "сингапурский доллар",
-        "name_singular": "Сингапурский доллар"
+        "display_name": "Сингапурский доллар",
+        "redenominated": false
     },
     "R01270": {
         "char_code": "INR",
         "nominal": "10",
         "name": "индийских рупий",
-        "name_singular": "Индийская рупия"
+        "display_name": "Индийская рупия",
+        "redenominated": true
     },
     "R01010": {
         "char_code": "AUD",
         "nominal": "1",
         "name": "австралийский доллар",
-        "name_singular": "Австралийский доллар"
+        "display_name": "Австралийский доллар",
+        "redenominated": false
     },
     "R01020A": {
         "char_code": "AZN",
         "nominal": "1",
         "name": "азербайджанский манат",
-        "name_singular": "Азербайджанский манат"
+        "display_name": "Азербайджанский манат",
+        "redenominated": false
     },
     "R01060": {
         "char_code": "AMD",
         "nominal": "100",
         "name": "армянских драмов",
-        "name_singular": "Армянский драм"
+        "display_name": "Армянский драм",
+        "redenominated": true
     },
     "R01100": {
         "char_code": "BGN",
         "nominal": "1",
         "name": "болгарский лев",
-        "name_singular": "Болгарский лев"
+        "display_name": "Болгарский лев",
+        "redenominated": true
     },
     "R01115": {
         "char_code": "BRL",
         "nominal": "1",
         "name": "бразильский реал",
-        "name_singular": "Бразильский реал"
+        "display_name": "Бразильский реал",
+        "redenominated": false
     },
     "R01135": {
         "char_code": "HUF",
         "nominal": "100",
         "name": "венгерских форинтов",
-        "name_singular": "Венгерский форинт"
+        "display_name": "Венгерский форинт",
+        "redenominated": true
     },
     "R01150": {
         "char_code": "VND",
         "nominal": "10000",
         "name": "вьетнамских донгов",
-        "name_singular": "Вьетнамский донг"
+        "display_name": "Вьетнамский донг",
+        "redenominated": false
     },
     "R01200": {
         "char_code": "HKD",
         "nominal": "1",
         "name": "гонконгский доллар",
-        "name_singular": "Гонконгский доллар"
+        "display_name": "Гонконгский доллар",
+        "redenominated": true
     },
     "R01210": {
         "char_code": "GEL",
         "nominal": "1",
         "name": "грузинский лари",
-        "name_singular": "Грузинский лари"
+        "display_name": "Грузинский лари",
+        "redenominated": false
     },
     "R01215": {
         "char_code": "DKK",
         "nominal": "1",
         "name": "датская крона",
-        "name_singular": "Датская крона"
+        "display_name": "Датская крона",
+        "redenominated": true
     },
     "R01240": {
         "char_code": "EGP",
         "nominal": "10",
         "name": "египетских фунтов",
-        "name_singular": "Египетский фунт"
+        "display_name": "Египетский фунт",
+        "redenominated": false
     },
     "R01280": {
         "char_code": "IDR",
         "nominal": "10000",
         "name": "индонезийских рупий",
-        "name_singular": "Индонезийская рупия"
+        "display_name": "Индонезийская рупия",
+        "redenominated": false
     },
     "R01350": {
         "char_code": "CAD",
         "nominal": "1",
         "name": "канадский доллар",
-        "name_singular": "Канадский доллар"
+        "display_name": "Канадский доллар",
+        "redenominated": false
     },
     "R01355": {
         "char_code": "QAR",
         "nominal": "1",
         "name": "катарский риал",
-        "name_singular": "Катарский риал"
+        "display_name": "Катарский риал",
+        "redenominated": false
     },
     "R01370": {
         "char_code": "KGS",
         "nominal": "10",
         "name": "киргизских сомов",
-        "name_singular": "Киргизский сом"
+        "display_name": "Киргизский сом",
+        "redenominated": true
     },
     "R01500": {
         "char_code": "MDL",
         "nominal": "10",
         "name": "молдавских леев",
-        "name_singular": "Молдавский лей"
+        "display_name": "Молдавский лей",
+        "redenominated": true
     },
     "R01530": {
         "char_code": "NZD",
         "nominal": "1",
         "name": "новозеландский доллар",
-        "name_singular": "Новозеландский доллар"
+        "display_name": "Новозеландский доллар",
+        "redenominated": false
     },
     "R01535": {
         "char_code": "NOK",
         "nominal": "10",
         "name": "норвежских крон",
-        "name_singular": "Норвежская крона"
+        "display_name": "Норвежская крона",
+        "redenominated": true
     },
     "R01565": {
         "char_code": "PLN",
         "nominal": "1",
         "name": "польский злотый",
-        "name_singular": "Польский злотый"
+        "display_name": "Польский злотый",
+        "redenominated": true
     },
     "R01585F": {
         "char_code": "RON",
         "nominal": "1",
         "name": "румынский лей",
-        "name_singular": "Румынский лей"
-    },
-    "R01670": {
-        "char_code": "TJS",
-        "nominal": "10",
-        "name": "таджикских сомони",
-        "name_singular": "Таджикский сомони"
-    },
-    "R01675": {
-        "char_code": "THB",
-        "nominal": "10",
-        "name": "таиландских батов",
-        "name_singular": "Таиландский бат"
-    },
-    "R01700J": {
-        "char_code": "TRY",
-        "nominal": "10",
-        "name": "турецких лир",
-        "name_singular": "Турецкая лира"
-    },
-    "R01710A": {
-        "char_code": "TMT",
-        "nominal": "1",
-        "name": "новый туркменский манат",
-        "name_singular": "Туркменский манат"
-    },
-    "R01717": {
-        "char_code": "UZS",
-        "nominal": "10000",
-        "name": "узбекских сумов",
-        "name_singular": "Узбекский сум"
-    },
-    "R01720": {
-        "char_code": "UAH",
-        "nominal": "10",
-        "name": "украинских гривен",
-        "name_singular": "Украинская гривна"
-    },
-    "R01760": {
-        "char_code": "CZK",
-        "nominal": "10",
-        "name": "чешских крон",
-        "name_singular": "Чешская крона"
-    },
-    "R01770": {
-        "char_code": "SEK",
-        "nominal": "10",
-        "name": "шведских крон",
-        "name_singular": "Шведская крона"
+        "display_name": "Румынский лей",
+        "redenominated": true
     },
     "R01805F": {
         "char_code": "RSD",
         "nominal": "100",
         "name": "сербских динаров",
-        "name_singular": "Сербский динар"
+        "display_name": "Сербский динар",
+        "redenominated": false
+    },
+    "R01670": {
+        "char_code": "TJS",
+        "nominal": "10",
+        "name": "таджикских сомони",
+        "display_name": "Таджикский сомони",
+        "redenominated": true
+    },
+    "R01675": {
+        "char_code": "THB",
+        "nominal": "10",
+        "name": "таиландских батов",
+        "display_name": "Таиландский бат",
+        "redenominated": false
+    },
+    "R01700J": {
+        "char_code": "TRY",
+        "nominal": "10",
+        "name": "турецких лир",
+        "display_name": "Турецкая лира",
+        "redenominated": true
+    },
+    "R01710A": {
+        "char_code": "TMT",
+        "nominal": "1",
+        "name": "новый туркменский манат",
+        "display_name": "Туркменский манат",
+        "redenominated": true
+    },
+    "R01717": {
+        "char_code": "UZS",
+        "nominal": "10000",
+        "name": "узбекских сумов",
+        "display_name": "Узбекский сум",
+        "redenominated": true
+    },
+    "R01720": {
+        "char_code": "UAH",
+        "nominal": "10",
+        "name": "украинских гривен",
+        "display_name": "Украинская гривна",
+        "redenominated": true
+    },
+    "R01760": {
+        "char_code": "CZK",
+        "nominal": "10",
+        "name": "чешских крон",
+        "display_name": "Чешская крона",
+        "redenominated": true
+    },
+    "R01770": {
+        "char_code": "SEK",
+        "nominal": "10",
+        "name": "шведских крон",
+        "display_name": "Шведская крона",
+        "redenominated": true
     },
     "R01810": {
         "char_code": "ZAR",
         "nominal": "10",
         "name": "южноафриканских рэндов",
-        "name_singular": "Южноафриканский рэнд"
+        "display_name": "Южноафриканский рэнд",
+        "redenominated": false
     },
     "R01815": {
         "char_code": "KRW",
         "nominal": "1000",
         "name": "вон Республики Корея",
-        "name_singular": "Южнокорейская вона"
+        "display_name": "Южнокорейская вона",
+        "redenominated": false
     }
 }
