@@ -33,12 +33,12 @@ def get_intervals():
     return intervals
 
 
-def get_currencies(display=False):
+def get_currencies(display: bool = False) -> dict:
     with open('currencies.json', encoding='utf-8') as f:
         currencies = json.load(f)
 
     if display:
-        return {k: v['name_singular'] for k, v in currencies.items()}
+        return {k: v['display_name'] for k, v in currencies.items()}
     return currencies
 
 
@@ -79,7 +79,7 @@ async def get_dynamic_rates(
     date_one: str,
     date_two: str = '',
 ) -> list:
-    """Get rates for one currency for one date or a specified date span."""
+    """Get rates of one currency for one date or a date span."""
     params = {
         'VAL_NM_RQ': cbr_id,
         'date_req1': date_one,
@@ -172,19 +172,33 @@ def line_chart(
     return chart
 
 
-def get_date_range(
-    start: datetime.date,
-    end: datetime.date,
-) -> list[datetime.date]:
-    """Return start, end dates and all the dates in between."""
-    delta_days = (end - start).days + 1
-    return [start + datetime.timedelta(days=i) for i in range(delta_days)]
+def unify_rates(current_nominal: str, rates: list) -> list[dict]:
+    updated_rates = []
+    
+    for i in rates:
+        if i['nominal'] == current_nominal:
+            updated_rates.append(i)
+        else:
+            nom = int(i['nominal'])
+            current_nom = int(current_nominal)
+            if current_nom > nom:
+                value = round(i['value'] * current_nom, 4)
+            else:
+                value = round(i['value'] / nom, 4)
+            i['value'] = value
+            updated_rates.append(i)
+
+    return updated_rates
 
 
 async def get_chart(cbr_id: str, start: datetime.date, end: datetime.date):
     currency = get_currencies()[cbr_id]
     title = f"{currency['nominal']} {currency['name']}"
     rates = await get_dynamic_rates(cbr_id, format_date(start), format_date(end))
+
+    if not len(set([i['nominal'] for i in rates])) == 1:
+        rates = unify_rates(currency['nominal'], rates)
+
     date_range = [i['date'] for i in rates]
     series = [
         {
