@@ -13,7 +13,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-for p in ['asyncio', 'aiosqlite', 'aiohttp_client_cache']:
+for p in ['asyncio', 'aiogram', 'aiosqlite', 'aiohttp_client_cache']:
     logging.getLogger(p).setLevel(logging.WARNING)
 
 
@@ -49,6 +49,7 @@ async def explain(comic_id):
 
     r = await session.get(explink)
     page = await r.text()
+    logger.debug(f'Explanation page: {len(page)}')
     await session.close()
 
     expl_pattern = re.compile(
@@ -62,11 +63,11 @@ async def explain(comic_id):
         return (
             f'<b>Explaining {comic_id}:</b>\n{explanation[:1000]}...\n{explink}'
         )
-    return f'Comic {comic_id} unexplainable!'
+    return f'Comic {comic_id} is unexplainable!'
 
 
 async def get_comic(latest=False):
-    cache = SQLiteBackend(cache_name='xkcd', expire_after=-1)
+    cache = SQLiteBackend(cache_name='xkcd', expire_after=60*60*24)
     session = CachedSession(cache=cache)
     latest_comic_id = await get_latest_comic_id(session)
 
