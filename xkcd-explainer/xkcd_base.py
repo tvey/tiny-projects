@@ -49,7 +49,7 @@ async def explain(comic_id):
 
     r = await session.get(explink)
     page = await r.text()
-    logger.debug(f'Explanation page: {len(page)}')
+    logger.debug(f'Explanation page size: {len(page)}')
     await session.close()
 
     expl_pattern = re.compile(
@@ -60,6 +60,7 @@ async def explain(comic_id):
         raw_explanation = match.group(2)
         soup = BeautifulSoup(raw_explanation, 'html.parser')
         explanation = soup.get_text().replace('\n', '\n\n').lstrip()
+        logger.debug(f'Explanation: {explanation[:100]}')
         return (
             f'<b>Explaining {comic_id}:</b>\n{explanation[:1000]}...\n{explink}'
         )
@@ -67,7 +68,7 @@ async def explain(comic_id):
 
 
 async def get_comic(latest=False):
-    cache = SQLiteBackend(cache_name='xkcd', expire_after=60*60*24)
+    cache = SQLiteBackend(cache_name='xkcd', expire_after=60 * 60 * 24)
     session = CachedSession(cache=cache)
     latest_comic_id = await get_latest_comic_id(session)
 

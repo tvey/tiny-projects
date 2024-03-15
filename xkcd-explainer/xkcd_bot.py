@@ -1,11 +1,13 @@
+import asyncio
 import os
 import logging
-import json
 
 import dotenv
-from aiogram import Bot, Dispatcher, executor, types
+from telebot.async_telebot import AsyncTeleBot
+from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 import xkcd_base as xkcd
+from telebot import types
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
@@ -14,25 +16,23 @@ dotenv.load_dotenv()
 
 API_TOKEN = os.environ.get('API_TOKEN')
 
-bot = Bot(token=API_TOKEN, parse_mode=types.ParseMode.HTML)
-dp = Dispatcher(bot)
+bot = AsyncTeleBot(API_TOKEN, parse_mode='HTML')
 
 
-@dp.message_handler(commands=['start', 'help'])
-async def reply_on_start(message: types.Message):
+@bot.message_handler(commands=['help', 'start'])
+async def reply_on_start(message):
     text = 'Hi! I can send you a random /comic.'
     kb = types.ReplyKeyboardMarkup(resize_keyboard=True)
     kb.add(types.KeyboardButton('Comic!'))
-    await message.reply(text, reply_markup=kb)
+    await bot.reply_to(message, text, reply_markup=kb)
 
 
-@dp.message_handler(lambda message: 'comic' in message.text.lower())
-async def get_comic(message: types.Message):
+@bot.message_handler(func=lambda message: 'comic' in message.text.lower())
+async def get_comic(message):
     comic = await xkcd.get_comic()
-    explain_btn = types.InlineKeyboardButton(
-        'Explain', callback_data=comic['id']
-    )
-    explain_kb = types.InlineKeyboardMarkup().add(explain_btn)
+    explain_btn = InlineKeyboardButton('Explain', callback_data=comic['id'])
+    explain_kb = InlineKeyboardMarkup().add(explain_btn)
+    logger.debug(f'Callback data: {comic["id"]}')
 
     await bot.send_photo(
         message.from_user.id,
@@ -42,8 +42,8 @@ async def get_comic(message: types.Message):
     )
 
 
-@dp.message_handler(commands=['latest'])
-async def get_latest(message: types.Message):
+@bot.message_handler(commands=['latest'])
+async def get_latest(message):
     comic = await xkcd.get_comic(latest=True)
     await bot.send_photo(
         message.from_user.id,
@@ -52,17 +52,19 @@ async def get_latest(message: types.Message):
     )
 
 
-@dp.callback_query_handler()
-async def explain(callback_query: types.CallbackQuery):
-    explanation = await xkcd.explain(callback_query.data)
-    await callback_query.answer()
-    await callback_query.message.answer(explanation)
+@bot.callback_query_handler(func=lambda call: True)
+async def explain_comic(call):
+    comic_id = call.data
+    explanation = await xkcd.explain(comic_id)
+    logger.debug(f'Explanation fetched for {comic_id}: {len(explanation)}')
+    await bot.answer_callback_query(call.id)
+    await bot.send_message(call.message.chat.id, explanation)
 
 
-@dp.message_handler()
-async def echo(message: types.Message):
-    await bot.send_message(message.from_user.id, f'{message.text}? 😊')
+@bot.message_handler(func=lambda message: True)
+async def echo_message(message):
+    await bot.reply_to(message, f'{message.text}? 😊')
 
 
 if __name__ == '__main__':
-    executor.start_polling(dp, skip_updates=True)
+    asyncio.run(bot.polling(skip_pending=True))
