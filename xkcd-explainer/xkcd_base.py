@@ -16,11 +16,17 @@ logger = logging.getLogger(__name__)
 for p in ['asyncio', 'aiogram', 'aiosqlite', 'aiohttp_client_cache']:
     logging.getLogger(p).setLevel(logging.WARNING)
 
-
 XKCD_BASE = 'https://xkcd.com/'
 XKCD_INFO = 'https://xkcd.com/{}/info.0.json'
 EXPLAIN_BASE = 'https://www.explainxkcd.com/wiki/index.php/'
 IRREGULAR_COMICS = [404, 961, 1037, 1116, 1264, 1350, 1416, 1608, 1663, 2198]
+HELP_TEXT = (
+    'Hey! I\'m bot that can send you random comic from '
+    '<a href="https://xkcd.com/">xkcd.com</a> and fetch their explanations '
+    'from <a href="https://explainxkcd.com/">explainxkcd.com</a>.'
+    'Yep, sometimes you\'ll really want the explanations, '
+    'and nope, it\'s not because you\'re dumb.'
+)
 
 
 async def get_latest_comic_id(session: CachedSession) -> int:
