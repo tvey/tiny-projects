@@ -8,6 +8,7 @@ fastapi = "*"
 pydantic-settings = "*"
 aiohttp = "*"
 uvicorn = "*"
+async-lru = "*"
 
 [dev-packages]
 
